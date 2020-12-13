@@ -4,12 +4,11 @@ import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [navToggle, setNaveToggle] = useState(false);
-  console.log(navToggle);
   const router = useRouter();
   return (
-    <nav className="navbar-container w-screen h-auto fixed flex justify-end">
-      <div className="bg-skin-lightWithOpacity flex justify-center w-full lg:my-1 lg:items-end lg:flex-row absolute shadow-sm">
-        <div className="lgg:w-2/6 lgg:h-2/6 lgg:ml-8 lg:ml-10 mt-2 flex justify-center items-center lg:pb-2 ">
+    <nav className="navbar-container w-full h-auto flex justify-end">
+      <div className="bg-skin-lightWithOpacity flex justify-center w-full lg:my-1 lg:items-end lg:flex-row shadow-sm">
+        <div className="lgg:w-2/6 lgg:h-auto lgg:ml-5 lgg:items-end lg:ml-10 mt-2 flex justify-center items-center lg:pb-2 ">
           <img
             onClick={() => router.push("/")}
             src="/brand.png"
@@ -104,7 +103,7 @@ const Navbar = () => {
       </div>
       {navToggle ? (
         <>
-          <div className="toggler animate-slide h-screen bg-skin-light z-10 w-60">
+          <div className="toggler fixed lg:hidden animate-slide h-screen bg-skin-light z-10 w-64">
             <div className="absolute w-4 h-4 right-5 top-3">
               <button
                 className="focus:outline-none"
@@ -116,42 +115,42 @@ const Navbar = () => {
                 />
               </button>
             </div>
-            <div className="absolute w-60 flex flex-col items-end justify-between lg:hidden my-12">
-              <div href="/" className="text-black text-md mr-10 mb-4">
+            <div className="absolute flex w-60 flex-col items-end justify-between lg:hidden my-12">
+              <div href="/" className="text-black text-md mr-6 mb-4">
                 Search
                 <img
                   className="inline w-4 h-4 ml-2"
                   src="https://www.flaticon.com/svg/static/icons/svg/622/622669.svg"
                 />
               </div>
-              <div className="mr-10 my-3">
+              <div className="mr-6 my-3">
                 <Link href="/" className="text-black text-md">
-                  Home
+                  HOME
                 </Link>
               </div>
-              <div className="mr-10 my-3">
+              <div className="mr-6 my-3">
                 <Link href="/about" className="text-black text-md">
-                  About Us
+                  ABOUT US
                 </Link>
               </div>
-              <div className="mr-10 my-3">
+              <div className="mr-6 my-3">
                 <Link href="/treatments" className="text-black text-md">
-                  Treatments
+                  TREATMENTS
                 </Link>
               </div>
-              <div className="mr-10 my-3">
+              <div className="mr-6 my-3">
                 <Link href="/contact" className="text-black text-md">
-                  Contact
+                  CONTACT
                 </Link>
               </div>
-              <div className="mr-10 my-3">
+              <div className="mr-6 my-3">
                 <Link href="/gallery" className="text-black text-md">
-                  Gallery
+                  GALLERY
                 </Link>
               </div>
-              <div className="mr-10 my-3">
+              <div className="mr-6 my-3 flex justify-end items-end">
                 <Link href="/appointments" className="text-black text-md">
-                  Book An Appointment
+                  BOOK AN APPOINTMENT
                 </Link>
               </div>
             </div>

@@ -22,7 +22,7 @@ module.exports = {
       keyframes: {
         slide: {
           "0%": { width: "0%" },
-          "100%": { width: "15rem" },
+          "100%": { width: "16rem" },
         },
       },
       animation: {
