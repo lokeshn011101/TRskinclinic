@@ -7,7 +7,7 @@ const Navbar = () => {
   const router = useRouter();
   return (
     <nav className="navbar-container w-full h-auto flex justify-end">
-      <div className="bg-skin-lightWithOpacity flex justify-center w-full lg:my-1 lg:items-end lg:flex-row shadow-sm">
+      <div className="bg-skin-lightWithOpacity flex justify-center w-full  lg:items-end lg:flex-row shadow-sm">
         <div className="lgg:w-2/6 lgg:h-auto lgg:ml-5 lgg:items-end lg:ml-10 mt-2 flex justify-center items-center lg:pb-2 ">
           <img
             onClick={() => router.push("/")}
@@ -123,32 +123,50 @@ const Navbar = () => {
                   src="https://www.flaticon.com/svg/static/icons/svg/622/622669.svg"
                 />
               </div>
-              <div className="mr-6 my-3">
+              <div
+                className="mr-6 my-3"
+                onClick={() => setNaveToggle(!navToggle)}
+              >
                 <Link href="/" className="text-black text-md">
                   HOME
                 </Link>
               </div>
-              <div className="mr-6 my-3">
+              <div
+                className="mr-6 my-3"
+                onClick={() => setNaveToggle(!navToggle)}
+              >
                 <Link href="/about" className="text-black text-md">
                   ABOUT US
                 </Link>
               </div>
-              <div className="mr-6 my-3">
+              <div
+                className="mr-6 my-3"
+                onClick={() => setNaveToggle(!navToggle)}
+              >
                 <Link href="/treatments" className="text-black text-md">
                   TREATMENTS
                 </Link>
               </div>
-              <div className="mr-6 my-3">
+              <div
+                className="mr-6 my-3"
+                onClick={() => setNaveToggle(!navToggle)}
+              >
                 <Link href="/contact" className="text-black text-md">
                   CONTACT
                 </Link>
               </div>
-              <div className="mr-6 my-3">
+              <div
+                className="mr-6 my-3"
+                onClick={() => setNaveToggle(!navToggle)}
+              >
                 <Link href="/gallery" className="text-black text-md">
                   GALLERY
                 </Link>
               </div>
-              <div className="mr-6 my-3 flex justify-end items-end">
+              <div
+                className="mr-6 my-3 flex justify-end items-end"
+                onClick={() => setNaveToggle(!navToggle)}
+              >
                 <Link href="/appointments" className="text-black text-md">
                   BOOK AN APPOINTMENT
                 </Link>

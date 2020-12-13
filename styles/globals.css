@@ -15,6 +15,25 @@ a {
 * {
   box-sizing: border-box;
 }
-/* .homepage-container {
+.description {
   font-family: "Playfair Display", serif;
-} */
+}
+.descd {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  max-width: 85vw;
+}
+.choicesD {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.slick-dots {
+  background: "#DF9A80" !important;
+}
+
+.slick-active div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
