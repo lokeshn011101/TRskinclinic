@@ -6,13 +6,18 @@ module.exports = {
       colors: {
         skin: {
           dark: "#DF9A80",
+          medium: "#E39F85",
           light: "#FFF7F5",
           lightWithOpacity: "rgb(255,247,245,0.6)",
         },
+        footer: {
+          bluei: "#14A59F",
+        },
       },
       screens: {
-        smm: { max: "639px" },
+        smm: { max: "640px" },
         lgg: { max: "1023px" },
+        mdd: { max: "1022px" },
       },
       fontFamily: {
         navToggle: {

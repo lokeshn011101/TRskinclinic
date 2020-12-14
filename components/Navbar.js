@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className="navbar-container w-full h-auto flex justify-end">
       <div className="bg-skin-lightWithOpacity flex justify-center w-full  lg:items-end lg:flex-row shadow-sm">
-        <div className="lgg:w-2/6 lgg:h-auto lgg:ml-5 lgg:items-end lg:ml-10 mt-2 flex justify-center items-center lg:pb-2 ">
+        <div className="lgg:w-2/6 lgg:h-auto lgg:ml-5 lgg:items-end lg:ml-10 mt-2 flex justify-center items-center lg:pb-3 ">
           <img
             onClick={() => router.push("/")}
             src="/brand.png"
@@ -20,7 +20,7 @@ const Navbar = () => {
           <div
             className={`${
               router.pathname === "/"
-                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 leading-8"
+                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 leading-10"
                 : ""
             }`}
           >
@@ -31,7 +31,7 @@ const Navbar = () => {
           <div
             className={`${
               router.pathname === "/about"
-                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 leading-8"
+                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 leading-10"
                 : ""
             }`}
           >
@@ -42,7 +42,7 @@ const Navbar = () => {
           <div
             className={`${
               router.pathname === "/treatments"
-                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 leading-8"
+                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 leading-10"
                 : ""
             }`}
           >
@@ -53,7 +53,7 @@ const Navbar = () => {
           <div
             className={`${
               router.pathname === "/contact"
-                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 leading-8"
+                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 leading-10"
                 : ""
             }`}
           >
@@ -64,7 +64,7 @@ const Navbar = () => {
           <div
             className={`${
               router.pathname === "/gallery"
-                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 leading-8"
+                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 leading-10"
                 : ""
             }`}
           >
@@ -75,7 +75,7 @@ const Navbar = () => {
           <div
             className={`${
               router.pathname === "/appointments"
-                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 leading-8"
+                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 leading-10"
                 : ""
             }`}
           >

@@ -15,7 +15,11 @@ a {
 * {
   box-sizing: border-box;
 }
-.description {
+.description,
+.footer-head,
+.about-heading,
+.about-head2,
+.name {
   font-family: "Playfair Display", serif;
 }
 .descd {
@@ -24,7 +28,9 @@ a {
   text-align: center;
   max-width: 85vw;
 }
-.choicesD {
+.choicesD,
+.about-desc,
+.about-desc2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
@@ -36,4 +42,33 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.footer {
+  color: rgba(230, 230, 230, 0.904);
+}
+
+.vl {
+  width: 0.8px;
+  height: 6.25rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.footer-brand {
+  margin-top: 0 !important;
+}
+
+@media (min-width: 787px) {
+  .abhinayareddy {
+    padding: 2.75rem;
+  }
+}
+.appt {
+  background-color: rgba(227, 160, 133, 0.226);
+}
+
+.stepss {
+  display: flex;
+  justify-content: between;
+  align-items: center;
+  border: #959595 solid 1px;
+  border-radius: 10px;
 }
