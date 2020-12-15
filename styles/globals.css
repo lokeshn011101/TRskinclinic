@@ -20,7 +20,7 @@ a {
 .about-heading,
 .about-head2,
 .name {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif !important;
 }
 .descd {
   font-family: "Montserrat", sans-serif;
@@ -31,9 +31,15 @@ a {
 .choicesD,
 .about-desc,
 .about-desc2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
   font-weight: 500;
 }
+
+.review {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 500;
+}
+
 .slick-dots {
   background: "#DF9A80" !important;
 }

@@ -6,9 +6,9 @@ module.exports = {
       colors: {
         skin: {
           dark: "#DF9A80",
-          medium: "#E39F85",
+          medium: "#e4ad97",
           light: "#FFF7F5",
-          lightWithOpacity: "rgb(255,247,245,0.6)",
+          lightWithOpacity: "rgb(255,247,245,0.95)",
         },
         footer: {
           bluei: "#14A59F",
@@ -20,8 +20,11 @@ module.exports = {
         mdd: { max: "1022px" },
       },
       fontFamily: {
-        navToggle: {
-          montserrat: ["Montserrat", "sans-serif"],
+        montserrat: {
+          normal: ["Montserrat", "sans-serif"],
+        },
+        playfare: {
+          normal: ["Playfair Display", "serif"],
         },
       },
       keyframes: {

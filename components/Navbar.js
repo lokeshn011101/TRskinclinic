@@ -6,7 +6,7 @@ const Navbar = () => {
   const [navToggle, setNaveToggle] = useState(false);
   const router = useRouter();
   return (
-    <nav className="navbar-container w-full h-auto flex justify-end">
+    <nav className=" navbar-container w-full h-auto flex justify-end z-10">
       <div className="bg-skin-lightWithOpacity flex justify-center w-full  lg:items-end lg:flex-row shadow-sm">
         <div className="lgg:w-2/6 lgg:h-auto lgg:ml-5 lgg:items-end lg:ml-10 mt-2 flex justify-center items-center lg:pb-3 ">
           <img
