@@ -20,7 +20,7 @@ const Navbar = () => {
           <div
             className={`${
               router.pathname === "/"
-                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 leading-10"
+                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 px-4 py-3"
                 : ""
             }`}
           >
@@ -31,7 +31,7 @@ const Navbar = () => {
           <div
             className={`${
               router.pathname === "/about"
-                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 leading-10"
+                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 px-4 py-3"
                 : ""
             }`}
           >
@@ -42,7 +42,7 @@ const Navbar = () => {
           <div
             className={`${
               router.pathname === "/treatments"
-                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 leading-10"
+                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 px-4 py-3"
                 : ""
             }`}
           >
@@ -53,7 +53,7 @@ const Navbar = () => {
           <div
             className={`${
               router.pathname === "/contact"
-                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 leading-10"
+                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 px-4 py-3"
                 : ""
             }`}
           >
@@ -64,7 +64,7 @@ const Navbar = () => {
           <div
             className={`${
               router.pathname === "/gallery"
-                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 leading-10"
+                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 px-4 py-3"
                 : ""
             }`}
           >
@@ -75,7 +75,7 @@ const Navbar = () => {
           <div
             className={`${
               router.pathname === "/appointments"
-                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 leading-10"
+                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 px-4 py-3"
                 : ""
             }`}
           >

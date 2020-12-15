@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import React, { useEffect } from "react";
 
-const Home = (prps) => {
+const Home = () => {
   const slider = React.createRef();
   useEffect(() => {
     slider.current.slickPlay();

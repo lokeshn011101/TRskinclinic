@@ -1,9 +1,11 @@
 import React from "react";
+import Card from "../components/Card";
 
 const About = () => {
   return (
     <div>
-      <img src="/about1.png" alt="ready to transform your skin?" />
+      {/* <img src="/about1.png" alt="ready to transform your skin?" /> */}
+      <Card />
       <div className="flex flex-row w-11/12 mx-auto lg:my-20 md:my-16 sm:my-12 smm:my-10">
         <img
           className="w-4/12 ml-9"
@@ -62,7 +64,7 @@ const About = () => {
         <div className="flex flex-col lg:justify-center lg:items-center w-9/12 lg:w-1/2 mdd:my-10">
           <div className="md:w-7/12 mx-auto">
             <img src="/tanujareddy.png" alt="tanujareddy" />
-            <div className="text-white bg-skin-dark md:p-8 mdd:p-5 lg:text-base md:text-base sm:text-sm smm:text-xs">
+            <div className="text-white bg-skin-dark md:p-8 mdd:p-5 lg:text-base md:text-base sm:text-sm smm:text-xs italic">
               She is an experienced dermatologist who wears her heart on her
               sleeve. She worked in the U.K for a decade as a consultant. Later,
               she moved back to India because she believes in affordable
@@ -81,7 +83,7 @@ const About = () => {
         <div className="flex flex-col lg:justify-center lg:items-center w-9/12 lg:w-1/2 mdd:my-8">
           <div className="md:w-7/12 mx-auto">
             <img src="/abhinayareddy.png" alt="abhinayareddy" />
-            <div className="abhinayareddy text-white bg-skin-dark mdd:p-5 lg:text-base md:text-base sm:text-sm smm:text-xs">
+            <div className="abhinayareddy text-white bg-skin-dark mdd:p-5 lg:text-base md:text-base sm:text-sm smm:text-xs italic">
               She was inspired by her mom to pursue dermatology as her career.
               She is the head of the Department Of Cosmetology at TR. She earned
               her diploma from the American Academy Of Aesthetics.
