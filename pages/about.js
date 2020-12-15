@@ -6,17 +6,17 @@ const About = () => {
     <div>
       {/* <img src="/about1.png" alt="ready to transform your skin?" /> */}
       <Card />
-      <div className="flex flex-row w-11/12 mx-auto lg:my-20 md:my-16 sm:my-12 smm:my-10">
+      <div className="flex flex-col-reverse justify-center items-center sm:flex-row w-11/12 mx-auto lg:my-20 md:my-16 sm:my-12 smm:my-10">
         <img
-          className="w-4/12 ml-9"
+          className="w-4/12 sm:ml-9 smm:w-8/12"
           src="/about2.png"
           alt="client of our clinic"
         />
-        <div className="w-8/12 flex flex-col justify-center items-start lg:ml-5 md:ml-4 sm:ml-3 smm:ml-2">
-          <h2 className="about-heading w-full lg:text-4xl md:text-2xl sm:text-xl smm:text-lg leading-10 lg:mb-4 md:mb-3 sm:mb-2 smm:mb-1">
+        <div className="w-8/12 smm:w-full flex flex-col justify-center items-start lg:ml-5 md:ml-4 sm:ml-3 smm:ml-2 smm:text-center">
+          <h2 className="smm:mt-5 smm:mx-auto smm:text-center about-heading w-full lg:text-4xl md:text-2xl sm:text-xl smm:text-lg leading-10 lg:mb-4 md:mb-3 sm:mb-2 smm:mb-1">
             WELCOME TO TANUJA REDDY SKIN CLINIC
           </h2>
-          <div className="w-10/12 about-desc lg:text-base md:text-base sm:text-sm smm:text-xs">
+          <div className="sm:w-10/12 w-11/12 smm:text-center smm:mx-auto  about-desc lg:text-base md:text-base sm:text-sm smm:text-xs smm:mb-5">
             <div className="lg:mb-8 md:mb-6 sm:mb-4 smm:mb-2">
               Located in Chennai committed to provide excellence in a
               professional and gracious ambience. We are well known for our

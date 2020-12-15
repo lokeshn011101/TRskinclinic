@@ -10,7 +10,7 @@ const Reviews = ({ review, name }) => {
         <img src="/icons.png" alt="star" className="h-2 md:h-4 ml-1" />
         <img src="/icons.png" alt="star" className="h-2 md:h-4 ml-1" />
       </div>
-      <div className="review lg:mb-5 md:mb-4 sm:mb-3 smm:mb-2 text-center">
+      <div className="review lg:mb-5 md:mb-4 sm:mb-3 smm:mb-2 mdd:text-center">
         {review}
       </div>
       <div className="w-full review lg:mb-8 md:mb-7 sm:mb-5 smm:mb-3 flex md:justify-start items-center justify-end">

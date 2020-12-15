@@ -5,10 +5,13 @@ import React, { useEffect } from "react";
 import TextAboveSection from "../components/TextAboveSection";
 import CarouselHome from "../components/CarouselHome";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import Reviews from "../components/Reviews";
+import ConsultUs from "../components/ConsultUs";
 
 const Home = () => {
   const slider = React.createRef();
+  const router = useRouter();
   useEffect(() => {
     slider.current.slickPlay();
     console.log(slider);
@@ -49,45 +52,42 @@ const Home = () => {
           </div>
         </Slider>
       </div>
-      <div className="flex h-96 items-center justify-center flex-col lgg:h-80">
-        <h2 className="description lg:text-4xl uppercase mb-5 md:text-xl sm:text-xl smm:text-xl">
-          Why Choose Us?
-        </h2>
-        <div className="descd lgg:text-sm">
-          TR Skin Clinic offers leading edge and innovative cosmetic medical
+      <TextAboveSection
+        title="Why Choose Us?"
+        text="TR Skin Clinic offers leading edge and innovative cosmetic medical
           grade treatments with outstanding levels of customer service combined
           with professionalism and expertise. Most of all, we place our
-          patients’ needs above all else.
-        </div>
-      </div>
-      <div className="flex justify-center w-10/12 h-auto max-w-5xl mx-auto">
+          patients’ needs above all else."
+      />
+
+      <div className="flex sm:flex-row flex-col justify-center w-10/12 h-auto max-w-5xl mx-auto">
         <div>
-          <img src="/home4.png" alt="choices" />
+          <img src="/home4.png" alt="choices" className="smm:w-8/12 mx-auto" />
         </div>
-        <div className="flex items-start flex-col justify-center ml-5 mt-5">
+        <div className="flex items-start flex-col justify-center ml-5 mt-5 ">
           <div className="lg:mb-12 sm:mb-7 smm:mb-5">
-            <h2 className="lg:mb-2 description lg:text-4xl smm:mb-0 sm:mb-1 uppercase md:text-xl sm:text-xl smm:text-lg">
+            <h2 className="lg:mb-2 description lg:text-4xl smm:mb-0 sm:mb-1 uppercase md:text-xl sm:text-xl smm:text-lg smm:text-center smm:w-full">
               QUALIFIED DOCTORS
             </h2>
-            <div className="choicesD smm:text-xs mdd:text-sm lg:text-base">
+            <div className="choicesD smm:text-xs md:text-sm lg:text-base smm:text-center smm:w-full">
               Our experts have the knowledge, skills and tools to best serve
               your cosmetic skin care needs.
             </div>
           </div>
           <div className="lg:mb-12 sm:mb-7 smm:mb-5">
-            <h2 className="lg:mb-2 description lg:text-4xl smm:mb-0 sm:mb-1 uppercase md:text-xl sm:text-xl smm:text-lg">
+            <h2 className="lg:mb-2 description lg:text-4xl smm:mb-0 sm:mb-1 uppercase md:text-xl sm:text-xl smm:text-lg smm:text-center smm:w-full">
               MEDICAL CARE
             </h2>
-            <div className="choicesD smm:text-xs mdd:text-sm lg:text-base">
+            <div className="choicesD smm:text-xs md:text-sm lg:text-base smm:text-center smm:w-full">
               TR Skin Clinic offer the ideal programme to address your
               individual concerns.
             </div>
           </div>
           <div className="lg:mb-12 sm:mb-7 smm:mb-5">
-            <h2 className="lg:mb-2 description lg:text-4xl smm:mb-0 sm:mb-1 uppercase md:text-xl sm:text-xl smm:text-lg">
+            <h2 className="lg:mb-2 description lg:text-4xl smm:mb-0 sm:mb-1 uppercase md:text-xl sm:text-xl smm:text-lg smm:text-center smm:w-full">
               ADVANCED LASERS
             </h2>
-            <div className="choicesD smm:text-xs mdd:text-sm lg:text-base">
+            <div className="choicesD smm:text-xs md:text-sm lg:text-base smm:text-center smm:w-full">
               Our State of the art Lasers are used to treat fine lines,
               pigmentation, tone and texture & More.
             </div>
@@ -105,7 +105,7 @@ We offer our patients in-depth assessment, skin & hair related advice and assist
         text="Our Medical Team is led by our very own Medical Director and team of highly experienced Registered Doctors, Nurses & Professionals.
 Who are committed to provide our patients with skin care of the highest quality at affordable pricing."
       />
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center w-8/12 mx-auto items-center md:mt-14 sm:mt-9 smm:mt-7 relative">
         <Image
           src="/doctors.png"
           alt="doctors"
@@ -113,32 +113,14 @@ Who are committed to provide our patients with skin care of the highest quality 
           height={600}
           layout="intrinsic"
         />
+        <button
+          onClick={() => router.push("about")}
+          className="doct-but lg:text-base md:text-base sm:text-sm smm:text-xs absolute right-0 bottom-0 md:my-10 p-2 md:mx-16  mdd:mx-9 mdd:my-4 mdd:p-1 rounded-full bg-white text-skin-dark"
+        >
+          Discover More
+        </button>
       </div>
-      <div className="flex justify-around items-center w-full lg:mt-24 sm:mt-16 smm:mt-8">
-        <div className="w-9/12 flex flex-row justify-around items-center">
-          <img
-            src="/homeimg.png"
-            alt="home"
-            className="w-5/12  lg:ml-16 sm:ml-8 smm:ml-5"
-          />
-          <div className="w-7/12 lg:ml-16 sm:ml-8 smm:ml-5">
-            <h2 className="description lg:text-4xl uppercase md:text-xl sm:text-xl smm:text-xl md:mb-14 sm:mb-9 smm:mb-7">
-              consult our dermatologists online
-            </h2>
-            <div className="about-desc2 md:mb-10 sm:mb-7 smm:mb-4">
-              Dr. Tanuja Reddy and her expert team of medical professionals
-              treat patients of all ages and skin types for a variety of skin
-              conditions including mole removal, acne and rosacea treatment,
-              eczema, psoriasis and more.
-            </div>
-            <div className="about-desc2">
-              Our state-of-the-art medical facility and skilled team provide
-              patients with an unmatched level of expertise, experience and
-              customer service.
-            </div>
-          </div>
-        </div>
-      </div>
+      <ConsultUs />
       <div className="lg:mt-32 sm:mt-16 smm:mt-10">
         <h2 className="about-head2 mx-auto text-center lg:text-4xl md:text-2xl sm:text-xl smm:text-lg uppercase lg:mb-24 md:mb-20 sm:mb-16 smm:mb-10 lg:mt-8 md:mt-6 sm:mt-4 smm:mt-2">
           Patient reviews

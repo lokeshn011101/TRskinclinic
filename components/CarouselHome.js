@@ -38,11 +38,11 @@ const CarouselHome = () => {
     infinite: true,
     centerPadding: "1px",
     slidesToShow: 3,
-    // autoplay: true,
-    // autoplaySpeed: 2500,
+    autoplay: true,
+    autoplaySpeed: 2500,
   };
   return (
-    <div className="overflow-hidden ml-2">
+    <div className="overflow-hidden ml-2 md:my-16 sm:my-10 smm:my-6 ">
       <Slider {...settings}>
         <Item
           source="/HomeCarousel/four.png"
