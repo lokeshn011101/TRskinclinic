@@ -23,29 +23,29 @@ const Home = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    autoplaySpeed: 5000,
+    // autoplaySpeed: 5000,
   };
   return (
     <div className="">
-      <div className="bg-skin-dark h-auto">
+      <div className="bg-transparent h-auto">
         <Slider {...settings} ref={slider}>
-          <div className="home-img1">
+          <div className="home-img1 relative">
             <img
-              src="/home1.png"
+              src="/Home/Home1/homebg1.png"
               alt="Say goodbye to all your skin woes"
               className="w-full h-full"
             />
           </div>
           <div className="home-img1">
             <img
-              src="/home2.png"
+              src="/Home/Home2/home21.png"
               alt="BECAUSE,YOUR SKIN DESERVES THE VERY BEST"
               className="w-full h-full"
             />
           </div>
           <div className="home-img1">
             <img
-              src="/home3.png"
+              src="/Home/Home3/home31.png"
               alt="Chennai's leading Skin Clinic is only an appointment away!"
               className="w-full h-full"
             />
@@ -65,7 +65,7 @@ const Home = () => {
           <img src="/home4.png" alt="choices" className="smm:w-8/12 mx-auto" />
         </div>
         <div className="flex items-start flex-col justify-center ml-5 mt-5 ">
-          <div className="lg:mb-12 sm:mb-7 smm:mb-5">
+          <div className="lg:mb-12 sm:mb-7 smm:mb-3">
             <h2 className="lg:mb-2 description lg:text-4xl smm:mb-0 sm:mb-1 uppercase md:text-xl sm:text-xl smm:text-lg smm:text-center smm:w-full">
               QUALIFIED DOCTORS
             </h2>
@@ -74,7 +74,7 @@ const Home = () => {
               your cosmetic skin care needs.
             </div>
           </div>
-          <div className="lg:mb-12 sm:mb-7 smm:mb-5">
+          <div className="lg:mb-12 sm:mb-7 smm:mb-3">
             <h2 className="lg:mb-2 description lg:text-4xl smm:mb-0 sm:mb-1 uppercase md:text-xl sm:text-xl smm:text-lg smm:text-center smm:w-full">
               MEDICAL CARE
             </h2>
@@ -83,7 +83,7 @@ const Home = () => {
               individual concerns.
             </div>
           </div>
-          <div className="lg:mb-12 sm:mb-7 smm:mb-5">
+          <div className="lg:mb-12 sm:mb-7 smm:mb-3">
             <h2 className="lg:mb-2 description lg:text-4xl smm:mb-0 sm:mb-1 uppercase md:text-xl sm:text-xl smm:text-lg smm:text-center smm:w-full">
               ADVANCED LASERS
             </h2>

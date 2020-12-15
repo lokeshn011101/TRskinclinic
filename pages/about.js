@@ -61,10 +61,10 @@ const About = () => {
         </div>
       </div>
       <div className="about-desc2 flex flex-col justify-center items-center lg:flex-row lg:justify-center lg:items-center mx-auto lg:py-12 md:py-9 sm:py-6 smm:py-3 w-10/12 mb-32">
-        <div className="flex flex-col lg:justify-center lg:items-center w-9/12 lg:w-1/2 mdd:my-10  transition-all duration-500 ease-in-out lg:hover:w-10/12">
-          <div className="md:w-7/12 mx-auto">
+        <div className="flex flex-col lg:justify-center lg:items-center md:w-full lg:w-1/2 mdd:my-10  transition-all duration-500 ease-in-out lg:hover:w-10/12">
+          <div className="md:w-9/12 mx-auto mdd:w-7/12">
             <img src="/tanujareddy.png" alt="tanujareddy" />
-            <div className="text-white bg-skin-medium md:p-8 mdd:p-5 lg:text-base md:text-base sm:text-sm smm:text-xs italic transition-all duration-500 ease-in-out hover:bg-skin-dark cursor-default font-light">
+            <div className="text-white bg-skin-medium md:p-8 mdd:p-5 lg:text-base md:text-base sm:text-sm smm:text-xs italic transition-all duration-500 ease-in-out hover:bg-skin-dark mdd:bg-skin-dark cursor-default font-light">
               She is an experienced dermatologist who wears her heart on her
               sleeve. She worked in the U.K for a decade as a consultant. Later,
               she moved back to India because she believes in affordable
@@ -80,10 +80,10 @@ const About = () => {
             </h3>
           </div>
         </div>
-        <div className="flex flex-col lg:justify-center lg:items-center w-9/12 lg:w-1/2 mdd:my-8">
-          <div className="md:w-7/12 mx-auto">
+        <div className="flex flex-col lg:justify-center lg:items-center md:w-full lg:w-1/2 mdd:my-8">
+          <div className="md:w-9/12 mx-auto mdd:w-7/12">
             <img src="/abhinayareddy.png" alt="abhinayareddy" />
-            <div className="abhinayareddy text-white bg-skin-medium mdd:p-5 lg:text-base md:text-base sm:text-sm smm:text-xs italic transition-all duration-500 ease-in-out hover:bg-skin-dark cursor-default font-light">
+            <div className="abhinayareddy text-white bg-skin-medium mdd:p-5 lg:text-base md:text-base sm:text-sm smm:text-xs italic transition-all duration-500 ease-in-out hover:bg-skin-dark mdd:bg-skin-dark cursor-default font-light">
               She was inspired by her mom to pursue dermatology as her career.
               She is the head of the Department Of Cosmetology at TR. She earned
               her diploma from the American Academy Of Aesthetics.
