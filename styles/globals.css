@@ -14,7 +14,8 @@ body {
 .footer-head,
 .about-heading,
 .about-head2,
-.name {
+.name,
+.tr-heading {
   font-family: "Playfair Display", serif !important;
 }
 .descd {

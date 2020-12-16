@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 5];
 
+const trans0 = (x, y) => `translate3d(${x / 35}px,${y / 35 - 10}px,0)`;
 const trans1 = (x, y) => `translate3d(${x / 25}px,${y / 25 - 10}px,0)`;
 const trans2 = (x, y) => `translate3d(${x / 18 + 20}px,${y / 18 - 15}px,0)`;
 const trans3 = (x, y) => `translate3d(${x / 13 + 23}px,${y / 13 - 18}px,0)`;
@@ -28,11 +29,21 @@ const Slider2 = () => {
         >
           Book An Appointment
         </button>
-        <img
-          className="homeimg2 absolute right-0 w-11/12 h-auto"
-          src="/Home/Home2/home22.png"
-          alt="home2"
-        />
+        <animated.div
+          onMouseMove={({ clientX: x, clientY: y }) => {
+            set({ xy: calc(x, y) });
+          }}
+          style={{
+            transform: props.xy ? props.xy.interpolate(trans0) : null,
+          }}
+          className="carouel-container absolute w-full h-full"
+        >
+          <img
+            className="homeimg2 absolute right-0 w-11/12 h-auto"
+            src="/Home/Home2/home22.png"
+            alt="home2"
+          />
+        </animated.div>
         <div className="homecar-heading2 text-white absolute lg:text-7xl md:text-4xl sm:text-2xl smm:text-sm lg:w-5/12 lgg:w-4/12 uppercase flex flex-col justify-start items-center">
           <h1 className="w-full">because,</h1>
           <h1 className="w-full">your skin</h1>

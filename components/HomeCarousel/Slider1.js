@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 5];
 
+const trans0 = (x, y) => `translate3d(${x / 35}px,${y / 35 - 10}px,0)`;
 const trans1 = (x, y) => `translate3d(${x / 25}px,${y / 25 - 10}px,0)`;
 const trans2 = (x, y) => `translate3d(${x / 18 + 20}px,${y / 18 - 15}px,0)`;
 const trans3 = (x, y) => `translate3d(${x / 13 + 23}px,${y / 13 - 18}px,0)`;
@@ -38,11 +39,21 @@ const Slider1 = () => {
         >
           Book An Appointment
         </button>
-        <img
-          className="homeimg1 absolute right-0 w-6/12 h-auto"
-          src="/Home/Home1/homeimg1.png"
-          alt="home1"
-        />
+        <animated.div
+          onMouseMove={({ clientX: x, clientY: y }) => {
+            set({ xy: calc(x, y) });
+          }}
+          style={{
+            transform: props.xy ? props.xy.interpolate(trans0) : null,
+          }}
+          className="carouel-container absolute w-full h-full"
+        >
+          <img
+            className="homeimg1 absolute right-0 w-6/12 h-auto"
+            src="/Home/Home1/homeimg1.png"
+            alt="home1"
+          />
+        </animated.div>
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
             set({ xy: calc(x, y) });
