@@ -1,0 +1,31 @@
+.h2dand {
+  z-index: -100;
+}
+
+#h2dand1 {
+  top: 12%;
+  left: 2%;
+}
+#h2dand2 {
+  top: 55%;
+  left: 38%;
+}
+#h2dand3 {
+  top: 38%;
+  left: 41%;
+}
+.homeimg2 {
+  top: 5%;
+  width: 60%;
+}
+.homecar-heading2 {
+  top: 20%;
+  left: 8%;
+}
+
+@media (min-width: 1024px) {
+  .homecar-heading2 {
+    font-size: 4rem;
+    line-height: 1;
+  }
+}

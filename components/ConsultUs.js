@@ -6,7 +6,7 @@ const ConsultUs = () => {
       <div className="flex justify-around items-center w-full lg:mt-36 sm:mt-24 smm:mt-16 smm:hidden">
         <div className="w-9/12 flex flex-row justify-around items-center">
           <img
-            src="/homeimg.png"
+            src="/Home/homeimg.png"
             alt="home"
             className="w-5/12  lg:ml-16 sm:ml-8 smm:ml-5"
           />

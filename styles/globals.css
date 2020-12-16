@@ -65,10 +65,14 @@ a {
     padding: 2.75rem;
   }
 }
+@media (max-width: 767px) and (min-width: 641px) {
+  .doctorss {
+    max-width: 73% !important;
+  }
+}
 .appt {
   background-color: rgba(227, 160, 133, 0.226);
 }
-
 .stepss {
   display: flex;
   justify-content: between;
@@ -99,7 +103,10 @@ a {
   position: relative;
 }
 
-.card-head {
+.card-head,
+.homecar-heading,
+.homecar-heading2,
+.homecar-heading3 {
   font-family: "Playfair Display", serif;
 }
 

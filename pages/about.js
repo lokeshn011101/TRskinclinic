@@ -9,7 +9,7 @@ const About = () => {
       <div className="flex flex-col-reverse justify-center items-center sm:flex-row w-11/12 mx-auto lg:my-20 md:my-16 sm:my-12 smm:my-10">
         <img
           className="w-4/12 sm:ml-9 smm:w-8/12"
-          src="/about2.png"
+          src="/About/about2.png"
           alt="client of our clinic"
         />
         <div className="w-8/12 smm:w-full flex flex-col justify-center items-start lg:ml-5 md:ml-4 sm:ml-3 smm:ml-2 smm:text-center">
@@ -60,10 +60,10 @@ const About = () => {
           aesthetic care for more than 20 years.
         </div>
       </div>
-      <div className="about-desc2 flex flex-col justify-center items-center lg:flex-row lg:justify-center lg:items-center mx-auto lg:py-12 md:py-9 sm:py-6 smm:py-3 w-10/12 mb-32">
+      <div className="about-desc2 flex flex-col justify-center items-center lg:flex-row lg:justify-center lg:items-center mx-auto lg:py-12 md:py-9 sm:py-6 smm:py-3 w-10/12 lgg:w-8/12 mdd:w-10/12 mb-32">
         <div className="flex flex-col lg:justify-center lg:items-center md:w-full lg:w-1/2 mdd:my-10  transition-all duration-500 ease-in-out lg:hover:w-10/12">
-          <div className="md:w-9/12 mx-auto mdd:w-7/12">
-            <img src="/tanujareddy.png" alt="tanujareddy" />
+          <div className="doctorss md:w-9/12 mx-auto smm:w-9/12 ">
+            <img src="/About/tanujareddy.png" alt="tanujareddy" />
             <div className="text-white bg-skin-medium md:p-8 mdd:p-5 lg:text-base md:text-base sm:text-sm smm:text-xs italic transition-all duration-500 ease-in-out hover:bg-skin-dark mdd:bg-skin-dark cursor-default font-light">
               She is an experienced dermatologist who wears her heart on her
               sleeve. She worked in the U.K for a decade as a consultant. Later,
@@ -80,16 +80,16 @@ const About = () => {
             </h3>
           </div>
         </div>
-        <div className="flex flex-col lg:justify-center lg:items-center md:w-full lg:w-1/2 mdd:my-8">
-          <div className="md:w-9/12 mx-auto mdd:w-7/12">
-            <img src="/abhinayareddy.png" alt="abhinayareddy" />
-            <div className="abhinayareddy text-white bg-skin-medium mdd:p-5 lg:text-base md:text-base sm:text-sm smm:text-xs italic transition-all duration-500 ease-in-out hover:bg-skin-dark mdd:bg-skin-dark cursor-default font-light">
+        <div className="flex flex-col lg:justify-center lg:items-center md:w-full lg:w-1/2 mdd:my-10  transition-all duration-500 ease-in-out lg:hover:w-10/12 lgg:mt-32">
+          <div className="doctorss md:w-9/12 mx-auto  smm:w-9/12">
+            <img src="/About/abhinayareddy.png" alt="tanujareddy" />
+            <div className="abhinayareddy text-white bg-skin-medium md:p-8 mdd:p-5 lg:text-base md:text-base sm:text-sm smm:text-xs italic transition-all duration-500 ease-in-out hover:bg-skin-dark mdd:bg-skin-dark cursor-default font-light">
               She was inspired by her mom to pursue dermatology as her career.
               She is the head of the Department Of Cosmetology at TR. She earned
               her diploma from the American Academy Of Aesthetics.
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex  flex-col  justify-center items-center">
             <h2 className="name lg:text-4xl md:text-2xl sm:text-xl smm:text-lg uppercase lg:my-4 md:my-3 sm:my-2 smm:my-2">
               DR ABHINAYA REDDY
             </h2>

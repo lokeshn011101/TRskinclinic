@@ -8,6 +8,9 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import Reviews from "../components/Reviews";
 import ConsultUs from "../components/ConsultUs";
+import Slider1 from "../components/HomeCarousel/Slider1";
+import Slider2 from "../components/HomeCarousel/Slider2";
+import Slider3 from "../components/HomeCarousel/Slider3";
 
 const Home = () => {
   const slider = React.createRef();
@@ -29,27 +32,9 @@ const Home = () => {
     <div className="">
       <div className="bg-transparent h-auto">
         <Slider {...settings} ref={slider}>
-          <div className="home-img1 relative">
-            <img
-              src="/Home/Home1/homebg1.png"
-              alt="Say goodbye to all your skin woes"
-              className="w-full h-full"
-            />
-          </div>
-          <div className="home-img1">
-            <img
-              src="/Home/Home2/home21.png"
-              alt="BECAUSE,YOUR SKIN DESERVES THE VERY BEST"
-              className="w-full h-full"
-            />
-          </div>
-          <div className="home-img1">
-            <img
-              src="/Home/Home3/home31.png"
-              alt="Chennai's leading Skin Clinic is only an appointment away!"
-              className="w-full h-full"
-            />
-          </div>
+          <Slider1 />
+          <Slider2 />
+          <Slider3 />
         </Slider>
       </div>
       <TextAboveSection
@@ -62,7 +47,11 @@ const Home = () => {
 
       <div className="flex sm:flex-row flex-col justify-center w-10/12 h-auto max-w-5xl mx-auto">
         <div>
-          <img src="/home4.png" alt="choices" className="smm:w-8/12 mx-auto" />
+          <img
+            src="/Home/home4.png"
+            alt="choices"
+            className="smm:w-8/12 mx-auto"
+          />
         </div>
         <div className="flex items-start flex-col justify-center ml-5 mt-5 ">
           <div className="lg:mb-12 sm:mb-7 smm:mb-3">
@@ -107,7 +96,7 @@ Who are committed to provide our patients with skin care of the highest quality 
       />
       <div className="flex justify-center w-8/12 mx-auto items-center md:mt-14 sm:mt-9 smm:mt-7 relative">
         <Image
-          src="/doctors.png"
+          src="/Home/doctors.png"
           alt="doctors"
           width={885}
           height={600}
@@ -129,12 +118,12 @@ Who are committed to provide our patients with skin care of the highest quality 
       <div className="flex justify-evenly items-center md:flex-row flex-col md:w-9/12 w-8/12 mx-auto lg:mb-36 md:mb-32 sm:mb-24 smm:mb-20">
         <div className="md:w-2/3 flex flex-row justify-between md:justify-center items-center lg:mb-24 md:mb-20 sm:mb-16 smm:mb-10 ">
           <img
-            src="/patient2.png"
+            src="/Home/patient2.png"
             alt="patient1"
             className="w-5/12 md:mx-10 md:transform md:-translate-y-5"
           />
           <img
-            src="/patient1.png"
+            src="/Home/patient1.png"
             alt="patient2"
             className="w-5/12 md:transform md:translate-y-24 md:-ml-8"
           />

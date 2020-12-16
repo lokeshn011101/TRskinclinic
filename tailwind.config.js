@@ -17,7 +17,7 @@ module.exports = {
       screens: {
         smm: { max: "640px" },
         lgg: { max: "1023px" },
-        mdd: { max: "1022px" },
+        mdd: { max: "768px" },
       },
       fontFamily: {
         montserrat: {

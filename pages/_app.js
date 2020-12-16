@@ -1,6 +1,9 @@
 import "../styles/index.css";
 import "../styles/navbar.css";
 import "../styles/globals.css";
+import "../styles/HomeCarousel/homeSlider1.css";
+import "../styles/HomeCarousel/homeSlider2.css";
+import "../styles/HomeCarousel/homeSlider3.css";
 import Layout from "../components/Layout";
 import Head from "next/head";
 
