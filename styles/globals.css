@@ -15,7 +15,8 @@ body {
 .about-heading,
 .about-head2,
 .name,
-.tr-heading {
+.tr-heading,
+.trhd2 {
   font-family: "Playfair Display", serif !important;
 }
 .descd {
@@ -30,7 +31,8 @@ body {
   font-family: "Montserrat", sans-serif !important;
   font-weight: 500;
 }
-a {
+a,
+.trdesc {
   font-family: "Montserrat", sans-serif !important;
 }
 .review,
@@ -120,4 +122,21 @@ a {
   .doct-but {
     right: 20px !important;
   }
+}
+
+li {
+  margin: 1rem 0;
+  padding-left: 1rem;
+}
+ul {
+  list-style-image: url("../public/bullet.png");
+}
+
+@media (max-width: 768px) {
+  ul {
+    list-style-image: none;
+  }
+}
+.nlist {
+  list-style-image: none;
 }
