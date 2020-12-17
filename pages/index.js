@@ -26,7 +26,7 @@ const Home = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    // autoplaySpeed: 5000,
+    autoplaySpeed: 5000,
   };
   return (
     <div className="">

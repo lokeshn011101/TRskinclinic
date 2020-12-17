@@ -1,12 +1,16 @@
 import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import React, { useEffect } from "react";
 
 const Navbar = () => {
+  const Ol = React.createRef();
+  console.log(Ol);
   const [navToggle, setNaveToggle] = useState(false);
   const router = useRouter();
+  let drpdwn = false;
   return (
-    <nav className=" navbar-container w-full h-auto flex justify-end z-10">
+    <nav className="sticky top-0 navbar-container w-full h-auto flex justify-end z-10">
       <div className="bg-skin-lightWithOpacity flex justify-center w-full  lg:items-end lg:flex-row shadow-sm">
         <div className="lgg:w-2/6 lgg:h-auto lgg:ml-5 lgg:items-end lg:ml-10 mt-2 flex justify-center items-center lg:pb-3 ">
           <img
@@ -42,13 +46,76 @@ const Navbar = () => {
           <div
             className={`${
               router.pathname.includes("/treatments")
-                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 px-4 py-3"
-                : ""
+                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 px-4 py-3 relative"
+                : "relative"
             }`}
           >
-            <Link href="/treatments" className="text-black text-md">
+            <button
+              className="menu-item-t cursor-pointer select-none"
+              onClick={() => {
+                drpdwn
+                  ? (Ol.current.style.display = "block")
+                  : (Ol.current.style.display = "none");
+                router.pathname.includes("/treatments")
+                  ? (Ol.current.style.margin = "0 auto")
+                  : (Ol.current.style.margin = "0.8rem auto 0 auto");
+                drpdwn = !drpdwn;
+              }}
+            >
               Treatments
-            </Link>
+            </button>
+            <ol className="sub-menu" ref={Ol}>
+              <li className="menu-item">
+                <Link href="/treatments/chemical-peels">Chemical Peels</Link>
+              </li>
+              <li className="menu-item">
+                <Link href="/treatments/dermal-fillers">Dermal Fillers</Link>
+              </li>
+              <li className="menu-item">
+                <Link href="/treatments/anti-wrinkle-treatment">
+                  Anti Wrinkle Treatment
+                </Link>
+              </li>
+              <li className="menu-item">
+                <Link href="/treatments/acne-scar-treatment">
+                  Acne Scar Treatment
+                </Link>
+              </li>
+              <li className="menu-item">
+                <Link href="/treatments/laser-hair-removal">
+                  Laser Hair Removal
+                </Link>
+              </li>
+              <li className="menu-item">
+                <Link href="/treatments/skin-tags">Skin Tags</Link>
+              </li>
+              <li className="menu-item">
+                <Link href="/treatments/microdermabrasion">
+                  Microdermabrasion
+                </Link>
+              </li>
+              <li className="menu-item">
+                <Link href="/treatments/growth-factor-treatment">
+                  Growth Factor Treatment
+                </Link>
+              </li>
+              <li className="menu-item">
+                <Link href="/treatments/photo-facial">Photofacial</Link>
+              </li>
+              <li className="menu-item">
+                <Link href="/treatments/body-sculpting">Body Sculpting</Link>
+              </li>
+              <li className="menu-item">
+                <Link href="/treatments/skin-resurfacing-m22">
+                  Skin Resurfacing With M22™
+                </Link>
+              </li>
+              <li className="menu-item">
+                <Link href="/treatments/skin-hydration">
+                  Skin Hydration with Volite
+                </Link>
+              </li>
+            </ol>
           </div>
           <div
             className={`${

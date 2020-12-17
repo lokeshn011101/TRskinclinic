@@ -15,7 +15,7 @@ const Appointment = () => {
       </div>
       <img
         className="lg:mb-10 md:mb-7 sm:mb-5 smm:mb-3"
-        src="/appt.png"
+        src="/About/appt.png"
         alt="ready to transform your skin?"
       />
       <div className="appt lg:p-8 md:p-5 sm:p-4 smm:p-2 flex flex-col justify-center items-center mx-auto ">
@@ -28,7 +28,7 @@ const Appointment = () => {
           <div className="stepss lg:px-5 md:px-12 sm:px-10 smm:px-8 lg:my-7 md:my-5 sm:my-4 smm:my-3 font-light">
             <img
               className="lg:mr-5 md:mr-12 sm:mr-10 smm:mr-8"
-              src="/phone.png"
+              src="/Contact/phone.png"
               alt="phone"
             />
             <div>
@@ -39,7 +39,7 @@ const Appointment = () => {
           <div className="stepss lg:px-5 md:px-12 sm:px-10 smm:px-8 lg:my-7 md:my-5 sm:my-4 smm:my-3 font-light">
             <img
               className="lg:mr-5 md:mr-12 sm:mr-10 smm:mr-8"
-              src="/msg.png"
+              src="/Contact/msg.png"
               alt="message"
             />
             <div>
@@ -50,7 +50,7 @@ const Appointment = () => {
           <div className="stepss lg:px-5 md:px-12 sm:px-10 smm:px-8 lg:my-7 md:my-5 sm:my-4 smm:my-3 font-light">
             <img
               className="lg:mr-5 md:mr-12 sm:mr-10 smm:mr-8"
-              src="/locc.png"
+              src="/Contact/locc.png"
               alt="location"
             />
             <div>Kindly arrive on time for your appointment.</div>
@@ -58,7 +58,7 @@ const Appointment = () => {
           <div className="stepss lg:px-5 md:px-12 sm:px-10 smm:px-8 lg:my-5 md:my-4 sm:my-3 smm:my-2 font-light">
             <img
               className="lg:mr-5 md:mr-12 sm:mr-10 smm:mr-8"
-              src="/fem.png"
+              src="/Contact/fem.png"
               alt="femaleicon"
             />
             <div>

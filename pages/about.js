@@ -4,7 +4,6 @@ import Card from "../components/Card";
 const About = () => {
   return (
     <div>
-      {/* <img src="/about1.png" alt="ready to transform your skin?" /> */}
       <Card />
       <div className="flex flex-col-reverse justify-center items-center sm:flex-row w-11/12 mx-auto lg:my-20 md:my-16 sm:my-12 smm:my-10">
         <img

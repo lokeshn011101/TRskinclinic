@@ -33,7 +33,7 @@ const ConsultUs = () => {
           <h2 className="description lg:text-4xl uppercase md:text-xl sm:text-xl smm:text-xl md:mb-14 sm:mb-9 smm:mb-7 md:pr-20 text-center">
             consult our dermatologists online
           </h2>
-          <img src="/homeimg.png" alt="home" className="w-7/12 " />
+          <img src="/Home/homeimg.png" alt="home" className="w-7/12 " />
           <div className="w-11/12  lg:my-16 sm:my-8 smm:my-5 lg:text-base md:text-base sm:text-sm smm:text-xs smm:text-center">
             <div className="about-desc2 md:mb-10 sm:mb-7 smm:mb-4 md:pr-20 w-full">
               Dr. Tanuja Reddy and her expert team of medical professionals
