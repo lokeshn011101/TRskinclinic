@@ -1,8 +1,64 @@
 import React from "react";
 import TreatmentsCard from "../../components/TreatmentsCard";
 import TreatmentsSection from "../../components/TreatmentsSection";
+import Image from "next/image";
+
+const Li = ({ data }) => {
+  return data.map((item) => {
+    return <li className="beneli mdd:m-1">{item}</li>;
+  });
+};
+
+const RenderItem = ({ heading, data, skintype }) => {
+  return (
+    <div className="titem w-1/5 h-full mdd:h-auto mdd:w-3/4 flex flex-col mdd:justify-center mdd:items-center mdd:mt-10 mt-14 bg-skin-aboveLight ml-1">
+      <h2 className="trhd2 w-full lg:text-2xl md:text-xl sm:text-lg smm:text-lg mdd:text-center p-2 pl-4 bg-skin-medium">
+        {heading}
+      </h2>
+      <ul className="pr-7 mdd:mb-5 mb-7">
+        <Li data={data} />
+      </ul>
+      <h2 className="trhd2 lg:text-2xl md:text-xl sm:text-lg smm:text-lg mdd:text-center pl-4">
+        Skin Type
+      </h2>
+      <div className="trdesc mdd:text-center p-2 pb-4 pl-4">{skintype}</div>
+    </div>
+  );
+};
 
 const ChemicalPeels = () => {
+  const benefits = [
+    [
+      "Makes skin pores small",
+      "Great for cleaning acne",
+      "Reduces the effect of sun damage",
+      "Increases collagen production",
+    ],
+    [
+      "Brighter, Smoother Skin",
+      "Treats Acne And Blackheads",
+      "Reduce Fine Lines, And Wrinkles",
+      "Fade Dark Spots And Uneven Skin Tone",
+    ],
+    [
+      "Immediate Results",
+      "Exfoliates Dead Skin",
+      "Improvement Of Uneven Skin Pigmentation And Melasma",
+      "Younger, And More Refreshed Skin Post Treatment",
+    ],
+    [
+      "Decreases The Appearance Of Scars",
+      "Treat Melasma",
+      "Anti-Aging Effect",
+      "Reduces Hyperpigmentation",
+    ],
+    [
+      "Immediate Results & Minimal Downtime",
+      "Brighter, Smoother Skin",
+      "Great For Clearing Acne",
+      "Reduces The Effect Of Sun Damage",
+    ],
+  ];
   return (
     <>
       <TreatmentsCard Name={"Chemical Peel"} treatment="ChemicalPeels" />
@@ -19,7 +75,7 @@ const ChemicalPeels = () => {
         <h2 className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center">
           Why should you get it done?
         </h2>
-        <div className="w-3/4 trdesc mx-auto">
+        <div className="w-3/4 trdesc mx-auto text-sm mdd:text-xs mdd:text-center">
           Chemical peels can be used to treat a variation of skin problems
         </div>
         <div className="w-9/12 trdesc mx-auto lg:mb-20 md:mb-16 sm:mb-12 smm:mb-9 lg:text-2xl md:text-xl sm:text-lg smm:text-base mdd:text-center">
@@ -47,6 +103,56 @@ const ChemicalPeels = () => {
           quickly and evenly. Some peels are removed right away in 2 to 5
           minutes depending on your skin. Some peels are removed at home after 6
           to 7 hours.
+        </div>
+      </div>
+      <div className="flex md:flex-row flex-col justify-around items-center mx-auto lg:w-5/12 w-7/12">
+        <Image
+          src="/Treatments/ChemicalPeels/two.png"
+          alt="cp1"
+          width={200}
+          height={200}
+          layout="intrinsic"
+        />
+        <div className="md:mt-0 mt-8">
+          <Image
+            src="/Treatments/ChemicalPeels/one.png"
+            alt="cp1"
+            width={200}
+            height={200}
+            layout="intrinsic"
+          />
+        </div>
+      </div>
+      <div className="md:mt-20 mt-16">
+        <h2 className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center">
+          What type of Chemical Peels can I get and What are their benefits?
+        </h2>
+        <div className="w-11/12 mx-auto flex flex-row justify-start items-start mdd:justify-center mdd:items-center mdd:flex-col">
+          <RenderItem
+            data={benefits[0]}
+            heading="Glycolic Peel"
+            skintype="All Skin Types"
+          />
+          <RenderItem
+            data={benefits[1]}
+            heading="Salycilic Acid"
+            skintype="Combination, Oily Or Acne Prone Skin"
+          />
+          <RenderItem
+            data={benefits[2]}
+            heading="Lactic Acid"
+            skintype="All Skin Types, Particularly Those With Acne Scarring"
+          />
+          <RenderItem
+            data={benefits[3]}
+            heading="Kojic Acid"
+            skintype="All Skin Types"
+          />
+          <RenderItem
+            data={benefits[4]}
+            heading="TCA"
+            skintype="All Skin Types"
+          />
         </div>
       </div>
     </>

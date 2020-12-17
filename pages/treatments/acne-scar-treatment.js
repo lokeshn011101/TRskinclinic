@@ -2,7 +2,33 @@ import React from "react";
 import TreatmentsCard from "../../components/TreatmentsCard";
 import TreatmentsSection from "../../components/TreatmentsSection";
 
+const RenderList = ({ data }) => {
+  let i = 1;
+  return (
+    <ul className="nlist">
+      {data.map((item) => {
+        return (
+          <li className="my-5 p-0">
+            <img
+              className="inline-block mr-3"
+              src={`/${i}.png`}
+              alt={`${i++}`}
+            />
+            {item}
+          </li>
+        );
+      })}
+    </ul>
+  );
+};
+
 const AcneScarTreatment = () => {
+  const benefits = [
+    "Excess oil production",
+    "Hair follicles clogged by oil and dead skin cells",
+    "Bacteria",
+    "Excess activity of a type of hormone",
+  ];
   return (
     <>
       <TreatmentsCard
@@ -23,18 +49,7 @@ const AcneScarTreatment = () => {
           Four main factors cause acne:
         </div>
         <div className="w-9/12 trdesc mx-auto lg:mb-20 md:mb-36 sm:mb-32 smm:mb-9 lg:text-2xl md:text-xl sm:text-lg smm:text-base mdd:text-center">
-          <div className="nlist">
-            <div className="my-4 mr-4 flex flex-row justify-start items-center">
-              Excess oil production
-            </div>
-            <div className="my-4 mr-4">
-              Hair follicles clogged by oil and dead skin cells
-            </div>
-            <div className="my-4 mr-4">Bacteria</div>
-            <div className="my-4 mr-4">
-              Excess activity of a type of hormone
-            </div>
-          </div>
+          <RenderList data={benefits} />
         </div>
       </div>
       <div className="mx-auto w-full">
