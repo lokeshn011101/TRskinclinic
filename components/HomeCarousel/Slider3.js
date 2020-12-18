@@ -1,6 +1,7 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 5];
 
@@ -24,18 +25,6 @@ const Slider1 = () => {
           alt="Say goodbye to all your skin woes"
           className="w-full h-full"
         />
-        <div className="homecar-heading3 absolute lg:text-7xl md:text-4xl sm:text-2xl smm:text-sm lg:w-6/12 lgg:w-3/12 flex flex-col justify-start items-center text-white">
-          <h1 className="w-full">Chennai's</h1>
-          <h1 className="w-full">leading Skin Clinic</h1>
-          <h1 className="w-full">is only an</h1>
-          <h1 className="w-full">appointment away!</h1>
-        </div>
-        <button
-          onClick={() => router.push("about")}
-          className="cursor-pointer doct-buth1 lg:text-base md:text-base sm:text-sm smm:text-xs absolute bottom-0 left-0 md:my-20 p-2 px-3 md:mx-32  mdd:mx-9 mdd:my-4 mdd:p-1 rounded-full bg-white text-skin-dark"
-        >
-          Book An Appointment
-        </button>
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
             set({ xy: calc(x, y) });
@@ -109,12 +98,26 @@ const Slider1 = () => {
           className="carouel-container absolute w-full h-full"
         >
           <img
-            className="h3dand absolute top-0 left-0"
+            className=" absolute top-0 left-0"
             id="h3dand4"
             src="/Home/Home3/linenearface.png"
             alt=""
           />
         </animated.div>
+        <div className="homecar-heading3 absolute lg:ml-20 md:ml-16 sm:ml-14 smm:ml-6  flex flex-col justify-center items-start">
+          <div className=" lg:text-6xl md:text-4xl sm:text-2xl smm:text-xl uppercase flex flex-col justify-start items-start">
+            <h1 className="w-full hh">Chennai's</h1>
+            <h1 className="w-full hh">leading Skin Clinic</h1>
+            <h1 className="w-full hh">is only an</h1>
+            <h1 className="w-full">appointment away!</h1>
+          </div>
+          <button
+            onClick={() => router.push("about")}
+            className="cursor-pointer but1 lg:text-base md:text-base sm:text-sm smm:text-xs md:my-5 sm:my-3 my-1 p-2 px-3 mdd:p-1 rounded-full bg-white text-skin-dark"
+          >
+            <Link href="/appointment">Book An Appointment</Link>
+          </button>
+        </div>
       </div>
     </div>
   );

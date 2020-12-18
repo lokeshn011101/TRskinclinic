@@ -1,6 +1,7 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 5];
 
@@ -28,17 +29,7 @@ const Slider1 = () => {
           alt="Say goodbye to all your skin woes"
           className="w-full h-full"
         />
-        <div className="homecar-heading absolute lg:text-7xl md:text-4xl sm:text-2xl smm:text-sm lg:w-4/12 lgg:w-3/12 uppercase flex flex-col justify-start items-center">
-          <h1 className="w-full">Say Goodbye</h1>
-          <h1 className="w-full">to all your</h1>
-          <h1 className="w-full">skin woes</h1>
-        </div>
-        <button
-          onClick={() => router.push("about")}
-          className="cursor-pointer doct-buth1 lg:text-base md:text-base sm:text-sm smm:text-xs absolute bottom-0 left-0 md:my-20 p-2 px-3 md:mx-32  mdd:mx-9 mdd:my-4 mdd:p-1 rounded-full bg-white text-skin-dark"
-        >
-          Book An Appointment
-        </button>
+
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
             set({ xy: calc(x, y) });
@@ -182,6 +173,19 @@ const Slider1 = () => {
             alt=""
           />
         </animated.div>
+        <div className="absolute lg:ml-20 md:ml-16 sm:ml-14 smm:ml-6 smm:top-1/4 sm:top-1/3 flex flex-col justify-center items-start">
+          <div className="homecar-heading lg:text-7xl md:text-4xl sm:text-2xl smm:text-xl uppercase flex flex-col justify-start items-start">
+            <h1 className="w-full hh">Say Goodbye</h1>
+            <h1 className="w-full hh">to all your</h1>
+            <h1 className="w-full">skin woes</h1>
+          </div>
+          <button
+            onClick={() => router.push("about")}
+            className="cursor-pointer but1 lg:text-base md:text-base sm:text-sm smm:text-xs md:my-5 sm:my-3 my-1 p-2 px-3 mdd:p-1 rounded-full bg-white text-skin-dark"
+          >
+            <Link href="/appointment">Book An Appointment</Link>
+          </button>
+        </div>
       </div>
     </div>
   );

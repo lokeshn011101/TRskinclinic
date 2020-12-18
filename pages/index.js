@@ -18,7 +18,6 @@ const Home = () => {
   const router = useRouter();
   useEffect(() => {
     slider.current.slickPlay();
-    console.log(slider);
   }, []);
   const settings = {
     dots: true,
@@ -30,7 +29,7 @@ const Home = () => {
     autoplaySpeed: 5000,
   };
   return (
-    <div className="">
+    <>
       <div className="bg-transparent h-auto">
         <Slider {...settings} ref={slider}>
           <Slider1 />
@@ -151,7 +150,7 @@ you’re the best!”"
           />
         </div>
       </div>
-    </div>
+    </>
   );
 };
 export default Home;

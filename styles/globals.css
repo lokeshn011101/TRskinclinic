@@ -35,11 +35,6 @@ a,
 .trdesc {
   font-family: "Montserrat", sans-serif !important;
 }
-.review,
-.doc-but {
-  font-family: "Montserrat", sans-serif !important;
-  font-weight: 500;
-}
 
 .slick-dots {
   background: "#DF9A80" !important;
@@ -47,8 +42,6 @@ a,
 
 .slick-active div {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .footer {
   color: rgba(230, 230, 230, 0.904);
