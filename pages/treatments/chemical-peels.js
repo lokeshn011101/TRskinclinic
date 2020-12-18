@@ -1,6 +1,6 @@
 import React from "react";
 import TreatmentsCard from "../../components/TreatmentsCard";
-import TreatmentsSection from "../../components/TreatmentsSection";
+import FAQ from "../../components/FAQ";
 import Image from "next/image";
 
 const Li = ({ data }) => {
@@ -31,6 +31,20 @@ const RenderItem = ({ heading, data, skintype }) => {
 };
 
 const ChemicalPeels = () => {
+  const faq = [
+    [
+      "When will I see the results?",
+      "Once your skin heals, you will see the results. Healing time ranges from 1 day for a refreshing or lunchtime peel to 14 days or longer for a deep peel. To get the results you seek from a  refreshing peel or lunchtime peel, you may need to have 3 to 5 peels.",
+    ],
+    [
+      "Do chemical peels hurt?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+    ],
+    [
+      "How do I know what chemical peel is right for me?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+    ],
+  ];
   const benefits = [
     [
       "Makes skin pores small",
@@ -159,6 +173,7 @@ const ChemicalPeels = () => {
           />
         </div>
       </div>
+      <FAQ data={faq} />
     </>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import TreatmentsCard from "../../components/TreatmentsCard";
 import TreatmentsSection from "../../components/TreatmentsSection";
-import Image from "next/image";
+import FAQ from "../../components/FAQ";
 
 const RenderList = ({ data }) => {
   let i = 1;
@@ -35,6 +35,28 @@ const RenderList = ({ data }) => {
 };
 
 const PhotoFacial = () => {
+  const faq = [
+    [
+      "What parts of my body can I have treated?",
+      "Most people get photofacials to treat their face, neck, shoulders, back, and hands. However, photofacial treatments can be performed on any part of the body except the eyelids and the area above them.",
+    ],
+    [
+      "Do photofacials hurt?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+    ],
+    [
+      "How long does it take to recover from a photofacial?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+    ],
+    [
+      "How long do the results last?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+    ],
+    [
+      "What can I do to prolong results?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+    ],
+  ];
   const benefits = [
     "The provider will apply a cool gel to your face and supply you with dark glasses to protect your eyes from the light.",
     "Once you’ve been prepped, the doctor administering your treatment will take a hand-piece with a cold smooth surface and run it along your skin as it pulses light.",
@@ -87,6 +109,7 @@ else that thins the blood. Additionally, be sure to notify your doctor if you’
         text="IPL photofacials are performed in a series, with each treatment lasting from approximately 20 minutes to an hour, depending on the amount of skin
 being treated. Typically, patients receive between three and six treatments spaced roughly one month apart."
       />
+      <FAQ data={faq} />
     </>
   );
 };

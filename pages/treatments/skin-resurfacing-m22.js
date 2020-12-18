@@ -1,8 +1,31 @@
 import React from "react";
 import TreatmentsCard from "../../components/TreatmentsCard";
 import TreatmentsSection from "../../components/TreatmentsSection";
+import FAQ from "../../components/FAQ";
 
 const SkinResurfacing = () => {
+  const faq = [
+    [
+      "How long does the effect of the treatment last?",
+      "The favorable effects of this service are long lasting. Since the skin keeps ageing, regular maintenance is required.",
+    ],
+    [
+      "Is there any downtime?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+    ],
+    [
+      "How long are the sessions?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+    ],
+    [
+      "How long do the results last?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+    ],
+    [
+      "What can I do to prolong results?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+    ],
+  ];
   return (
     <>
       <TreatmentsCard Name={"Skin Resurfacing"} treatment="SkinResurfacing" />
@@ -50,6 +73,7 @@ so it reduces any discomfort."
         text="You may experience warmth, redness, mild swelling in the  treated area, which will most likely fade within a few hours of treatment. The skin may have
 a pinkish tone for 5- 6 days."
       />
+      <FAQ data={faq} />
     </>
   );
 };

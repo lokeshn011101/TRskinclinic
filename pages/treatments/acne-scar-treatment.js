@@ -1,6 +1,7 @@
 import React from "react";
 import TreatmentsCard from "../../components/TreatmentsCard";
 import TreatmentsSection from "../../components/TreatmentsSection";
+import FAQ from "../../components/FAQ";
 
 const RenderList = ({ data }) => {
   let i = 1;
@@ -23,6 +24,16 @@ const RenderList = ({ data }) => {
 };
 
 const AcneScarTreatment = () => {
+  const faq = [
+    [
+      "Are Acne Scars Permanent?",
+      "No, acne scars are not permanent. They can be resolved through non - surgical treatments and prescription medicine at TR Skin Clinic.",
+    ],
+    [
+      "What are the results of laser acne treatment?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+    ],
+  ];
   const benefits = [
     "Excess oil production",
     "Hair follicles clogged by oil and dead skin cells",
@@ -89,6 +100,7 @@ in case you have an important event and need to get rid of your acne immediately
         text="There are many treatments for acne scarring such as Growth Factor Treatment, Chemical Peels or M-22 laser. These treatments have minimal downtime
 and side effects. The only post-care is to use sunscreen."
       />
+      <FAQ data={faq} />
     </>
   );
 };

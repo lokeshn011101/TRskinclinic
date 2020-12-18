@@ -2,6 +2,7 @@ import React from "react";
 import TreatmentsCard from "../../components/TreatmentsCard";
 import TreatmentsSection from "../../components/TreatmentsSection";
 import Image from "next/image";
+import FAQ from "../../components/FAQ";
 
 const RenderList = ({ data }) => {
   let i = 1;
@@ -32,6 +33,20 @@ const RenderList = ({ data }) => {
 };
 
 const LaserHairRemoval = () => {
+  const faq = [
+    [
+      "Does laser hair removal hurt?",
+      "It can cause initial stinging in areas with thick hair. But it does not cause any pain whatsoever. Topical anaesthetic cream can be applied on certain bony areas in case it stings a little more.",
+    ],
+    [
+      "When will I see the results after THE TREATMENT?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+    ],
+    [
+      "How long does THE TREATMENT TAKE?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+    ],
+  ];
   const benefits = [
     [
       "Painless & Quick",
@@ -176,6 +191,7 @@ This can also stimulate hair growth in other areas that we have already treated.
         title="What type of laser is used for laser hair removal at TR Skin Clinic?"
         text="At TR Skin Clinic, we use the FDA approved Light Sheer Desire by Lumenius to provide you with the finest painless laser hair removal procedure."
       />
+      <FAQ data={faq} />
     </>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import TreatmentsCard from "../../components/TreatmentsCard";
 import TreatmentsSection from "../../components/TreatmentsSection";
+import FAQ from "../../components/FAQ";
 
 const RenderList = ({ data, data2 }) => {
   let i = 1;
@@ -29,6 +30,20 @@ const RenderList = ({ data, data2 }) => {
 };
 
 const SkinTags = () => {
+  const faq = [
+    [
+      "When to contact us?",
+      "If a corn or callus becomes very painful or inflamed, contact us. If you have diabetes or poor blood flow, visit us before self-treating a corn or  callus because even a minor injury to your foot can lead to an infected  open sore (ulcer).",
+    ],
+    [
+      "Can I do other activities after corn treatmenT?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+    ],
+    [
+      "Are the surgical treatments painful?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+    ],
+  ];
   const benefits1 = [
     ["Hyfrecation", "We will use heat to remove the skin tag."],
     [
@@ -104,9 +119,6 @@ are loose collagen fibers that become lodged inside the thicker parts of the ski
         <h2 className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center">
           Procedures for Skin Tags
         </h2>
-        {/* <div className="w-3/4 trdesc mx-auto">
-          Four main factors cause acne:
-        </div> */}
         <div className="w-9/12 trdesc mx-auto md:mb-32 sm:mb-24 smm:mb-9 lg:text-2xl md:text-xl sm:text-lg smm:text-base mdd:text-center">
           <RenderList
             data={benefits1}
@@ -134,6 +146,7 @@ to see and remove the smaller ones as well. You also have a 4 to 5 years gap bef
           />
         </div>
       </div>
+      <FAQ data={faq} />
     </>
   );
 };

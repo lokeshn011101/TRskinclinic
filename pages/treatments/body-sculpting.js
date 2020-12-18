@@ -1,6 +1,7 @@
 import React from "react";
 import TreatmentsCard from "../../components/TreatmentsCard";
 import TreatmentsSection from "../../components/TreatmentsSection";
+import FAQ from "../../components/FAQ";
 import Image from "next/image";
 
 const RenderList = ({ data }) => {
@@ -24,6 +25,24 @@ const RenderList = ({ data }) => {
 };
 
 const BodySculpting = () => {
+  const faq = [
+    [
+      "Can I return to normal activities after my treatment?",
+      "Yes, you can. Body Sculpting procedure is completely non-surgical, so you can return to normal activities immediately.",
+    ],
+    [
+      "Will the results look natural?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+    ],
+    [
+      "Is It Painful?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+    ],
+    [
+      "Are There Any Risks?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+    ],
+  ];
   const benefits = [
     "Non-invasive",
     "No downtime",
@@ -140,6 +159,7 @@ developed by your body."
 fat cells grow or shrink. When you lose weight, the fat cells generally shrink throughout your body. Body contouring, however, directly removes fat cells
 from a specific area of your body. It's recommended for people who want to resolve one or two stubborn areas of fat."
       />
+      <FAQ data={faq} />
     </>
   );
 };

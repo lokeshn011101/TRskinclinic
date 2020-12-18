@@ -7,6 +7,7 @@ module.exports = {
         skin: {
           dark: "#DF9A80",
           medium: "#e4ad97",
+          belowMedium: "#ecd9d1",
           aboveLight: "#ebcabe",
           light: "#FFF7F5",
           lightWithOpacity: "rgb(255,247,245,0.95)",

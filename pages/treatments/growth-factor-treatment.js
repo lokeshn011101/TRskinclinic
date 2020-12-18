@@ -1,6 +1,7 @@
 import React from "react";
 import TreatmentsCard from "../../components/TreatmentsCard";
 import TreatmentsSection from "../../components/TreatmentsSection";
+import FAQ from "../../components/FAQ";
 
 const RenderList = ({ data }) => {
   let i = 1;
@@ -39,6 +40,24 @@ const RenderList = ({ data }) => {
 };
 
 const GrowthFactorTreatment = () => {
+  const faq = [
+    [
+      "Is it painful?",
+      "The treatment is performed under local anesthesia so it is a relatively painless procedure.",
+    ],
+    [
+      "Is it safe?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+    ],
+    [
+      "Is there any downtime?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+    ],
+    [
+      "Does the treatment work on male pattern baldness?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+    ],
+  ];
   const benefits = [
     ["Blood Collection", "A small amount of blood is taken from the patient"],
     [
@@ -110,6 +129,7 @@ It restores the function of hair follicles in the area where the injection is do
         text="PRP contains growth factors, chemokine factors, cytokine and adhesive proteins that have both mitogenic and chemotactic properties. GFC contains more
 or less consistent levels of natural growth factors and hence provides consistent results without any side effect."
       />
+      <FAQ data={faq} />
     </>
   );
 };

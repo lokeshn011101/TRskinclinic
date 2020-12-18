@@ -1,8 +1,23 @@
 import React from "react";
 import TreatmentsCard from "../../components/TreatmentsCard";
 import TreatmentsSection from "../../components/TreatmentsSection";
+import FAQ from "../../components/FAQ";
 
 const AntiWrinkleTreatment = () => {
+  const faq = [
+    [
+      "Does the procedure hurt?",
+      "Some patients report that being injected with Anti-Wrinkle Treatment  feels like a pinch. We may use ice to numb the treatment area. Or, if you are concerned about discomfort, we may apply a topical numbing cream before administering your treatment.",
+    ],
+    [
+      "How much downtime is required?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+    ],
+    [
+      "Is BOTOX and Anti-Wrinkle Treatment the same?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+    ],
+  ];
   return (
     <>
       <TreatmentsCard
@@ -53,6 +68,7 @@ treatment areas for you."
         title="When will I notice the results?"
         text="You may begin to notice results within 24 to 48 hours but it takes upto 2 or 3 weeks for the full results."
       />
+      <FAQ data={faq} />
     </>
   );
 };

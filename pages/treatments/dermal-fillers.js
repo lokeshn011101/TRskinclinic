@@ -1,8 +1,19 @@
 import React from "react";
 import TreatmentsCard from "../../components/TreatmentsCard";
 import TreatmentsSection from "../../components/TreatmentsSection";
+import FAQ from "../../components/FAQ";
 
 const DermalFillers = () => {
+  const faq = [
+    [
+      "Do dermal fillers hurt?",
+      "There may be a slight discomfort when the filler is being injected, but we can minimise this by applying a topical anaesthetic cream before treatment. Our fillers also contain a pre-mixed local anaesthetic which also helps make the procedure relatively painless.",
+    ],
+    [
+      "Is there any downtime?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+    ],
+  ];
   return (
     <>
       <TreatmentsCard Name={"Dermal Fillers"} treatment="DermalFillers" />
@@ -52,6 +63,7 @@ to create totally different features rather they enhance your already existing f
         text="Anti-Wrinkle treatment works on relaxing the muscles and softening lines whereas fillers add small amounts of volume in the right places to enhance
 the features of the face."
       />
+      <FAQ data={faq} />
     </>
   );
 };

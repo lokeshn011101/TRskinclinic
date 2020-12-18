@@ -1,6 +1,7 @@
 import React from "react";
 import TreatmentsCard from "../../components/TreatmentsCard";
 import TreatmentsSection from "../../components/TreatmentsSection";
+import FAQ from "../../components/FAQ";
 
 const Li = ({ data }) => {
   return data.map((item) => {
@@ -26,6 +27,16 @@ const RenderItem = ({ heading, data }) => {
 };
 
 const Microdermabasion = () => {
+  const faq = [
+    [
+      "Does THE treatment hurt?",
+      "The treatment does not hurt as it is pain-free.",
+    ],
+    [
+      "Is there any downtime?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+    ],
+  ];
   const benefits = [
     [
       "Microdermabrasion is an exfoliation of the skin and is more pocket friendly",
@@ -100,6 +111,7 @@ and function. Medi-Facials sittings may take 45 minutes and similarly microderma
 and also do not have any side effects. They tend to improve the skin tone and texture immediately. They also provide you with healthy and glowing skin.
 Microdermabrasion is usually suggested first 14 days before your event (as it removes the dead cells) and medi-facial one week before."
       />
+      <FAQ data={faq} />
     </>
   );
 };
