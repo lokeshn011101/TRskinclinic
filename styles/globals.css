@@ -2,15 +2,153 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  font-family: "Montserrat", sans-serif !important;
+  background-color: rgb(255, 247, 245);
 }
 
 * {
   box-sizing: border-box;
+}
+.description,
+.footer-head,
+.about-heading,
+.about-head2,
+.name,
+.tr-heading,
+.trhd2 {
+  font-family: "Playfair Display", serif !important;
+}
+.descd,
+.beneli {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  max-width: 85vw;
+}
+.choicesD,
+.about-desc,
+.about-desc2 {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 500;
+}
+a,
+.trdesc {
+  font-family: "Montserrat", sans-serif !important;
+}
+.review,
+.doc-but {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 500;
+}
+
+.slick-dots {
+  background: "#DF9A80" !important;
+}
+
+.slick-active div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  color: rgba(230, 230, 230, 0.904);
+}
+
+.vl {
+  width: 0.8px;
+  height: 6.25rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.footer-brand {
+  margin-top: 0 !important;
+}
+
+@media (min-width: 787px) {
+  .abhinayareddy {
+    padding: 2.75rem;
+  }
+}
+@media (max-width: 767px) and (min-width: 641px) {
+  .doctorss {
+    max-width: 73% !important;
+  }
+}
+.appt {
+  background-color: rgba(227, 160, 133, 0.226);
+}
+.stepss {
+  display: flex;
+  justify-content: between;
+  align-items: center;
+  border: #959595 solid 1px;
+  border-radius: 10px;
+}
+
+.card4 {
+  position: absolute;
+  width: fit-content !important;
+  height: fit-content !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.abimg {
+  width: fit-content !important;
+  height: fit-content !important;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.card-head,
+.homecar-heading,
+.homecar-heading2,
+.homecar-heading3 {
+  font-family: "Playfair Display", serif;
+}
+
+@media (min-width: 640px) {
+  .cont {
+    height: 700px;
+  }
+}
+@media (min-width: 1480px) {
+  .doct-but {
+    right: 20px !important;
+  }
+}
+
+li {
+  margin: 1rem 0;
+  padding-left: 1rem;
+}
+ul {
+  list-style-image: url("../public/bullet.png");
+}
+
+@media (max-width: 768px) {
+  ul {
+    list-style-image: none;
+  }
+}
+.nlist {
+  list-style-image: none;
+}
+.beneli {
+  list-style-image: none;
+  margin: 0;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .beneli {
+    text-align: center;
+  }
 }
