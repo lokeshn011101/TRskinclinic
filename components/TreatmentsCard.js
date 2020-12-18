@@ -70,9 +70,9 @@ const TreatmentsCard = ({ treatment, Name, trImage }) => {
             style={{
               transform: props.xy ? props.xy.interpolate(trans3) : null,
             }}
-            className="trh absolute bottom-0 overflow-hidden"
+            className="trh absolute bottom-0 right-8 overflow-hidden"
           >
-            <div className="tr-heading float-right text-black lg:text-7xl md:text-4xl sm:text-2xl smm:text-base flex flex-col justify-start items-center">
+            <div className="tr-heading overflow-hidden text-black lg:text-7xl md:text-4xl sm:text-2xl smm:text-base flex flex-col justify-start items-center">
               <h1 className="w-full">{Name}</h1>
             </div>
           </animated.div>

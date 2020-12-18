@@ -8,7 +8,7 @@ const RenderList = ({ data }) => {
     <ul className="nlist">
       {data.map((item) => {
         return (
-          <li className="my-5 p-0">
+          <li key={item} className="my-5 p-0">
             <img
               className="inline-block mr-3"
               src={`/${i}.png`}

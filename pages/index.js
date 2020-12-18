@@ -5,6 +5,7 @@ import React, { useEffect } from "react";
 import TextAboveSection from "../components/TextAboveSection";
 import CarouselHome from "../components/CarouselHome";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import Reviews from "../components/Reviews";
 import ConsultUs from "../components/ConsultUs";
@@ -106,7 +107,7 @@ Who are committed to provide our patients with skin care of the highest quality 
           onClick={() => router.push("about")}
           className="doct-but lg:text-base md:text-base sm:text-sm smm:text-xs absolute right-0 bottom-0 md:my-10 p-2 md:mx-16  mdd:mx-9 mdd:my-4 mdd:p-1 rounded-full bg-white text-skin-dark"
         >
-          Discover More
+          <Link href="/about">Discover More</Link>
         </button>
       </div>
       <ConsultUs />

@@ -8,7 +8,7 @@ const RenderList = ({ data, data2 }) => {
     <ul className="nlist ">
       {data.map((item) => {
         return (
-          <li className="md:my-7 p-0 text-sm mdd:text-xs">
+          <li key={item} className="md:my-7 p-0 text-sm mdd:text-xs">
             <div className=" flex flex-row justify-start items-start">
               <img
                 className="inline-block mr-3 mdd:hidden"
@@ -49,7 +49,7 @@ const SkinTags = () => {
   return (
     <>
       <TreatmentsCard Name={"Skin Tags"} treatment="SkinTags" />
-      <div className="w-full md:mt-32 mt-20">
+      <div className="w-full md:mt-44 mt-20">
         <TreatmentsSection
           title="What are corns?"
           text="Corns and calluses are thick, hardened layers of skin that develop when your skin tries to defend itself against friction and pressure. They most often appear

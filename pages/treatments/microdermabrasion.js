@@ -4,7 +4,11 @@ import TreatmentsSection from "../../components/TreatmentsSection";
 
 const Li = ({ data }) => {
   return data.map((item) => {
-    return <li className="beneli mdd:m-1">{item}</li>;
+    return (
+      <li key={item} className="beneli mdd:m-1">
+        {item}
+      </li>
+    );
   });
 };
 
@@ -35,7 +39,7 @@ const Microdermabasion = () => {
   return (
     <>
       <TreatmentsCard Name={"Microdermabrasion"} treatment="Microdermabasion" />
-      <div className="trdesc mx-auto w-3/4 lg:mt-36 md:mt-36 sm:mt-20 smm:mt-16 lg:mb-20 md:mb-16 sm:mb-12 smm:mb-9 mdd:text-center text-sm mdd:text-xs">
+      <div className="trdesc mx-auto w-3/4 lg:mt-44 md:mt-36 sm:mt-20 smm:mt-16 lg:mb-20 md:mb-16 sm:mb-12 smm:mb-9 mdd:text-center text-sm mdd:text-xs">
         It is a procedure that uses a diamond tip which helps exfoliate the dead
         cells, helps reduce tan, stimulates collagen formation and leaves your
         face looking youthful. It is more effective than a regular facial and

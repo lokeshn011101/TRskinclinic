@@ -5,7 +5,11 @@ import Image from "next/image";
 
 const Li = ({ data }) => {
   return data.map((item) => {
-    return <li className="beneli mdd:m-1">{item}</li>;
+    return (
+      <li className="beneli mdd:m-1" key={item}>
+        {item}
+      </li>
+    );
   });
 };
 
@@ -62,7 +66,7 @@ const ChemicalPeels = () => {
   return (
     <>
       <TreatmentsCard Name={"Chemical Peel"} treatment="ChemicalPeels" />
-      <div className="trdesc mx-auto w-3/4 lg:mt-36 md:mt-36 sm:mt-20 smm:mt-16 lg:mb-20 md:mb-16 sm:mb-12 smm:mb-9 mdd:text-center text-sm mdd:text-xs">
+      <div className="trdesc mx-auto w-3/4 lg:mt-40 md:mt-36 sm:mt-20 smm:mt-16 lg:mb-20 md:mb-16 sm:mb-12 smm:mb-9 mdd:text-center text-sm mdd:text-xs">
         A chemical peel is a skin-resurfacing procedure that can be applied to
         the face, hands, and neck. They’re used for the improvement of the
         appearance of the skin. During this procedure, chemical solutions will

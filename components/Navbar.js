@@ -5,10 +5,9 @@ import React, { useEffect } from "react";
 
 const Navbar = () => {
   const Ol = React.createRef();
-  console.log(Ol);
   const [navToggle, setNaveToggle] = useState(false);
+  const [drpDwn, setDrpDwn] = useState(true);
   const router = useRouter();
-  let drpdwn = false;
   return (
     <nav className="sticky top-0 navbar-container w-full h-auto flex justify-end z-10">
       <div className="bg-skin-lightWithOpacity flex justify-center w-full  lg:items-end lg:flex-row shadow-sm">
@@ -53,13 +52,13 @@ const Navbar = () => {
             <button
               className="menu-item-t cursor-pointer select-none"
               onClick={() => {
-                drpdwn
+                drpDwn
                   ? (Ol.current.style.display = "block")
                   : (Ol.current.style.display = "none");
                 router.pathname.includes("/treatments")
                   ? (Ol.current.style.margin = "0 auto")
                   : (Ol.current.style.margin = "0.8rem auto 0 auto");
-                drpdwn = !drpdwn;
+                setDrpDwn(!drpDwn);
               }}
             >
               Treatments
