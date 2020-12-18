@@ -24,44 +24,46 @@ const Appointment = () => {
           assist you and answer any questions you may have regarding our
           treatments.
         </div>
-        <div>
-          <div className="stepss lg:px-5 md:px-12 sm:px-10 smm:px-8 lg:my-7 md:my-5 sm:my-4 smm:my-3 font-light">
+        <div className="lg:text-base md:text-base sm:text-sm smm:text-xs">
+          <div className="stepss flex flex-row items-center lg:px-5 md:px-12 sm:px-10 smm:px-8 lg:my-7 md:my-5 sm:my-4 smm:my-3 font-light">
             <img
-              className="lg:mr-5 md:mr-12 sm:mr-10 smm:mr-8"
+              className="lg:mr-5 md:mr-12 sm:mr-10 smm:mr-5 smm:w-2/12"
               src="/Contact/phone.png"
               alt="phone"
             />
-            <div>
+            <div className="w-full">
               Take the first step towards your ideal skin. Call us at +91 77080
               07026 during our working hours.
             </div>
           </div>
-          <div className="stepss lg:px-5 md:px-12 sm:px-10 smm:px-8 lg:my-7 md:my-5 sm:my-4 smm:my-3 font-light">
+          <div className="stepss flex flex-row items-center lg:px-5 md:px-12 sm:px-10 smm:px-8 lg:my-7 md:my-5 sm:my-4 smm:my-3 font-light">
             <img
-              className="lg:mr-5 md:mr-12 sm:mr-10 smm:mr-8"
+              className="lg:mr-5 md:mr-12 sm:mr-10 smm:mr-5 smm:w-2/12"
               src="/Contact/msg.png"
               alt="message"
             />
-            <div>
+            <div className="w-full">
               Briefly mention the purpose of your visit and schedule your
               appointment.
             </div>
           </div>
-          <div className="stepss lg:px-5 md:px-12 sm:px-10 smm:px-8 lg:my-7 md:my-5 sm:my-4 smm:my-3 font-light">
+          <div className="stepss flex flex-row items-center lg:px-5 md:px-12 sm:px-10 smm:px-8 lg:my-7 md:my-5 sm:my-4 smm:my-3 font-light">
             <img
-              className="lg:mr-5 md:mr-12 sm:mr-10 smm:mr-8"
+              className="lg:mr-5 md:mr-12 sm:mr-10 smm:mr-5 smm:w-2/12"
               src="/Contact/locc.png"
               alt="location"
             />
-            <div>Kindly arrive on time for your appointment.</div>
+            <div className="w-full">
+              Kindly arrive on time for your appointment.
+            </div>
           </div>
-          <div className="stepss lg:px-5 md:px-12 sm:px-10 smm:px-8 lg:my-5 md:my-4 sm:my-3 smm:my-2 font-light">
+          <div className="stepss flex flex-row items-center lg:px-5 md:px-12 sm:px-10 smm:px-8 lg:my-5 md:my-4 sm:my-3 smm:my-2 font-light">
             <img
-              className="lg:mr-5 md:mr-12 sm:mr-10 smm:mr-8"
+              className="lg:mr-5 md:mr-12 sm:mr-10 smm:mr-5 smm:w-2/12"
               src="/Contact/fem.png"
               alt="femaleicon"
             />
-            <div>
+            <div className="w-full">
               Discuss your skin woes with our doctors & they will offer you a
               solution at an affordable price.
             </div>
