@@ -1,6 +1,7 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 5];
 
@@ -23,12 +24,7 @@ const Slider2 = () => {
           alt="Say goodbye to all your skin woes"
           className="w-full h-full"
         />
-        <button
-          onClick={() => router.push("about")}
-          className="cursor-pointer doct-buth1 lg:text-base md:text-base sm:text-sm smm:text-xs absolute bottom-0 left-0 md:my-32 p-2 px-3 md:mx-24  mdd:mx-9 mdd:my-4 mdd:p-1 rounded-full bg-white text-skin-dark"
-        >
-          Book An Appointment
-        </button>
+
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
             set({ xy: calc(x, y) });
@@ -44,12 +40,6 @@ const Slider2 = () => {
             alt="home2"
           />
         </animated.div>
-        <div className="homecar-heading2 text-white absolute lg:text-7xl md:text-4xl sm:text-2xl smm:text-sm lg:w-5/12 lgg:w-4/12 uppercase flex flex-col justify-start items-center">
-          <h1 className="w-full">because,</h1>
-          <h1 className="w-full">your skin</h1>
-          <h1 className="w-full">deserves</h1>
-          <h1 className="w-full">the very best</h1>
-        </div>
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
             set({ xy: calc(x, y) });
@@ -98,6 +88,20 @@ const Slider2 = () => {
             alt=""
           />
         </animated.div>
+        <div className="homecar-heading3 absolute lg:ml-20 md:ml-16 sm:ml-14 smm:ml-6  flex flex-col justify-center items-start">
+          <div className="text-white lg:text-6xl md:text-4xl sm:text-2xl smm:text-lg uppercase flex flex-col justify-start items-start">
+            <h1 className="w-full hh3">because,</h1>
+            <h1 className="w-full hh3">your skin</h1>
+            <h1 className="w-full hh3">deserves</h1>
+            <h1 className="w-full">the very best</h1>
+          </div>
+          <button
+            onClick={() => router.push("/appointments")}
+            className="cursor-pointer but1 lg:text-base md:text-base sm:text-sm smm:text-xs md:my-5 sm:my-3 my-1 p-2 px-3 mdd:p-1 rounded-full bg-white text-skin-dark"
+          >
+            <Link href="/appointments">Book An Appointment</Link>
+          </button>
+        </div>
       </div>
     </div>
   );

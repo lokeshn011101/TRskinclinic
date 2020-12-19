@@ -6,9 +6,9 @@ import Link from "next/link";
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 5];
 
 const trans1 = (x, y) => `translate3d(${x / 25}px,${y / 25 - 10}px,0)`;
-const trans2 = (x, y) => `translate3d(${x / 7 + 20}px,${y / 18 - 15}px,0)`;
-const trans3 = (x, y) => `translate3d(${x / 13 + 23}px,${y / 13 - 18}px,0)`;
-const trans4 = (x, y) => `translate3d(${x / 12.5 + 16}px,${y / 21 - 19}px,0)`;
+const trans2 = (x, y) => `translate3d(${x / 12 + 20}px,${y / 18 - 15}px,0)`;
+const trans3 = (x, y) => `translate3d(${x / 18 + 23}px,${y / 18 - 18}px,0)`;
+const trans4 = (x, y) => `translate3d(${x / 17.5 + 16}px,${y / 20 - 19}px,0)`;
 const trans5 = (x, y) => `translate3d(${x / 28 + 19}px,${y / 28 - 13}px,0)`;
 
 const Slider1 = () => {
@@ -105,17 +105,17 @@ const Slider1 = () => {
           />
         </animated.div>
         <div className="homecar-heading3 absolute lg:ml-20 md:ml-16 sm:ml-14 smm:ml-6  flex flex-col justify-center items-start">
-          <div className=" lg:text-6xl md:text-4xl sm:text-2xl smm:text-xl uppercase flex flex-col justify-start items-start">
+          <div className=" lg:text-6xl md:text-4xl sm:text-2xl smm:text-lg uppercase flex flex-col justify-start items-start">
             <h1 className="w-full hh">Chennai's</h1>
             <h1 className="w-full hh">leading Skin Clinic</h1>
             <h1 className="w-full hh">is only an</h1>
             <h1 className="w-full">appointment away!</h1>
           </div>
           <button
-            onClick={() => router.push("about")}
+            onClick={() => router.push("/appointments")}
             className="cursor-pointer but1 lg:text-base md:text-base sm:text-sm smm:text-xs md:my-5 sm:my-3 my-1 p-2 px-3 mdd:p-1 rounded-full bg-white text-skin-dark"
           >
-            <Link href="/appointment">Book An Appointment</Link>
+            <Link href="/appointments">Book An Appointment</Link>
           </button>
         </div>
       </div>

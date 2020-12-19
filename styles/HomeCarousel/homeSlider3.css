@@ -27,13 +27,6 @@
   top: 23%;
 }
 
-@media (min-width: 1024px) {
-  .homecar-heading2 {
-    font-size: 4rem;
-    line-height: 1;
-  }
-}
-
 @media (max-width: 500px) {
   .homecar-heading3 {
     top: 17%;
@@ -122,5 +115,29 @@
   }
   #h3dand2 {
     transform: scale(0.17);
+    left: 5%;
+    top: -29%;
+  }
+}
+
+@media (max-width: 380px) {
+  #h3dand1 {
+    top: -43%;
+    left: 18%;
+  }
+  #h3dand2 {
+    left: 0%;
+    top: -49%;
+  }
+  #h3dand3 {
+    top: 0%;
+    left: -20%;
+  }
+}
+
+@media (max-width: 350px) {
+  #h3dand2 {
+    left: 0%;
+    top: -40%;
   }
 }

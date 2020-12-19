@@ -180,10 +180,10 @@ const Slider1 = () => {
             <h1 className="w-full">skin woes</h1>
           </div>
           <button
-            onClick={() => router.push("about")}
+            onClick={() => router.push("/appointments")}
             className="cursor-pointer but1 lg:text-base md:text-base sm:text-sm smm:text-xs md:my-5 sm:my-3 my-1 p-2 px-3 mdd:p-1 rounded-full bg-white text-skin-dark"
           >
-            <Link href="/appointment">Book An Appointment</Link>
+            <Link href="/appointments">Book An Appointment</Link>
           </button>
         </div>
       </div>
