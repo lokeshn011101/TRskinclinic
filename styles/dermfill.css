@@ -55,3 +55,23 @@ button {
 .acctitle:hover {
   background-color: #ebcabe;
 }
+
+@media (min-width: 700px) {
+  .carouhome {
+    margin-right: 2rem;
+  }
+  .downcarou .slick-list {
+    overflow: visible !important;
+  }
+  .downcarou .slick-active div div div,
+  .downcarou .slick-slide div div div {
+    transform: scale(0.9);
+  }
+
+  .downcarou .slick-current img {
+    transform: scale(1.225) !important;
+  }
+  .downcarou .slick-current h3 {
+    margin-top: 1.3rem;
+  }
+}

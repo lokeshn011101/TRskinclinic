@@ -316,6 +316,7 @@ const Navbar = () => {
           <div className="toggler fixed top-0 lg:hidden animate-slide h-screen bg-skin-light z-10 w-64">
             <div className="absolute w-4 h-4 right-5 top-3">
               <button
+                name="toggler"
                 className="focus:outline-none"
                 onClick={() => setNaveToggle(!navToggle)}
               >
@@ -330,6 +331,7 @@ const Navbar = () => {
                 Search
                 <img
                   className="inline w-4 h-4 ml-2"
+                  alt="search"
                   src="https://www.flaticon.com/svg/static/icons/svg/622/622669.svg"
                 />
               </div>
