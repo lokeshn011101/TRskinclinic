@@ -36,7 +36,7 @@ const ArrowPrev = (props) => {
   console.log(props);
   return (
     <button onClick={props.onClick} className={props.className + " arr"}>
-      <img src="/previous.png" alt="next" />
+      <img src="/Previous.png" alt="next" />
     </button>
   );
 };
