@@ -56,7 +56,7 @@ button {
   background-color: #ebcabe;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .carouhome {
     margin-right: 2rem;
   }
@@ -65,13 +65,16 @@ button {
   }
   .downcarou .slick-active div div div,
   .downcarou .slick-slide div div div {
-    transform: scale(0.9);
+    transform: scale(0.8);
   }
-
   .downcarou .slick-current img {
-    transform: scale(1.225) !important;
+    transform: scale(1.4) !important;
   }
   .downcarou .slick-current h3 {
     margin-top: 1.3rem;
+  }
+  .slick-current .doct-but {
+    right: -10% !important;
+    bottom: -10%;
   }
 }

@@ -149,3 +149,21 @@ ul {
 .gimg {
   background-color: rgba(0, 0, 0, 0.452);
 }
+
+.slick-next {
+  top: 37% !important;
+  z-index: 100;
+  right: 5% !important;
+}
+.slick-prev {
+  top: 37% !important;
+  z-index: 100;
+  left: 5% !important;
+}
+.slick-prev:before,
+.slick-next:before {
+  content: "" !important;
+}
+.arr {
+  width: 45px !important;
+}

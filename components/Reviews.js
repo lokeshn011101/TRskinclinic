@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 
-const Reviews = ({ review, name, delay = "" }) => {
+const Reviews = ({ review, name, delay = "", offset = "" }) => {
   const [winWidth, setWinWidth] = useState(0);
   useEffect(() => {
     AOS.init({
@@ -14,7 +14,7 @@ const Reviews = ({ review, name, delay = "" }) => {
       className="flex flex-col justify-center md:items-start items-center lg:text-sm md:text-sm sm:text-xs smm:text-xs"
       data-aos={winWidth <= 1000 ? "fade-up" : "fade-left"}
       data-aos-delay={delay}
-      data-aos-offset="10"
+      data-aos-offset={offset}
     >
       <div className="flex flex-row justify-center md:items-start items-center lg:mb-2 md:mb-2 sm:mb-1 smm:mb-1">
         <img src="/Home/icons.png" alt="star" className="h-2 md:h-4" />

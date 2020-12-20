@@ -25,6 +25,22 @@ const Item = ({ desc, source, to }) => {
   );
 };
 
+const ArrowNext = (props) => {
+  return (
+    <button onClick={props.onClick} className={props.className + " arr"}>
+      <img src="/next.png" alt="next" />
+    </button>
+  );
+};
+const ArrowPrev = (props) => {
+  console.log(props);
+  return (
+    <button onClick={props.onClick} className={props.className + " arr"}>
+      <img src="/previous.png" alt="next" />
+    </button>
+  );
+};
+
 const CarouselHome = () => {
   const [winWidth, setWinWidth] = useState(0);
   useEffect(() => {
@@ -35,13 +51,16 @@ const CarouselHome = () => {
   }, []);
   const settings = {
     dots: true,
+    arrows: true,
     className: "center",
     centerMode: true,
     infinite: true,
     centerPadding: "10px",
     slidesToShow: winWidth <= 700 ? 2 : 3,
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 3000,
+    nextArrow: <ArrowNext />,
+    prevArrow: <ArrowPrev />,
   };
 
   return (

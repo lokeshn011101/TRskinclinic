@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
           rel="stylesheet"
         />
-        <title>Tanja Reddy Skin Clinic</title>
+        <title>Tanuja Reddy Skin Clinic</title>
       </Head>
       <Layout>
         <Component {...pageProps} />

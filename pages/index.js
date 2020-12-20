@@ -125,13 +125,14 @@ We offer our patients in-depth assessment, skin & hair related advice and assist
         text="Our Medical Team is led by our very own Medical Director and team of highly experienced Registered Doctors, Nurses & Professionals.
 Who are committed to provide our patients with skin care of the highest quality at affordable pricing."
         aosTitle="fade-down"
-        offsetTitle="0"
+        offsetTitle="-100"
         aosText="fade-up"
-        offsetText="0"
+        offsetText="-200"
       />
       <div
         className="flex justify-center w-8/12 mx-auto items-center md:mt-14 sm:mt-9 smm:mt-7 relative"
         data-aos="zoom-in"
+        data-aos-offset="-300"
       >
         <Image
           src="/Home/doctors.png"
@@ -161,7 +162,7 @@ Who are committed to provide our patients with skin care of the highest quality 
             className="w-5/12 md:mx-10 md:transform md:-translate-y-5"
             data-aos={winWidth <= 1000 ? "fade-right" : "fade-down"}
             data-aos-delay="400"
-            data-aos-offset="10"
+            data-aos-offset="-300"
           />
           <div className="h-full w-5/12 md:transform md:translate-y-24 md:-ml-8">
             <img
@@ -170,7 +171,7 @@ Who are committed to provide our patients with skin care of the highest quality 
               className=""
               data-aos={winWidth <= 1000 ? "fade-left" : "fade-up"}
               data-aos-delay="400"
-              data-aos-offset="10"
+              data-aos-offset="-300"
             />
           </div>
         </div>
@@ -180,6 +181,7 @@ Who are committed to provide our patients with skin care of the highest quality 
 my skin. I have never felt more better”"
             name="— Ananya Kannan"
             delay="200"
+            offset="-300"
           />
           <Reviews
             review="“Possibly the best clinic in Chennai! The friendliest
@@ -187,6 +189,7 @@ doctors one has seen. TR Skin Clinic is the
 one stop for all skin problems”"
             name="— Vaishnavi Rao"
             delay="300"
+            offset="-350"
           />
           <Reviews
             review="“TR skin Clinic gave me the confidence that my
@@ -196,6 +199,7 @@ any acne now. All thanks to TR Skin Clinic,
 you’re the best!”"
             name="— Shanthoshri Janakiraman"
             delay="400"
+            offset="-400"
           />
         </div>
       </div>
