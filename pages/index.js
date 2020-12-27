@@ -1,18 +1,23 @@
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import React, { useEffect, useState } from "react";
-import TextAboveSection from "../components/TextAboveSection";
-import CarouselHome from "../components/CarouselHome";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+
+import React, { useEffect, useState } from "react";
+
+import TextAboveSection from "../components/TextAboveSection";
+import CarouselHome from "../components/CarouselHome";
+
 import Reviews from "../components/Reviews";
 import ConsultUs from "../components/ConsultUs";
 import Slider1 from "../components/HomeCarousel/Slider1";
 import Slider2 from "../components/HomeCarousel/Slider2";
 import Slider3 from "../components/HomeCarousel/Slider3";
+
+import Slider from "react-slick";
 import AOS from "aos";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Home = () => {
   const slider = React.createRef();
@@ -58,10 +63,11 @@ const Home = () => {
 
       <div className="flex sm:flex-row flex-col justify-center w-10/12 h-auto max-w-5xl mx-auto">
         <div>
-          <img
+          <Image
             src="/Home/home4.png"
             alt="choices"
             className="smm:w-8/12 mx-auto"
+            layout="fill"
             data-aos={winWidth <= 1000 ? "fade-down" : "fade-right"}
           />
         </div>
@@ -70,8 +76,7 @@ const Home = () => {
             className="lg:mb-12 sm:mb-7 smm:mb-3"
             data-aos={winWidth <= 1000 ? "fade-up" : "fade-left"}
             data-aos-delay="200"
-            data-aos-offset="10"
-          >
+            data-aos-offset="10">
             <h2 className="lg:mb-2 description lg:text-4xl smm:mb-0 sm:mb-1 uppercase md:text-xl sm:text-xl smm:text-lg smm:text-center smm:w-full">
               QUALIFIED DOCTORS
             </h2>
@@ -84,8 +89,7 @@ const Home = () => {
             className="lg:mb-12 sm:mb-7 smm:mb-3"
             data-aos={winWidth <= 1000 ? "fade-up" : "fade-left"}
             data-aos-delay="300"
-            data-aos-offset="10"
-          >
+            data-aos-offset="10">
             <h2 className="lg:mb-2 description lg:text-4xl smm:mb-0 sm:mb-1 uppercase md:text-xl sm:text-xl smm:text-lg smm:text-center smm:w-full">
               MEDICAL CARE
             </h2>
@@ -98,8 +102,7 @@ const Home = () => {
             className="lg:mb-12 sm:mb-7 smm:mb-3"
             data-aos={winWidth <= 1000 ? "fade-up" : "fade-left"}
             data-aos-delay="400"
-            data-aos-offset="10"
-          >
+            data-aos-offset="10">
             <h2 className="lg:mb-2 description lg:text-4xl smm:mb-0 sm:mb-1 uppercase md:text-xl sm:text-xl smm:text-lg smm:text-center smm:w-full">
               ADVANCED LASERS
             </h2>
@@ -132,8 +135,7 @@ Who are committed to provide our patients with skin care of the highest quality 
       <div
         className="flex justify-center w-8/12 mx-auto items-center md:mt-14 sm:mt-9 smm:mt-7 relative"
         data-aos="zoom-in"
-        data-aos-offset="-300"
-      >
+        data-aos-offset="-300">
         <Image
           src="/Home/doctors.png"
           alt="doctors"
@@ -143,8 +145,7 @@ Who are committed to provide our patients with skin care of the highest quality 
         />
         <button
           onClick={() => router.push("about")}
-          className="doct-but lg:text-base md:text-base sm:text-sm smm:text-xs absolute right-0 bottom-0 md:my-10 p-2 md:mx-16  mdd:mx-9 mdd:my-4 mdd:p-1 rounded-full bg-white text-skin-dark"
-        >
+          className="doct-but lg:text-base md:text-base sm:text-sm smm:text-xs absolute right-0 bottom-0 md:my-10 p-2 md:mx-16  mdd:mx-9 mdd:my-4 mdd:p-1 rounded-full bg-white text-skin-dark">
           <Link href="/about">Discover More</Link>
         </button>
       </div>
@@ -156,8 +157,9 @@ Who are committed to provide our patients with skin care of the highest quality 
       </div>
       <div className="flex justify-evenly items-center md:flex-row flex-col md:w-9/12 w-8/12 mx-auto lg:mb-36 md:mb-32 sm:mb-24 smm:mb-20">
         <div className="md:w-2/3 flex flex-row justify-between md:justify-center items-center lg:mb-24 md:mb-20 sm:mb-16 smm:mb-10">
-          <img
+          <Image
             src="/Home/patient2.png"
+            layout="fill"
             alt="patient1"
             className="w-5/12 md:mx-10 md:transform md:-translate-y-5"
             data-aos={winWidth <= 1000 ? "fade-right" : "fade-down"}
@@ -165,8 +167,9 @@ Who are committed to provide our patients with skin care of the highest quality 
             data-aos-offset="-300"
           />
           <div className="h-full w-5/12 md:transform md:translate-y-24 md:-ml-8">
-            <img
+            <Image
               src="/Home/patient1.png"
+              layout="fill"
               alt="patient2"
               className=""
               data-aos={winWidth <= 1000 ? "fade-left" : "fade-up"}

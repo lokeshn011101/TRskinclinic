@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import Link from "next/link";
 import AOS from "aos";
+import Image from "next/image";
 
 const Item = ({ desc, source, to }) => {
   useEffect(() => {
@@ -13,7 +14,7 @@ const Item = ({ desc, source, to }) => {
   return (
     <div className="carousel-cell lg:mx-3 md:mx-2 sm:mx-1 smm:mx-1 flex flex-col justify-center items-center relative">
       <div className="relative">
-        <img src={source} alt="Image" />
+        <Image src={source} alt="Image" layout="fill" />
         <button className="doct-but lg:text-base md:text-base sm:text-sm smm:text-xs absolute mdd:right-1 right-2 bottom-0 md:my-3 p-2 mdd:my-1 mdd:p-1 rounded-full bg-white text-skin-dark">
           <Link href={`/treatments/${to}`}>Discover More</Link>
         </button>
@@ -28,7 +29,7 @@ const Item = ({ desc, source, to }) => {
 const ArrowNext = (props) => {
   return (
     <button onClick={props.onClick} className={props.className + " arr"}>
-      <img src="/next.png" alt="next" />
+      <Image src="/next.png" alt="next" layout="fill" />
     </button>
   );
 };
@@ -36,7 +37,7 @@ const ArrowPrev = (props) => {
   console.log(props);
   return (
     <button onClick={props.onClick} className={props.className + " arr"}>
-      <img src="/Previous.png" alt="next" />
+      <Image src="/Previous.png" alt="next" layout="fill" />
     </button>
   );
 };
@@ -68,8 +69,7 @@ const CarouselHome = () => {
       className="downcarou h-auto md:my-16 sm:my-10 smm:my-6 "
       data-aos="flip-up"
       data-aos-delay="200"
-      data-aos-offset="0"
-    >
+      data-aos-offset="0">
       <Slider {...settings}>
         <Item
           source="/HomeCarousel/four.png"

@@ -2,6 +2,7 @@ import React from "react";
 import { useSpring, animated } from "react-spring";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Image from "next/image";
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 5];
 
@@ -24,8 +25,9 @@ const Slider1 = () => {
   return (
     <div className="carou-container">
       <div className="home-img1 relative">
-        <img
+        <Image
           src="/Home/Home1/homebg1.png"
+          layout="fill"
           alt="Say goodbye to all your skin woes"
           className="w-full h-full"
         />
@@ -37,12 +39,12 @@ const Slider1 = () => {
           style={{
             transform: props.xy ? props.xy.interpolate(trans0) : null,
           }}
-          className="carouel-container absolute w-full h-full"
-        >
-          <img
+          className="carouel-container absolute w-full h-full">
+          <Image
             className="homeimg1 absolute right-0 w-6/12 h-auto"
             src="/Home/Home1/homeimg1.png"
             alt="home1"
+            layout="fill"
           />
         </animated.div>
         <animated.div
@@ -52,13 +54,13 @@ const Slider1 = () => {
           style={{
             transform: props.xy ? props.xy.interpolate(trans1) : null,
           }}
-          className="carouel-container absolute w-full h-full"
-        >
-          <img
+          className="carouel-container absolute w-full h-full">
+          <Image
             className="h1dand absolute top-0 left-0"
             id="h1dand1"
             src="/Home/Home1/home11.png"
             alt="dandelion"
+            layout="fill"
           />
         </animated.div>
         <animated.div
@@ -68,13 +70,13 @@ const Slider1 = () => {
           style={{
             transform: props.xy ? props.xy.interpolate(trans2) : null,
           }}
-          className="carouel-container absolute w-full h-full"
-        >
-          <img
+          className="carouel-container absolute w-full h-full">
+          <Image
             className="h1dand absolute top-0 left-0"
             id="h1dand2"
             src="/Home/Home1/home12.png"
             alt=""
+            layout="fill"
           />
         </animated.div>
         <animated.div
@@ -84,13 +86,13 @@ const Slider1 = () => {
           style={{
             transform: props.xy ? props.xy.interpolate(trans3) : null,
           }}
-          className="carouel-container absolute w-full h-full"
-        >
-          <img
+          className="carouel-container absolute w-full h-full">
+          <Image
             className="h1dand absolute top-0 left-0"
             id="h1dand3"
             src="/Home/Home1/home13.png"
             alt=""
+            layout="fill"
           />
         </animated.div>
         <animated.div
@@ -100,13 +102,13 @@ const Slider1 = () => {
           style={{
             transform: props.xy ? props.xy.interpolate(trans4) : null,
           }}
-          className="carouel-container absolute w-full h-full"
-        >
-          <img
+          className="carouel-container absolute w-full h-full">
+          <Image
             className="h1dand absolute top-0 left-0"
             id="h1dand4"
             src="/Home/Home1/home14.png"
             alt=""
+            layout="fill"
           />
         </animated.div>
         <animated.div
@@ -116,13 +118,13 @@ const Slider1 = () => {
           style={{
             transform: props.xy ? props.xy.interpolate(trans5) : null,
           }}
-          className="carouel-container absolute w-full h-full"
-        >
-          <img
+          className="carouel-container absolute w-full h-full">
+          <Image
             className="h1dand absolute top-0 left-0"
             id="h1dand5"
             src="/Home/Home1/home15.png"
             alt=""
+            layout="fill"
           />
         </animated.div>
         <animated.div
@@ -132,13 +134,13 @@ const Slider1 = () => {
           style={{
             transform: props.xy ? props.xy.interpolate(trans6) : null,
           }}
-          className="carouel-container absolute w-full h-full"
-        >
-          <img
+          className="carouel-container absolute w-full h-full">
+          <Image
             className="h1dand absolute top-0 left-0"
             id="h1dand6"
             src="/Home/Home1/home16.png"
             alt=""
+            layout="fill"
           />
         </animated.div>
         <animated.div
@@ -148,13 +150,13 @@ const Slider1 = () => {
           style={{
             transform: props.xy ? props.xy.interpolate(trans7) : null,
           }}
-          className="carouel-container absolute w-full h-full"
-        >
-          <img
+          className="carouel-container absolute w-full h-full">
+          <Image
             className="h1dand absolute top-0 left-0"
             id="h1dand7"
             src="/Home/Home1/home17.png"
             alt=""
+            layout="fill"
           />
         </animated.div>
         <animated.div
@@ -164,12 +166,12 @@ const Slider1 = () => {
           style={{
             transform: props.xy ? props.xy.interpolate(trans8) : null,
           }}
-          className="carouel-container absolute w-full h-full"
-        >
-          <img
+          className="carouel-container absolute w-full h-full">
+          <Image
             className="h1dand absolute top-0 left-0"
             id="h1dand8"
             src="/Home/Home1/home18.png"
+            layout="fill"
             alt=""
           />
         </animated.div>
@@ -181,8 +183,7 @@ const Slider1 = () => {
           </div>
           <button
             onClick={() => router.push("/appointments")}
-            className="cursor-pointer but1 lg:text-base md:text-base sm:text-sm smm:text-xs md:my-5 sm:my-3 my-1 p-2 px-3 mdd:p-1 rounded-full bg-white text-skin-dark"
-          >
+            className="cursor-pointer but1 lg:text-base md:text-base sm:text-sm smm:text-xs md:my-5 sm:my-3 my-1 p-2 px-3 mdd:p-1 rounded-full bg-white text-skin-dark">
             <Link href="/appointments">Book An Appointment</Link>
           </button>
         </div>

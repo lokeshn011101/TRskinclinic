@@ -1,12 +1,13 @@
 import React from "react";
 import Card from "../components/Card";
+import Image from "next/image";
 
 const About = () => {
   return (
     <div>
       <Card />
       <div className="flex flex-col-reverse justify-center items-center sm:flex-row w-11/12 mx-auto lg:my-20 md:my-16 sm:my-12 smm:my-10">
-        <img
+        <Image
           className="w-4/12 sm:ml-9 smm:w-8/12"
           src="/About/about2.png"
           alt="client of our clinic"
@@ -62,7 +63,7 @@ const About = () => {
       <div className="about-desc2 flex flex-col justify-center items-center lg:flex-row lg:justify-center lg:items-center mx-auto lg:py-12 md:py-9 sm:py-6 smm:py-3 w-10/12 lgg:w-8/12 mdd:w-10/12 mb-32">
         <div className="flex flex-col lg:justify-center lg:items-center md:w-full lg:w-1/2 mdd:my-10  transition-all duration-500 ease-in-out lg:hover:w-10/12">
           <div className="doctorss md:w-9/12 mx-auto smm:w-9/12 ">
-            <img src="/About/tanujareddy.png" alt="tanujareddy" />
+            <Image src="/About/tanujareddy.png" alt="tanujareddy" />
             <div className="text-white bg-skin-medium md:p-8 mdd:p-5 lg:text-base md:text-base sm:text-sm smm:text-xs italic transition-all duration-500 ease-in-out hover:bg-skin-dark mdd:bg-skin-dark cursor-default font-light">
               She is an experienced dermatologist who wears her heart on her
               sleeve. She worked in the U.K for a decade as a consultant. Later,
@@ -81,7 +82,7 @@ const About = () => {
         </div>
         <div className="flex flex-col lg:justify-center lg:items-center md:w-full lg:w-1/2 mdd:my-10  transition-all duration-500 ease-in-out lg:hover:w-10/12 lgg:mt-32">
           <div className="doctorss md:w-9/12 mx-auto  smm:w-9/12">
-            <img src="/About/abhinayareddy.png" alt="tanujareddy" />
+            <Image src="/About/abhinayareddy.png" alt="tanujareddy" />
             <div className="abhinayareddy text-white bg-skin-medium md:p-8 mdd:p-5 lg:text-base md:text-base sm:text-sm smm:text-xs italic transition-all duration-500 ease-in-out hover:bg-skin-dark mdd:bg-skin-dark cursor-default font-light">
               She was inspired by her mom to pursue dermatology as her career.
               She is the head of the Department Of Cosmetology at TR. She earned

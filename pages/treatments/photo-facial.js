@@ -2,6 +2,7 @@ import React from "react";
 import TreatmentsCard from "../../components/TreatmentsCard";
 import TreatmentsSection from "../../components/TreatmentsSection";
 import FAQ from "../../components/FAQ";
+import Image from "next/image";
 
 const RenderList = ({ data }) => {
   let i = 1;
@@ -12,15 +13,14 @@ const RenderList = ({ data }) => {
         return (
           <li
             key={item}
-            className="my-5 p-0 flex flex-row items-center text-sm mdd:text-xs"
-          >
-            <img
+            className="my-5 p-0 flex flex-row items-center text-sm mdd:text-xs">
+            <Image
               className="w-7 h-7 mx-5 mdd:hidden"
               src={`/${i}.png`}
               alt={`${i}`}
             />
             <div className="flex md:flex-row flex-col md:justify-center justify-start items-center my-6">
-              <img
+              <Image
                 src={`/Treatments/PhotoFacial/${nums[i]}.png`}
                 alt={nums[i++]}
                 className="mx-5 mr-8 md:w-52 md:h-52 w-44 h-44 mdd:mb-5"

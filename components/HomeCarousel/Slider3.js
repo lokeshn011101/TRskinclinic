@@ -2,6 +2,7 @@ import React from "react";
 import { useSpring, animated } from "react-spring";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Image from "next/image";
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 5];
 
@@ -20,10 +21,11 @@ const Slider1 = () => {
   return (
     <div className="carou-container">
       <div className="home-img1 relative">
-        <img
+        <Image
           src="/Home/Home3/home31.png"
           alt="Say goodbye to all your skin woes"
           className="w-full h-full"
+          layout="fill"
         />
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
@@ -32,12 +34,12 @@ const Slider1 = () => {
           style={{
             transform: props.xy ? props.xy.interpolate(trans5) : null,
           }}
-          className="carouel-container absolute w-full h-full"
-        >
-          <img
+          className="carouel-container absolute w-full h-full">
+          <Image
             className="homeimg3 absolute right-0 w-5/12 h-auto"
             src="/Home/Home3/home32.png"
             alt="home1"
+            layout="fill"
           />
         </animated.div>
         <animated.div
@@ -47,11 +49,11 @@ const Slider1 = () => {
           style={{
             transform: props.xy ? props.xy.interpolate(trans1) : null,
           }}
-          className="carouel-container absolute w-full h-full"
-        >
-          <img
+          className="carouel-container absolute w-full h-full">
+          <Image
             className="h3dand absolute top-0 left-0"
             id="h3dand1"
+            layout="fill"
             src="/Home/Home3/hometop.png"
             alt="dandelion"
           />
@@ -63,13 +65,13 @@ const Slider1 = () => {
           style={{
             transform: props.xy ? props.xy.interpolate(trans2) : null,
           }}
-          className="carouel-container absolute w-full h-full"
-        >
-          <img
+          className="carouel-container absolute w-full h-full">
+          <Image
             className="h3dand absolute top-0 left-0"
             id="h3dand2"
             src="/Home/Home3/homeright.png"
             alt=""
+            layout="fill"
           />
         </animated.div>
         <animated.div
@@ -79,12 +81,12 @@ const Slider1 = () => {
           style={{
             transform: props.xy ? props.xy.interpolate(trans3) : null,
           }}
-          className="carouel-container absolute w-full h-full"
-        >
-          <img
+          className="carouel-container absolute w-full h-full">
+          <Image
             className="h3dand absolute top-0 left-0"
             id="h3dand3"
             src="/Home/Home3/homebottom.png"
+            layout="fill"
             alt=""
           />
         </animated.div>
@@ -95,13 +97,13 @@ const Slider1 = () => {
           style={{
             transform: props.xy ? props.xy.interpolate(trans4) : null,
           }}
-          className="carouel-container absolute w-full h-full"
-        >
-          <img
+          className="carouel-container absolute w-full h-full">
+          <Image
             className=" absolute top-0 left-0"
             id="h3dand4"
             src="/Home/Home3/linenearface.png"
             alt=""
+            layout="fill"
           />
         </animated.div>
         <div className="homecar-heading3 absolute lg:ml-20 md:ml-16 sm:ml-14 smm:ml-6  flex flex-col justify-center items-start">
@@ -113,8 +115,7 @@ const Slider1 = () => {
           </div>
           <button
             onClick={() => router.push("/appointments")}
-            className="cursor-pointer but1 lg:text-base md:text-base sm:text-sm smm:text-xs md:my-5 sm:my-3 my-1 p-2 px-3 mdd:p-1 rounded-full bg-white text-skin-dark"
-          >
+            className="cursor-pointer but1 lg:text-base md:text-base sm:text-sm smm:text-xs md:my-5 sm:my-3 my-1 p-2 px-3 mdd:p-1 rounded-full bg-white text-skin-dark">
             <Link href="/appointments">Book An Appointment</Link>
           </button>
         </div>

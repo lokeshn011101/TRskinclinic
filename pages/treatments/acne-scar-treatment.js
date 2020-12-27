@@ -2,6 +2,7 @@ import React from "react";
 import TreatmentsCard from "../../components/TreatmentsCard";
 import TreatmentsSection from "../../components/TreatmentsSection";
 import FAQ from "../../components/FAQ";
+import Image from "next/image";
 
 const RenderList = ({ data }) => {
   let i = 1;
@@ -10,7 +11,7 @@ const RenderList = ({ data }) => {
       {data.map((item) => {
         return (
           <li key={item} className="my-5 p-0">
-            <img
+            <Image
               className="inline-block mr-3"
               src={`/${i}.png`}
               alt={`${i++}`}

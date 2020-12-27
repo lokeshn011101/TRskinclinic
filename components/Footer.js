@@ -1,12 +1,14 @@
 import React from "react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
     <div className="footer lg:mt-24 md:mt-20 sm:mt-16 smm:mt-16 bg-footer-bluei flex items-center justify-center text-center font-light lg:text-lg md:text-base sm:text-sm smm:text-xs">
       <div className="h-auto w-11/12 lg:my-20 md:my-16 sm:my-10 smm:my-10 mx-auto flex justify-center items-center flex-row">
         <div className="w-6/12 h-auto md:w-5/12">
-          <img
+          <Image
             src="/footer.png"
+            layout="fill"
             alt="tanuja reddy clinic"
             className="footer-brand mx-auto lg:my-9 md:my-8 sm:my-5 smm:my-5 lg:w-6/12 lg:h-3/12 smm:w-6/12"
           />

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSpring, animated } from "react-spring";
 import Image from "next/image";
+
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 5];
 const trans2 = (x, y) => `translate3d(${x / 25}px,${y / 25 - 5}px,0)`;
 
@@ -17,8 +18,7 @@ const Card = () => {
   return (
     <div
       className="container"
-      onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
-    >
+      onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
       <Image
         src="/About/aboutbg.jpg"
         alt="carousel-img"
@@ -32,8 +32,7 @@ const Card = () => {
       </h1>
       <animated.div
         className="card4"
-        style={{ transform: props.xy ? props.xy.interpolate(trans2) : null }}
-      >
+        style={{ transform: props.xy ? props.xy.interpolate(trans2) : null }}>
         <Image
           src="/About/aboutgirl.png"
           alt="carousel-img"

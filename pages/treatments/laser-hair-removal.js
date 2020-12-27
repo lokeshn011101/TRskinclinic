@@ -12,9 +12,8 @@ const RenderList = ({ data }) => {
         return (
           <li
             key={item}
-            className="md:my-5 p-0 flex flex-row items-center text-sm mdd:text-xs"
-          >
-            <img
+            className="md:my-5 p-0 flex flex-row items-center text-sm mdd:text-xs">
+            <Image
               className="w-7 h-7 mx-5 mdd:hidden"
               src={`/${i}.png`}
               alt={`${i++}`}
