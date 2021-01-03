@@ -25,7 +25,7 @@ const Home = () => {
   const [winWidth, setWinWidth] = useState(0);
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 640,
     });
     slider.current.slickPlay();
     setWinWidth(window.innerWidth);
@@ -38,7 +38,7 @@ const Home = () => {
     slidesToScroll: 1,
     arrows: false,
     autoplaySpeed: 3500,
-    autoplay: true,
+    // autoplay: true,
   };
   return (
     <div className=" overflow-hidden">
@@ -62,21 +62,23 @@ const Home = () => {
       />
 
       <div className="flex sm:flex-row flex-col justify-center w-10/12 h-auto max-w-5xl mx-auto">
-        <div>
+        <div className="flex justify-center items-center smm:w-8/12 mx-auto">
           <Image
             src="/Home/home4.png"
             alt="choices"
-            className="smm:w-8/12 mx-auto"
-            layout="fill"
-            data-aos={winWidth <= 1000 ? "fade-down" : "fade-right"}
+            width={488}
+            height={714}
+            style={{ margin: "5px" }}
+            data-aos={winWidth <= 640 ? "fade-down" : "fade-right"}
           />
         </div>
         <div className="flex items-start flex-col justify-center ml-5 mt-5 ">
           <div
             className="lg:mb-12 sm:mb-7 smm:mb-3"
-            data-aos={winWidth <= 1000 ? "fade-up" : "fade-left"}
+            data-aos={winWidth <= 640 ? "fade-up" : "fade-left"}
             data-aos-delay="200"
-            data-aos-offset="10">
+            data-aos-offset="10"
+          >
             <h2 className="lg:mb-2 description lg:text-4xl smm:mb-0 sm:mb-1 uppercase md:text-xl sm:text-xl smm:text-lg smm:text-center smm:w-full">
               QUALIFIED DOCTORS
             </h2>
@@ -87,9 +89,10 @@ const Home = () => {
           </div>
           <div
             className="lg:mb-12 sm:mb-7 smm:mb-3"
-            data-aos={winWidth <= 1000 ? "fade-up" : "fade-left"}
+            data-aos={winWidth <= 640 ? "fade-up" : "fade-left"}
             data-aos-delay="300"
-            data-aos-offset="10">
+            data-aos-offset="10"
+          >
             <h2 className="lg:mb-2 description lg:text-4xl smm:mb-0 sm:mb-1 uppercase md:text-xl sm:text-xl smm:text-lg smm:text-center smm:w-full">
               MEDICAL CARE
             </h2>
@@ -100,9 +103,10 @@ const Home = () => {
           </div>
           <div
             className="lg:mb-12 sm:mb-7 smm:mb-3"
-            data-aos={winWidth <= 1000 ? "fade-up" : "fade-left"}
+            data-aos={winWidth <= 640 ? "fade-up" : "fade-left"}
             data-aos-delay="400"
-            data-aos-offset="10">
+            data-aos-offset="10"
+          >
             <h2 className="lg:mb-2 description lg:text-4xl smm:mb-0 sm:mb-1 uppercase md:text-xl sm:text-xl smm:text-lg smm:text-center smm:w-full">
               ADVANCED LASERS
             </h2>
@@ -135,7 +139,8 @@ Who are committed to provide our patients with skin care of the highest quality 
       <div
         className="flex justify-center w-8/12 mx-auto items-center md:mt-14 sm:mt-9 smm:mt-7 relative"
         data-aos="zoom-in"
-        data-aos-offset="-300">
+        data-aos-offset="-300"
+      >
         <Image
           src="/Home/doctors.png"
           alt="doctors"
@@ -145,7 +150,8 @@ Who are committed to provide our patients with skin care of the highest quality 
         />
         <button
           onClick={() => router.push("about")}
-          className="doct-but lg:text-base md:text-base sm:text-sm smm:text-xs absolute right-0 bottom-0 md:my-10 p-2 md:mx-16  mdd:mx-9 mdd:my-4 mdd:p-1 rounded-full bg-white text-skin-dark">
+          className="doct-but lg:text-base md:text-base sm:text-sm smm:text-xs absolute right-0 bottom-0 md:my-10 p-2 md:mx-16  mdd:mx-9 mdd:my-4 mdd:p-1 rounded-full bg-white text-skin-dark"
+        >
           <Link href="/about">Discover More</Link>
         </button>
       </div>
@@ -157,24 +163,28 @@ Who are committed to provide our patients with skin care of the highest quality 
       </div>
       <div className="flex justify-evenly items-center md:flex-row flex-col md:w-9/12 w-8/12 mx-auto lg:mb-36 md:mb-32 sm:mb-24 smm:mb-20">
         <div className="md:w-2/3 flex flex-row justify-between md:justify-center items-center lg:mb-24 md:mb-20 sm:mb-16 smm:mb-10">
-          <Image
-            src="/Home/patient2.png"
-            layout="fill"
-            alt="patient1"
-            className="w-5/12 md:mx-10 md:transform md:-translate-y-5"
-            data-aos={winWidth <= 1000 ? "fade-right" : "fade-down"}
-            data-aos-delay="400"
-            data-aos-offset="-300"
-          />
-          <div className="h-full w-5/12 md:transform md:translate-y-24 md:-ml-8">
+          <div className="h-full w-5/12">
             <Image
-              src="/Home/patient1.png"
-              layout="fill"
-              alt="patient2"
-              className=""
-              data-aos={winWidth <= 1000 ? "fade-left" : "fade-up"}
+              src="/Home/patient2.png"
+              width={311}
+              height={484}
+              alt="patient1"
+              className="w-5/12 md:mx-10 md:transform md:-translate-y-5"
+              data-aos={winWidth <= 640 ? "fade-right" : "fade-down"}
               data-aos-delay="400"
               data-aos-offset="-300"
+            />
+          </div>
+          <div className="h-full w-5/12 md:transform md:translate-y-24 ml-2">
+            <Image
+              src="/Home/patient1.png"
+              width={311}
+              height={484}
+              alt="patient2"
+              className=""
+              data-aos={winWidth <= 640 ? "fade-left" : "fade-up"}
+              data-aos-delay="400"
+              data-aos-offset="-100"
             />
           </div>
         </div>
@@ -184,7 +194,7 @@ Who are committed to provide our patients with skin care of the highest quality 
 my skin. I have never felt more better”"
             name="— Ananya Kannan"
             delay="200"
-            offset="-300"
+            offset="-100"
           />
           <Reviews
             review="“Possibly the best clinic in Chennai! The friendliest
@@ -192,7 +202,7 @@ doctors one has seen. TR Skin Clinic is the
 one stop for all skin problems”"
             name="— Vaishnavi Rao"
             delay="300"
-            offset="-350"
+            offset="-150"
           />
           <Reviews
             review="“TR skin Clinic gave me the confidence that my
@@ -202,7 +212,7 @@ any acne now. All thanks to TR Skin Clinic,
 you’re the best!”"
             name="— Shanthoshri Janakiraman"
             delay="400"
-            offset="-400"
+            offset="-200"
           />
         </div>
       </div>

@@ -19,13 +19,14 @@ const Slider1 = () => {
     config: { mass: 10, tension: 300, friction: 140 },
   }));
   return (
-    <div className="carou-container">
+    <div className="carou-container  overflow-hidden">
       <div className="home-img1 relative">
         <Image
           src="/Home/Home3/home31.png"
           alt="Say goodbye to all your skin woes"
           className="w-full h-full"
-          layout="fill"
+          width={1519}
+          height={670}
         />
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
@@ -34,13 +35,16 @@ const Slider1 = () => {
           style={{
             transform: props.xy ? props.xy.interpolate(trans5) : null,
           }}
-          className="carouel-container absolute w-full h-full">
-          <Image
-            className="homeimg3 absolute right-0 w-5/12 h-auto"
-            src="/Home/Home3/home32.png"
-            alt="home1"
-            layout="fill"
-          />
+          className="carouel-container absolute w-full h-full  overflow-hidden"
+        >
+          <div className="homeimg3 absolute right-0 w-5/12 h-auto overflow-hidden">
+            <Image
+              src="/Home/Home3/home32.png"
+              alt="home1"
+              width={722}
+              height={670}
+            />
+          </div>
         </animated.div>
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
@@ -49,14 +53,16 @@ const Slider1 = () => {
           style={{
             transform: props.xy ? props.xy.interpolate(trans1) : null,
           }}
-          className="carouel-container absolute w-full h-full">
-          <Image
-            className="h3dand absolute top-0 left-0"
-            id="h3dand1"
-            layout="fill"
-            src="/Home/Home3/hometop.png"
-            alt="dandelion"
-          />
+          className="carouel-container absolute w-full h-full"
+        >
+          <div className="h3dand absolute top-0 left-0" id="h3dand1">
+            <Image
+              width={220}
+              height={179}
+              src="/Home/Home3/hometop.png"
+              alt="dandelion"
+            />
+          </div>
         </animated.div>
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
@@ -65,14 +71,16 @@ const Slider1 = () => {
           style={{
             transform: props.xy ? props.xy.interpolate(trans2) : null,
           }}
-          className="carouel-container absolute w-full h-full">
-          <Image
-            className="h3dand absolute top-0 left-0"
-            id="h3dand2"
-            src="/Home/Home3/homeright.png"
-            alt=""
-            layout="fill"
-          />
+          className="carouel-container absolute w-full h-full"
+        >
+          <div className="h3dand absolute top-0 left-0" id="h3dand2">
+            <Image
+              src="/Home/Home3/homeright.png"
+              alt=""
+              width={466}
+              height={387}
+            />
+          </div>
         </animated.div>
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
@@ -81,14 +89,16 @@ const Slider1 = () => {
           style={{
             transform: props.xy ? props.xy.interpolate(trans3) : null,
           }}
-          className="carouel-container absolute w-full h-full">
-          <Image
-            className="h3dand absolute top-0 left-0"
-            id="h3dand3"
-            src="/Home/Home3/homebottom.png"
-            layout="fill"
-            alt=""
-          />
+          className="carouel-container absolute w-full h-full"
+        >
+          <div className="h3dand absolute top-0 left-0" id="h3dand3">
+            <Image
+              src="/Home/Home3/homebottom.png"
+              width={469}
+              height={349}
+              alt=""
+            />
+          </div>
         </animated.div>
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
@@ -97,14 +107,16 @@ const Slider1 = () => {
           style={{
             transform: props.xy ? props.xy.interpolate(trans4) : null,
           }}
-          className="carouel-container absolute w-full h-full">
-          <Image
-            className=" absolute top-0 left-0"
-            id="h3dand4"
-            src="/Home/Home3/linenearface.png"
-            alt=""
-            layout="fill"
-          />
+          className="carouel-container absolute w-full h-full"
+        >
+          <div className=" absolute top-0 left-0" id="h3dand4">
+            <Image
+              src="/Home/Home3/linenearface.png"
+              alt=""
+              width={135}
+              height={712}
+            />
+          </div>
         </animated.div>
         <div className="homecar-heading3 absolute lg:ml-20 md:ml-16 sm:ml-14 smm:ml-6  flex flex-col justify-center items-start">
           <div className=" lg:text-6xl md:text-4xl sm:text-2xl smm:text-lg uppercase flex flex-col justify-start items-start">
@@ -115,7 +127,8 @@ const Slider1 = () => {
           </div>
           <button
             onClick={() => router.push("/appointments")}
-            className="cursor-pointer but1 lg:text-base md:text-base sm:text-sm smm:text-xs md:my-5 sm:my-3 my-1 p-2 px-3 mdd:p-1 rounded-full bg-white text-skin-dark">
+            className="cursor-pointer but1 lg:text-base md:text-base sm:text-sm smm:text-xs md:my-5 sm:my-3 my-1 p-2 px-3 mdd:p-1 rounded-full bg-white text-skin-dark"
+          >
             <Link href="/appointments">Book An Appointment</Link>
           </button>
         </div>

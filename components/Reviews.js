@@ -15,36 +15,42 @@ const Reviews = ({ review, name, delay = "", offset = "" }) => {
       className="flex flex-col justify-center md:items-start items-center lg:text-sm md:text-sm sm:text-xs smm:text-xs"
       data-aos={winWidth <= 1000 ? "fade-up" : "fade-left"}
       data-aos-delay={delay}
-      data-aos-offset={offset}>
+      data-aos-offset={offset}
+    >
       <div className="flex flex-row justify-center md:items-start items-center lg:mb-2 md:mb-2 sm:mb-1 smm:mb-1">
         <Image
           src="/Home/icons.png"
           alt="star"
-          layout="fill"
+          width={16}
+          height={16}
           className="h-2 md:h-4"
         />
         <Image
           src="/Home/icons.png"
           alt="star"
-          layout="fill"
+          width={16}
+          height={16}
           className="h-2 md:h-4 ml-1"
         />
         <Image
           src="/Home/icons.png"
           alt="star"
-          layout="fill"
+          width={16}
+          height={16}
           className="h-2 md:h-4 ml-1"
         />
         <Image
           src="/Home/icons.png"
           alt="star"
-          layout="fill"
+          width={16}
+          height={16}
           className="h-2 md:h-4 ml-1"
         />
         <Image
           src="/Home/icons.png"
           alt="star"
-          layout="fill"
+          width={16}
+          height={16}
           className="h-2 md:h-4 ml-1"
         />
       </div>

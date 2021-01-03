@@ -55,7 +55,6 @@ button {
 .acctitle:hover {
   background-color: #ebcabe;
 }
-
 @media (min-width: 768px) {
   .carouhome {
     margin-right: 2rem;
@@ -78,3 +77,10 @@ button {
     bottom: -10%;
   }
 }
+/* 
+.downcarou div {
+  overflow: visible !important;
+}
+.cc-child {
+  width: 100% !important;
+} */

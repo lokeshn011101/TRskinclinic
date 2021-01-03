@@ -24,9 +24,9 @@ const Slider2 = () => {
           src="/Home/Home2/home21.png"
           alt="Say goodbye to all your skin woes"
           className="w-full h-full"
-          layout="fill"
+          width={1519}
+          height={670}
         />
-
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
             set({ xy: calc(x, y) });
@@ -34,13 +34,16 @@ const Slider2 = () => {
           style={{
             transform: props.xy ? props.xy.interpolate(trans0) : null,
           }}
-          className="carouel-container absolute w-full h-full">
-          <Image
-            className="homeimg2 absolute right-0 w-11/12 h-auto"
-            src="/Home/Home2/home22.png"
-            alt="home2"
-            layout="fill"
-          />
+          className="carouel-container absolute w-full h-full"
+        >
+          <div className="homeimg2 absolute right-0 w-11/12 h-auto">
+            <Image
+              src="/Home/Home2/home22.png"
+              alt="home2"
+              width={911}
+              height={600}
+            />
+          </div>
         </animated.div>
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
@@ -49,14 +52,16 @@ const Slider2 = () => {
           style={{
             transform: props.xy ? props.xy.interpolate(trans1) : null,
           }}
-          className="carouel-container absolute w-full h-full">
-          <Image
-            className="h2dand absolute top-0 left-0"
-            id="h2dand1"
-            src="/Home/Home2/home23.png"
-            alt="dandelion"
-            layout="fill"
-          />
+          className="carouel-container absolute w-full h-full"
+        >
+          <div className="h2dand absolute top-0 left-0" id="h2dand1">
+            <Image
+              src="/Home/Home2/home23.png"
+              alt="dandelion"
+              width={758}
+              height={563}
+            />
+          </div>
         </animated.div>
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
@@ -65,14 +70,16 @@ const Slider2 = () => {
           style={{
             transform: props.xy ? props.xy.interpolate(trans2) : null,
           }}
-          className="carouel-container absolute w-full h-full">
-          <Image
-            className="h2dand absolute top-0 left-0"
-            id="h2dand2"
-            src="/Home/Home2/home24.png"
-            alt=""
-            layout="fill"
-          />
+          className="carouel-container absolute w-full h-full"
+        >
+          <div className="h2dand absolute top-0 left-0" id="h2dand2">
+            <Image
+              src="/Home/Home2/home24.png"
+              alt=""
+              width={293}
+              height={222}
+            />
+          </div>
         </animated.div>
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
@@ -81,14 +88,16 @@ const Slider2 = () => {
           style={{
             transform: props.xy ? props.xy.interpolate(trans3) : null,
           }}
-          className="carouel-container absolute w-full h-full">
-          <Image
-            className="h2dand absolute top-0 left-0"
-            id="h2dand3"
-            src="/Home/Home2/home25.png"
-            alt=""
-            layout="fill"
-          />
+          className="carouel-container absolute w-full h-full"
+        >
+          <div className="h2dand absolute top-0 left-0" id="h2dand3">
+            <Image
+              src="/Home/Home2/home25.png"
+              alt=""
+              width={184}
+              height={153}
+            />
+          </div>
         </animated.div>
         <div className="homecar-heading3 absolute lg:ml-20 md:ml-16 sm:ml-14 smm:ml-6  flex flex-col justify-center items-start">
           <div className="text-white lg:text-6xl md:text-4xl sm:text-2xl smm:text-lg uppercase flex flex-col justify-start items-start">
@@ -99,7 +108,8 @@ const Slider2 = () => {
           </div>
           <button
             onClick={() => router.push("/appointments")}
-            className="cursor-pointer but1 lg:text-base md:text-base sm:text-sm smm:text-xs md:my-5 sm:my-3 my-1 p-2 px-3 mdd:p-1 rounded-full bg-white text-skin-dark">
+            className="cursor-pointer but1 lg:text-base md:text-base sm:text-sm smm:text-xs md:my-5 sm:my-3 my-1 p-2 px-3 mdd:p-1 rounded-full bg-white text-skin-dark"
+          >
             <Link href="/appointments">Book An Appointment</Link>
           </button>
         </div>

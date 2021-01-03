@@ -8,7 +8,8 @@ const Footer = () => {
         <div className="w-6/12 h-auto md:w-5/12">
           <Image
             src="/footer.png"
-            layout="fill"
+            width={290}
+            height={130}
             alt="tanuja reddy clinic"
             className="footer-brand mx-auto lg:my-9 md:my-8 sm:my-5 smm:my-5 lg:w-6/12 lg:h-3/12 smm:w-6/12"
           />
