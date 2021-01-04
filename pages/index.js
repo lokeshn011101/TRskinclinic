@@ -184,7 +184,7 @@ Who are committed to provide our patients with skin care of the highest quality 
               className=""
               data-aos={winWidth <= 640 ? "fade-left" : "fade-up"}
               data-aos-delay="400"
-              data-aos-offset="-100"
+              data-aos-offset="-300"
             />
           </div>
         </div>
@@ -194,7 +194,7 @@ Who are committed to provide our patients with skin care of the highest quality 
 my skin. I have never felt more better”"
             name="— Ananya Kannan"
             delay="200"
-            offset="-100"
+            offset="-300"
           />
           <Reviews
             review="“Possibly the best clinic in Chennai! The friendliest
@@ -202,7 +202,7 @@ doctors one has seen. TR Skin Clinic is the
 one stop for all skin problems”"
             name="— Vaishnavi Rao"
             delay="300"
-            offset="-150"
+            offset="-350"
           />
           <Reviews
             review="“TR skin Clinic gave me the confidence that my
@@ -212,7 +212,7 @@ any acne now. All thanks to TR Skin Clinic,
 you’re the best!”"
             name="— Shanthoshri Janakiraman"
             delay="400"
-            offset="-200"
+            offset="-400"
           />
         </div>
       </div>
