@@ -13,14 +13,17 @@ const RenderList = ({ data }) => {
         return (
           <li
             key={item}
-            className="my-5 p-0 flex flex-row items-center text-sm mdd:text-xs">
+            className="my-5 p-0 flex flex-row items-center text-sm mdd:text-xs"
+          >
             <Image
+              layout="fill"
               className="w-7 h-7 mx-5 mdd:hidden"
               src={`/${i}.png`}
               alt={`${i}`}
             />
             <div className="flex md:flex-row flex-col md:justify-center justify-start items-center my-6 mdd:mx-auto">
               <Image
+                layout="fill"
                 src={`/Treatments/GrowthFactorTreatment/${nums[i]}.png`}
                 alt={nums[i++]}
                 className="mx-5 mr-8 md:w-52 md:h-52 w-44 h-44 mdd:mb-5"

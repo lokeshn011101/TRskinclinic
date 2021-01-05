@@ -129,7 +129,6 @@ const ChemicalPeels = () => {
           alt="cp1"
           width={200}
           height={200}
-          layout="intrinsic"
         />
         <div className="md:mt-0 mt-8">
           <Image
@@ -137,7 +136,6 @@ const ChemicalPeels = () => {
             alt="cp1"
             width={200}
             height={200}
-            layout="intrinsic"
           />
         </div>
       </div>

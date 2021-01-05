@@ -14,14 +14,16 @@ const ConsultUs = () => {
     <>
       <div className="flex justify-around items-center w-full lg:mt-36 sm:mt-24 smm:mt-16 smm:hidden">
         <div className="w-9/12 flex flex-row justify-around items-center">
-          <div className="w-5/12 lg:ml-16 sm:ml-8 smm:ml-5">
+          <div
+            className="w-5/12 lg:ml-16 sm:ml-8 smm:ml-5"
+            data-aos={winWidth <= 1000 ? "fade-down" : "fade-right"}
+            data-aos-offset="-200"
+          >
             <Image
               src="/Home/homeimg.png"
               width={474}
               height={742}
               alt="home"
-              data-aos={winWidth <= 1000 ? "fade-down" : "fade-right"}
-              data-aos-offset="-200"
             />
           </div>
           <div className="w-7/12 lg:ml-16 sm:ml-8 smm:ml-5">
@@ -47,7 +49,7 @@ const ConsultUs = () => {
             <div
               className="about-desc2 md:pr-20"
               data-aos="fade-left"
-              data-aos-delay="400"
+              data-aos-delay="350"
               data-aos-offset="-500"
             >
               Our state-of-the-art medical facility and skilled team provide
@@ -91,7 +93,7 @@ const ConsultUs = () => {
             <div
               className="about-desc2 md:pr-20 w-full"
               data-aos="fade-up"
-              data-aos-delay="400"
+              data-aos-delay="350"
               data-aos-offset="50"
             >
               Our state-of-the-art medical facility and skilled team provide

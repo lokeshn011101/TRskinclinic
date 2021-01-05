@@ -6,6 +6,7 @@ const Gallery = ({ title, category, pic }) => {
     <div className="mt-10">
       <div className="flex md:flex-row flex-col-reverse justify-around items-center md:w-10/12 mx-auto">
         <Image
+          layout="fill"
           src={`/Gallery/${category}/1.png`}
           className="w-6/12"
           alt="sdf"
@@ -19,6 +20,7 @@ const Gallery = ({ title, category, pic }) => {
           <>
             <div className="lg:w-1/4 lgg:w-7/12 lgg:mt-8">
               <Image
+                layout="fill"
                 className=""
                 src={`/Gallery/${category}/2.png`}
                 alt="two"
@@ -26,6 +28,7 @@ const Gallery = ({ title, category, pic }) => {
             </div>
             <div className="lg:w-1/4 lgg:w-7/12 lgg:mt-8">
               <Image
+                layout="fill"
                 className=""
                 src={`/Gallery/${category}/3.png`}
                 alt="two"
@@ -33,6 +36,7 @@ const Gallery = ({ title, category, pic }) => {
             </div>
             <div className="lg:w-1/4 lgg:w-7/12 lgg:mt-8">
               <Image
+                layout="fill"
                 className=""
                 src={`/Gallery/${category}/4.png`}
                 alt="three"
@@ -43,6 +47,7 @@ const Gallery = ({ title, category, pic }) => {
           <>
             <div className="lg:w-1/4 lgg:w-7/12 lgg:mt-8">
               <Image
+                layout="fill"
                 className=""
                 src={`/Gallery/${category}/2.png`}
                 alt="two"
@@ -50,6 +55,7 @@ const Gallery = ({ title, category, pic }) => {
             </div>
             <div className="lg:w-1/4 lgg:w-7/12 lgg:mt-8">
               <Image
+                layout="fill"
                 className=""
                 src={`/Gallery/${category}/3.png`}
                 alt="three"

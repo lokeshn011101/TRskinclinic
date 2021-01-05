@@ -38,7 +38,7 @@ const Home = () => {
     slidesToScroll: 1,
     arrows: false,
     autoplaySpeed: 3500,
-    // autoplay: true,
+    autoplay: true,
   };
   return (
     <div className=" overflow-hidden">
@@ -62,14 +62,16 @@ const Home = () => {
       />
 
       <div className="flex sm:flex-row flex-col justify-center w-10/12 h-auto max-w-5xl mx-auto">
-        <div className="flex justify-center items-center smm:w-8/12 mx-auto">
+        <div
+          className="flex justify-center items-center smm:w-8/12 mx-auto"
+          data-aos={winWidth <= 640 ? "fade-down" : "fade-right"}
+        >
           <Image
             src="/Home/home4.png"
             alt="choices"
             width={488}
             height={714}
             style={{ margin: "5px" }}
-            data-aos={winWidth <= 640 ? "fade-down" : "fade-right"}
           />
         </div>
         <div className="flex items-start flex-col justify-center ml-5 mt-5 ">
@@ -132,7 +134,7 @@ We offer our patients in-depth assessment, skin & hair related advice and assist
         text="Our Medical Team is led by our very own Medical Director and team of highly experienced Registered Doctors, Nurses & Professionals.
 Who are committed to provide our patients with skin care of the highest quality at affordable pricing."
         aosTitle="fade-down"
-        offsetTitle="-100"
+        offsetTitle="-300"
         aosText="fade-up"
         offsetText="-200"
       />
@@ -157,7 +159,11 @@ Who are committed to provide our patients with skin care of the highest quality 
       </div>
       <ConsultUs />
       <div className="lg:mt-32 sm:mt-16 smm:mt-10">
-        <h2 className="about-head2 mx-auto text-center lg:text-4xl md:text-2xl sm:text-xl smm:text-lg uppercase lg:mb-24 md:mb-20 sm:mb-16 smm:mb-10 lg:mt-8 md:mt-6 sm:mt-4 smm:mt-2">
+        <h2
+          className="about-head2 mx-auto text-center lg:text-4xl md:text-2xl sm:text-xl smm:text-lg uppercase lg:mb-24 md:mb-20 sm:mb-16 smm:mb-10 lg:mt-8 md:mt-6 sm:mt-4 smm:mt-2"
+          data-aos="fade-down"
+          data-aos-offset="-200"
+        >
           Patient reviews
         </h2>
       </div>
@@ -211,8 +217,8 @@ It’s been two years since then and I hardly get
 any acne now. All thanks to TR Skin Clinic,
 you’re the best!”"
             name="— Shanthoshri Janakiraman"
-            delay="400"
-            offset="-400"
+            delay="350"
+            offset="-450"
           />
         </div>
       </div>

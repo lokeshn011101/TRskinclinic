@@ -3,6 +3,7 @@ import { useSpring, animated } from "react-spring";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
+import AOS from "aos";
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 5];
 
@@ -23,7 +24,7 @@ const Slider1 = () => {
     config: { mass: 10, tension: 300, friction: 140 },
   }));
   return (
-    <div className="carou-container">
+    <div className="carou-container" data-aos="fade-right">
       <div className="home-img1 relative">
         <Image
           src="/Home/Home1/homebg1.png"
@@ -175,7 +176,7 @@ const Slider1 = () => {
             <Image src="/Home/Home1/home18.png" width={73} height={60} alt="" />
           </div>
         </animated.div>
-        <div className="absolute lg:ml-20 md:ml-16 sm:ml-14 smm:ml-6 smm:top-1/4 sm:top-1/3 flex flex-col justify-center items-start">
+        <div className="absolute lg:ml-20 md:ml-16 sm:ml-14 smm:ml-6 smm:top-1/4 sm:top-1/3 flex flex-col justify-center items-start overflow-visible">
           <div className="homecar-heading lg:text-7xl md:text-4xl sm:text-2xl smm:text-xl uppercase flex flex-col justify-start items-start">
             <h1 className="w-full hh">Say Goodbye</h1>
             <h1 className="w-full hh">to all your</h1>

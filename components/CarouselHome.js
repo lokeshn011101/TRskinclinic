@@ -37,7 +37,6 @@ const ArrowNext = (props) => {
   );
 };
 const ArrowPrev = (props) => {
-  console.log(props);
   return (
     <button onClick={props.onClick} className={props.className + " arr"}>
       <div>

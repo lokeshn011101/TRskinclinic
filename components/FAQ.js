@@ -16,10 +16,12 @@ const Helper = ({ item }) => {
             ? "accc acctitle bg-skin-light flex flex-row justify-between items-center cursor-pointer"
             : "acctitle bg-skin-light flex flex-row justify-between items-center cursor-pointer"
         }
-        onClick={toggleAccordion}>
+        onClick={toggleAccordion}
+      >
         <h2 className="w-10/12 p-4 uppercase select-none">{item[0]}</h2>
         <button className="w-1/12">
           <Image
+            layout="fill"
             src={toggle === "active" ? "/drpClose.png" : "/drpOpen.png"}
             alt={item[0]}
             className={
@@ -36,7 +38,8 @@ const Helper = ({ item }) => {
           toggle === "active"
             ? "bg-skin-belowMedium p-4 py-5 accordion-text acc"
             : "bg-skin-belowMedium p-4 py-5 accordion-text hidden"
-        }>
+        }
+      >
         {item[1]}
       </div>
     </div>

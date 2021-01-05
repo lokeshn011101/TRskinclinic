@@ -20,6 +20,7 @@ const TreatmentsCard = ({ treatment, Name, trImage }) => {
     <div className="tr-container">
       <div className="tr-bg relative">
         <Image
+          layout="fill"
           src="/Treatments/bg.jpg"
           alt="Say goodbye to all your skin woes"
           className="w-full h-full"
@@ -32,8 +33,10 @@ const TreatmentsCard = ({ treatment, Name, trImage }) => {
             style={{
               transform: props.xy ? props.xy.interpolate(trans2) : null,
             }}
-            className="treimg-container absolute w-4/12">
+            className="treimg-container absolute w-4/12"
+          >
             <Image
+              layout="fill"
               src={`/Treatments/${treatment}/pic.png`}
               alt="treatment image"
               className="treimg"
@@ -47,8 +50,14 @@ const TreatmentsCard = ({ treatment, Name, trImage }) => {
               transform: props.xy ? props.xy.interpolate(trans4) : null,
             }}
             className="tr-container absolute "
-            id="tr1">
-            <Image className="tr" src="/Treatments/top.png" alt="dandelion" />
+            id="tr1"
+          >
+            <Image
+              layout="fill"
+              className="tr"
+              src="/Treatments/top.png"
+              alt="dandelion"
+            />
           </animated.div>
           <animated.div
             onMouseMove={({ clientX: x, clientY: y }) => {
@@ -58,8 +67,10 @@ const TreatmentsCard = ({ treatment, Name, trImage }) => {
               transform: props.xy ? props.xy.interpolate(trans1) : null,
             }}
             className="tr-container absolute  "
-            id="tr2">
+            id="tr2"
+          >
             <Image
+              layout="fill"
               className="tr "
               src="/Treatments/bottom.png"
               alt="dandelion"
@@ -72,7 +83,8 @@ const TreatmentsCard = ({ treatment, Name, trImage }) => {
             style={{
               transform: props.xy ? props.xy.interpolate(trans3) : null,
             }}
-            className="trh absolute bottom-0 right-8 overflow-hidden">
+            className="trh absolute bottom-0 right-8 overflow-hidden"
+          >
             <div className="tr-heading overflow-hidden text-black lg:text-7xl md:text-4xl sm:text-2xl smm:text-base flex flex-col justify-start items-center">
               <h1 className="w-full">{Name}</h1>
             </div>

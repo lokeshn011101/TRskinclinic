@@ -12,6 +12,7 @@ const RenderList = ({ data }) => {
         return (
           <li className="my-5 p-0">
             <Image
+              layout="fill"
               className="inline-block mr-3"
               src={`/${i}.png`}
               alt={`${i++}`}

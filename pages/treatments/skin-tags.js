@@ -13,6 +13,7 @@ const RenderList = ({ data, data2 }) => {
           <li key={item} className="md:my-7 p-0 text-sm mdd:text-xs">
             <div className=" flex flex-row justify-start items-start">
               <Image
+                layout="fill"
                 className="inline-block mr-3 mdd:hidden"
                 src={`/${i}.png`}
                 alt={`${i++}`}
