@@ -28,7 +28,7 @@ const Slider1 = () => {
       <div className="home-img1 relative">
         <Image
           src="/Home/Home1/homebg1.png"
-          width={1519}
+          width={1528}
           height={670}
           alt="Say goodbye to all your skin woes"
           className="w-full h-full"

@@ -66,6 +66,7 @@ const Navbar = () => {
             }`}
           >
             <button
+              name="drpdwn"
               className="menu-item-t cursor-pointer select-none"
               onClick={() => {
                 drpDwn
@@ -300,6 +301,7 @@ const Navbar = () => {
           <div className="text-black text-md">
             Search
             <Image
+              alt="icon"
               className="inline w-4 h-4 ml-2"
               src="https://www.flaticon.com/svg/static/icons/svg/622/622669.svg"
               height={16}
@@ -308,10 +310,12 @@ const Navbar = () => {
           </div>
         </div>
         <button
+          name="toggler"
           onClick={() => setNaveToggle(!navToggle)}
           className="toggler w-24 ml-auto focus:outline-none"
         >
           <Image
+            alt="icon"
             src="https://www.flaticon.com/svg/static/icons/svg/1828/1828859.svg"
             className="w-5 h-5 rounded inline-flex lg:invisible lg:hidden lg:w-0 lg:h-0 fill-current text-black"
             height={20}
@@ -329,6 +333,7 @@ const Navbar = () => {
                 onClick={() => setNaveToggle(!navToggle)}
               >
                 <Image
+                  alt="icon"
                   src="https://www.flaticon.com/svg/static/icons/svg/1828/1828778.svg"
                   alt="cross"
                   height={16}
@@ -340,6 +345,7 @@ const Navbar = () => {
               <div href="/" className="text-black text-md mr-6 mb-4">
                 Search
                 <Image
+                  alt="icon"
                   className="inline w-4 h-4 ml-2"
                   alt="search"
                   src="https://www.flaticon.com/svg/static/icons/svg/622/622669.svg"

@@ -25,7 +25,7 @@ const Slider1 = () => {
           src="/Home/Home3/home31.png"
           alt="Say goodbye to all your skin woes"
           className="w-full h-full"
-          width={1519}
+          width={1528}
           height={670}
         />
         <animated.div
@@ -42,7 +42,7 @@ const Slider1 = () => {
               src="/Home/Home3/home32.png"
               alt="home1"
               width={722}
-              height={670}
+              height={675}
             />
           </div>
         </animated.div>
