@@ -1,6 +1,7 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 5];
 
@@ -18,7 +19,8 @@ const TreatmentsCard = ({ treatment, Name, trImage }) => {
   return (
     <div className="tr-container">
       <div className="tr-bg relative">
-        <img
+        <Image
+          layout="fill"
           src="/Treatments/bg.jpg"
           alt="Say goodbye to all your skin woes"
           className="w-full h-full"
@@ -33,7 +35,8 @@ const TreatmentsCard = ({ treatment, Name, trImage }) => {
             }}
             className="treimg-container absolute w-4/12"
           >
-            <img
+            <Image
+              layout="fill"
               src={`/Treatments/${treatment}/pic.png`}
               alt="treatment image"
               className="treimg"
@@ -49,7 +52,12 @@ const TreatmentsCard = ({ treatment, Name, trImage }) => {
             className="tr-container absolute "
             id="tr1"
           >
-            <img className="tr" src="/Treatments/top.png" alt="dandelion" />
+            <Image
+              layout="fill"
+              className="tr"
+              src="/Treatments/top.png"
+              alt="dandelion"
+            />
           </animated.div>
           <animated.div
             onMouseMove={({ clientX: x, clientY: y }) => {
@@ -61,7 +69,12 @@ const TreatmentsCard = ({ treatment, Name, trImage }) => {
             className="tr-container absolute  "
             id="tr2"
           >
-            <img className="tr " src="/Treatments/bottom.png" alt="dandelion" />
+            <Image
+              layout="fill"
+              className="tr "
+              src="/Treatments/bottom.png"
+              alt="dandelion"
+            />
           </animated.div>
           <animated.div
             onMouseMove={({ clientX: x, clientY: y }) => {

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 
 const Helper = ({ item }) => {
   const [toggle, setToggle] = useState("");
@@ -19,7 +20,8 @@ const Helper = ({ item }) => {
       >
         <h2 className="w-10/12 p-4 uppercase select-none">{item[0]}</h2>
         <button className="w-1/12">
-          <img
+          <Image
+            layout="fill"
             src={toggle === "active" ? "/drpClose.png" : "/drpOpen.png"}
             alt={item[0]}
             className={

@@ -11,7 +11,8 @@ const RenderList = ({ data }) => {
       {data.map((item) => {
         return (
           <li className="my-5 p-0">
-            <img
+            <Image
+              layout="fill"
               className="inline-block mr-3"
               src={`/${i}.png`}
               alt={`${i++}`}

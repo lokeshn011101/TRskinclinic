@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Appointment = () => {
   return (
@@ -13,7 +14,8 @@ const Appointment = () => {
           </div>
         </div>
       </div>
-      <img
+      <Image
+        layout="fill"
         className="lg:mb-10 md:mb-7 sm:mb-5 smm:mb-3"
         src="/About/appt.png"
         alt="ready to transform your skin?"
@@ -26,7 +28,8 @@ const Appointment = () => {
         </div>
         <div className="lg:text-base md:text-base sm:text-sm smm:text-xs">
           <div className="stepss flex flex-row items-center lg:px-5 md:px-12 sm:px-10 smm:px-8 lg:my-7 md:my-5 sm:my-4 smm:my-3 font-light">
-            <img
+            <Image
+              layout="fill"
               className="lg:mr-5 md:mr-12 sm:mr-10 smm:mr-5 smm:w-2/12"
               src="/Contact/phone.png"
               alt="phone"
@@ -37,7 +40,8 @@ const Appointment = () => {
             </div>
           </div>
           <div className="stepss flex flex-row items-center lg:px-5 md:px-12 sm:px-10 smm:px-8 lg:my-7 md:my-5 sm:my-4 smm:my-3 font-light">
-            <img
+            <Image
+              layout="fill"
               className="lg:mr-5 md:mr-12 sm:mr-10 smm:mr-5 smm:w-2/12"
               src="/Contact/msg.png"
               alt="message"
@@ -48,7 +52,8 @@ const Appointment = () => {
             </div>
           </div>
           <div className="stepss flex flex-row items-center lg:px-5 md:px-12 sm:px-10 smm:px-8 lg:my-7 md:my-5 sm:my-4 smm:my-3 font-light">
-            <img
+            <Image
+              layout="fill"
               className="lg:mr-5 md:mr-12 sm:mr-10 smm:mr-5 smm:w-2/12"
               src="/Contact/locc.png"
               alt="location"
@@ -58,7 +63,8 @@ const Appointment = () => {
             </div>
           </div>
           <div className="stepss flex flex-row items-center lg:px-5 md:px-12 sm:px-10 smm:px-8 lg:my-5 md:my-4 sm:my-3 smm:my-2 font-light">
-            <img
+            <Image
+              layout="fill"
               className="lg:mr-5 md:mr-12 sm:mr-10 smm:mr-5 smm:w-2/12"
               src="/Contact/fem.png"
               alt="femaleicon"

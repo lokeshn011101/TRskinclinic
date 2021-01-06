@@ -13,6 +13,18 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+          name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+        />
+        <meta name="description" content="Chennai's leading skin clinic" />
+        <meta name="keywords" content="Skin Clinic" />
+
+        <link rel="manifest" href="/manifest.json" />
+
+        <meta name="theme-color" content="#DF9A80" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"

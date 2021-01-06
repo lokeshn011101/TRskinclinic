@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Contact = () => {
   return (
@@ -23,18 +24,33 @@ const Contact = () => {
         </div>
         <div className="cont sm:w-1/2 w-full smm:mt-16 bg-skin-medium p-5 sm:p-10">
           <div className="flex flex-row sm:flex-col sm:items-start md:pl-10 sm:py-10 justify-center sm:h-1/3 items-center md:text-xl sm:text-base">
-            <img src="/Contact/phone.png" alt="phone" className="2/12" />
+            <Image
+              layout="fill"
+              src="/Contact/phone.png"
+              alt="phone"
+              className="2/12"
+            />
             <div className="w-10/12">
               <div>Call for appointments: +91 77080 07026</div>
               <div>WhatsApp only: +91 95661 88117</div>
             </div>
           </div>
           <div className="flex flex-row sm:flex-col sm:items-start md:pl-10 sm:py-10 justify-center sm:h-1/3 items-center md:text-xl sm:text-base">
-            <img src="/Contact/email.png" alt="email" className="2/12" />
+            <Image
+              layout="fill"
+              src="/Contact/email.png"
+              alt="email"
+              className="2/12"
+            />
             <div className="w-10/12">tanujareddyskinclinic@gmail.com</div>
           </div>
           <div className="flex flex-row sm:flex-col sm:items-start md:pl-10 sm:py-10 justify-center sm:h-1/3 items-center md:text-xl sm:text-base">
-            <img src="/Contact/locc.png" alt="location" className="2/12" />
+            <Image
+              layout="fill"
+              src="/Contact/locc.png"
+              alt="location"
+              className="2/12"
+            />
             <div className="w-10/12">
               No 175 Vijaya Health Centre, NSK Salai, Vadapalani, Chennai –
               600026, (Opposite Bus Depot, India)

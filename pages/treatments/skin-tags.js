@@ -2,6 +2,7 @@ import React from "react";
 import TreatmentsCard from "../../components/TreatmentsCard";
 import TreatmentsSection from "../../components/TreatmentsSection";
 import FAQ from "../../components/FAQ";
+import Image from "next/image";
 
 const RenderList = ({ data, data2 }) => {
   let i = 1;
@@ -11,7 +12,8 @@ const RenderList = ({ data, data2 }) => {
         return (
           <li key={item} className="md:my-7 p-0 text-sm mdd:text-xs">
             <div className=" flex flex-row justify-start items-start">
-              <img
+              <Image
+                layout="fill"
                 className="inline-block mr-3 mdd:hidden"
                 src={`/${i}.png`}
                 alt={`${i++}`}

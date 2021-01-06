@@ -2,6 +2,7 @@ import React from "react";
 import { useSpring, animated } from "react-spring";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Image from "next/image";
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 5];
 
@@ -18,12 +19,14 @@ const Slider1 = () => {
     config: { mass: 10, tension: 300, friction: 140 },
   }));
   return (
-    <div className="carou-container">
+    <div className="carou-container  overflow-hidden">
       <div className="home-img1 relative">
-        <img
+        <Image
           src="/Home/Home3/home31.png"
           alt="Say goodbye to all your skin woes"
           className="w-full h-full"
+          width={1528}
+          height={670}
         />
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
@@ -32,13 +35,16 @@ const Slider1 = () => {
           style={{
             transform: props.xy ? props.xy.interpolate(trans5) : null,
           }}
-          className="carouel-container absolute w-full h-full"
+          className="carouel-container absolute w-full h-full  overflow-hidden"
         >
-          <img
-            className="homeimg3 absolute right-0 w-5/12 h-auto"
-            src="/Home/Home3/home32.png"
-            alt="home1"
-          />
+          <div className="homeimg3 absolute right-0 w-5/12 h-auto overflow-hidden">
+            <Image
+              src="/Home/Home3/home32.png"
+              alt="home1"
+              width={722}
+              height={675}
+            />
+          </div>
         </animated.div>
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
@@ -49,12 +55,14 @@ const Slider1 = () => {
           }}
           className="carouel-container absolute w-full h-full"
         >
-          <img
-            className="h3dand absolute top-0 left-0"
-            id="h3dand1"
-            src="/Home/Home3/hometop.png"
-            alt="dandelion"
-          />
+          <div className="h3dand absolute top-0 left-0" id="h3dand1">
+            <Image
+              width={220}
+              height={179}
+              src="/Home/Home3/hometop.png"
+              alt="dandelion"
+            />
+          </div>
         </animated.div>
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
@@ -65,12 +73,14 @@ const Slider1 = () => {
           }}
           className="carouel-container absolute w-full h-full"
         >
-          <img
-            className="h3dand absolute top-0 left-0"
-            id="h3dand2"
-            src="/Home/Home3/homeright.png"
-            alt=""
-          />
+          <div className="h3dand absolute top-0 left-0" id="h3dand2">
+            <Image
+              src="/Home/Home3/homeright.png"
+              alt=""
+              width={466}
+              height={387}
+            />
+          </div>
         </animated.div>
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
@@ -81,12 +91,14 @@ const Slider1 = () => {
           }}
           className="carouel-container absolute w-full h-full"
         >
-          <img
-            className="h3dand absolute top-0 left-0"
-            id="h3dand3"
-            src="/Home/Home3/homebottom.png"
-            alt=""
-          />
+          <div className="h3dand absolute top-0 left-0" id="h3dand3">
+            <Image
+              src="/Home/Home3/homebottom.png"
+              width={469}
+              height={349}
+              alt=""
+            />
+          </div>
         </animated.div>
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
@@ -97,12 +109,14 @@ const Slider1 = () => {
           }}
           className="carouel-container absolute w-full h-full"
         >
-          <img
-            className=" absolute top-0 left-0"
-            id="h3dand4"
-            src="/Home/Home3/linenearface.png"
-            alt=""
-          />
+          <div className=" absolute top-0 left-0" id="h3dand4">
+            <Image
+              src="/Home/Home3/linenearface.png"
+              alt=""
+              width={135}
+              height={712}
+            />
+          </div>
         </animated.div>
         <div className="homecar-heading3 absolute lg:ml-20 md:ml-16 sm:ml-14 smm:ml-6  flex flex-col justify-center items-start">
           <div className=" lg:text-6xl md:text-4xl sm:text-2xl smm:text-lg uppercase flex flex-col justify-start items-start">

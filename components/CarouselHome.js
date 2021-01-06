@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import Link from "next/link";
 import AOS from "aos";
+import Image from "next/image";
 
 const Item = ({ desc, source, to }) => {
   useEffect(() => {
@@ -12,7 +13,8 @@ const Item = ({ desc, source, to }) => {
 
   return (
     <div className="carousel-cell lg:mx-3 md:mx-2 sm:mx-1 smm:mx-1 flex flex-col justify-center items-center relative">
-      <div className="relative">
+      <div className="cc-child relative w-full">
+        {/* <Image src={source} alt="Image" width={560} height={350} /> */}
         <img src={source} alt="Image" />
         <button className="doct-but lg:text-base md:text-base sm:text-sm smm:text-xs absolute mdd:right-1 right-2 bottom-0 md:my-3 p-2 mdd:my-1 mdd:p-1 rounded-full bg-white text-skin-dark">
           <Link href={`/treatments/${to}`}>Discover More</Link>
@@ -28,15 +30,18 @@ const Item = ({ desc, source, to }) => {
 const ArrowNext = (props) => {
   return (
     <button onClick={props.onClick} className={props.className + " arr"}>
-      <img src="/next.png" alt="next" />
+      <div>
+        <Image src="/next.png" alt="next" width={45} height={45} />
+      </div>
     </button>
   );
 };
 const ArrowPrev = (props) => {
-  console.log(props);
   return (
     <button onClick={props.onClick} className={props.className + " arr"}>
-      <img src="/Previous.png" alt="next" />
+      <div>
+        <Image src="/Previous.png" alt="next" width={45} height={45} />
+      </div>
     </button>
   );
 };

@@ -2,6 +2,8 @@ import React from "react";
 import { useSpring, animated } from "react-spring";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Image from "next/image";
+import AOS from "aos";
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 5];
 
@@ -22,10 +24,12 @@ const Slider1 = () => {
     config: { mass: 10, tension: 300, friction: 140 },
   }));
   return (
-    <div className="carou-container">
+    <div className="carou-container" data-aos="fade-right">
       <div className="home-img1 relative">
-        <img
+        <Image
           src="/Home/Home1/homebg1.png"
+          width={1528}
+          height={670}
           alt="Say goodbye to all your skin woes"
           className="w-full h-full"
         />
@@ -39,11 +43,14 @@ const Slider1 = () => {
           }}
           className="carouel-container absolute w-full h-full"
         >
-          <img
-            className="homeimg1 absolute right-0 w-6/12 h-auto"
-            src="/Home/Home1/homeimg1.png"
-            alt="home1"
-          />
+          <div className="homeimg1 absolute right-0 w-6/12 h-auto">
+            <Image
+              src="/Home/Home1/homeimg1.png"
+              alt="home1"
+              width={759}
+              height={562}
+            />
+          </div>
         </animated.div>
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
@@ -54,12 +61,14 @@ const Slider1 = () => {
           }}
           className="carouel-container absolute w-full h-full"
         >
-          <img
-            className="h1dand absolute top-0 left-0"
-            id="h1dand1"
-            src="/Home/Home1/home11.png"
-            alt="dandelion"
-          />
+          <div id="h1dand1" className="h1dand absolute top-0 left-0">
+            <Image
+              src="/Home/Home1/home11.png"
+              alt="dandelion"
+              width={131}
+              height={86}
+            />
+          </div>
         </animated.div>
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
@@ -70,12 +79,14 @@ const Slider1 = () => {
           }}
           className="carouel-container absolute w-full h-full"
         >
-          <img
-            className="h1dand absolute top-0 left-0"
-            id="h1dand2"
-            src="/Home/Home1/home12.png"
-            alt=""
-          />
+          <div className="h1dand absolute top-0 left-0" id="h1dand2">
+            <Image
+              src="/Home/Home1/home12.png"
+              alt="dand"
+              width={49}
+              height={81}
+            />
+          </div>
         </animated.div>
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
@@ -86,12 +97,14 @@ const Slider1 = () => {
           }}
           className="carouel-container absolute w-full h-full"
         >
-          <img
-            className="h1dand absolute top-0 left-0"
-            id="h1dand3"
-            src="/Home/Home1/home13.png"
-            alt=""
-          />
+          <div className="h1dand absolute top-0 left-0" id="h1dand3">
+            <Image
+              src="/Home/Home1/home13.png"
+              alt="dand"
+              width={40}
+              height={27}
+            />
+          </div>
         </animated.div>
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
@@ -102,12 +115,9 @@ const Slider1 = () => {
           }}
           className="carouel-container absolute w-full h-full"
         >
-          <img
-            className="h1dand absolute top-0 left-0"
-            id="h1dand4"
-            src="/Home/Home1/home14.png"
-            alt=""
-          />
+          <div className="h1dand absolute top-0 left-0" id="h1dand4">
+            <Image src="/Home/Home1/home14.png" alt="" width={35} height={45} />
+          </div>
         </animated.div>
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
@@ -118,12 +128,9 @@ const Slider1 = () => {
           }}
           className="carouel-container absolute w-full h-full"
         >
-          <img
-            className="h1dand absolute top-0 left-0"
-            id="h1dand5"
-            src="/Home/Home1/home15.png"
-            alt=""
-          />
+          <div className="h1dand absolute top-0 left-0" id="h1dand5">
+            <Image src="/Home/Home1/home15.png" alt="" width={38} height={37} />
+          </div>
         </animated.div>
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
@@ -134,12 +141,14 @@ const Slider1 = () => {
           }}
           className="carouel-container absolute w-full h-full"
         >
-          <img
-            className="h1dand absolute top-0 left-0"
-            id="h1dand6"
-            src="/Home/Home1/home16.png"
-            alt=""
-          />
+          <div className="h1dand absolute top-0 left-0" id="h1dand6">
+            <Image
+              src="/Home/Home1/home16.png"
+              alt=""
+              width={98}
+              height={125}
+            />
+          </div>
         </animated.div>
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
@@ -150,12 +159,9 @@ const Slider1 = () => {
           }}
           className="carouel-container absolute w-full h-full"
         >
-          <img
-            className="h1dand absolute top-0 left-0"
-            id="h1dand7"
-            src="/Home/Home1/home17.png"
-            alt=""
-          />
+          <div className="h1dand absolute top-0 left-0" id="h1dand7">
+            <Image src="/Home/Home1/home17.png" alt="" width={38} height={37} />
+          </div>
         </animated.div>
         <animated.div
           onMouseMove={({ clientX: x, clientY: y }) => {
@@ -166,14 +172,11 @@ const Slider1 = () => {
           }}
           className="carouel-container absolute w-full h-full"
         >
-          <img
-            className="h1dand absolute top-0 left-0"
-            id="h1dand8"
-            src="/Home/Home1/home18.png"
-            alt=""
-          />
+          <div className="h1dand absolute top-0 left-0" id="h1dand8">
+            <Image src="/Home/Home1/home18.png" width={73} height={60} alt="" />
+          </div>
         </animated.div>
-        <div className="absolute lg:ml-20 md:ml-16 sm:ml-14 smm:ml-6 smm:top-1/4 sm:top-1/3 flex flex-col justify-center items-start">
+        <div className="absolute lg:ml-20 md:ml-16 sm:ml-14 smm:ml-6 smm:top-1/4 sm:top-1/3 flex flex-col justify-center items-start overflow-visible">
           <div className="homecar-heading lg:text-7xl md:text-4xl sm:text-2xl smm:text-xl uppercase flex flex-col justify-start items-start">
             <h1 className="w-full hh">Say Goodbye</h1>
             <h1 className="w-full hh">to all your</h1>

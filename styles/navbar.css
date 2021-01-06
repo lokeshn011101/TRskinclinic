@@ -116,3 +116,16 @@ a {
     opacity: 1;
   }
 }
+
+@media (min-width: 1023px) {
+  .toggler {
+    display: none !important;
+  }
+  .navigate {
+    width: 80.3333% !important;
+    margin-right: 2.5% !important;
+  }
+}
+.toggler {
+  padding-top: 0.5rem;
+}
