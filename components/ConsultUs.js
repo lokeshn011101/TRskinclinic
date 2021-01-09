@@ -13,7 +13,7 @@ const ConsultUs = () => {
   return (
     <>
       <div className="flex justify-around items-center w-full lg:mt-36 sm:mt-24 smm:mt-16 smm:hidden">
-        <div className="w-9/12 flex flex-row justify-around items-center">
+        <div className="consult-us w-9/12 flex flex-row justify-around items-center">
           <div
             className="w-5/12 lg:ml-16 sm:ml-8 smm:ml-5"
             data-aos={winWidth <= 1000 ? "fade-down" : "fade-right"}

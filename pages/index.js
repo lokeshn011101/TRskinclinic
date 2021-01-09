@@ -25,7 +25,7 @@ const Home = () => {
   const [winWidth, setWinWidth] = useState(0);
   useEffect(() => {
     AOS.init({
-      duration: 640,
+      duration: 1000,
     });
     slider.current.slickPlay();
     setWinWidth(window.innerWidth);
@@ -40,6 +40,7 @@ const Home = () => {
     autoplaySpeed: 3500,
     autoplay: true,
   };
+  console.log(winWidth);
   return (
     <div className=" overflow-hidden">
       <div className="bg-transparent h-auto">
@@ -140,7 +141,7 @@ Who are committed to provide our patients with skin care of the highest quality 
       />
       <div
         className="flex justify-center w-8/12 mx-auto items-center md:mt-14 sm:mt-9 smm:mt-7 relative"
-        data-aos="zoom-in"
+        data-aos="zoom-in-up"
         data-aos-offset="-300"
       >
         <Image

@@ -58,8 +58,8 @@ const Slider2 = () => {
             <Image
               src="/Home/Home2/home23.png"
               alt="dandelion"
-              width={758}
-              height={563}
+              width={608}
+              height={413}
             />
           </div>
         </animated.div>

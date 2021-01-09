@@ -3,7 +3,7 @@
 }
 
 #h2dand1 {
-  top: 12%;
+  top: 25%;
   left: 2%;
 }
 #h2dand2 {
@@ -47,8 +47,8 @@
     left: 33%;
   }
   #h2dand1 {
-    top: 5%;
-    left: -10%;
+    top: 28%;
+    left: 5%;
   }
 }
 @media (max-width: 400px) {
@@ -73,8 +73,29 @@
     left: 29%;
   }
   #h2dand1 {
-    top: -10%;
-    left: -20%;
+    top: 10%;
+    left: -10%;
+  }
+}
+@media (max-width: 700px) {
+  .homeimg2 {
+    top: 7.8%;
+    width: 60%;
+  }
+  .h2dand {
+    transform: scale(0.6);
+  }
+  #h2dand3 {
+    top: 15%;
+    left: 30%;
+  }
+  #h2dand2 {
+    top: 20%;
+    left: 24%;
+  }
+  #h2dand1 {
+    top: 5%;
+    left: -15%;
   }
 }
 @media (max-width: 600px) {

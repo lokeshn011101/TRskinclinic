@@ -168,3 +168,8 @@ ul {
 .arr {
   width: 45px !important;
 }
+@media (max-width: 924px) {
+  .consult-us {
+    width: 91.66667%;
+  }
+}

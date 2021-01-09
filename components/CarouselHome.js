@@ -5,18 +5,22 @@ import AOS from "aos";
 import Image from "next/image";
 
 const Item = ({ desc, source, to }) => {
+  const imgRef = React.createRef();
   useEffect(() => {
     AOS.init({
       duration: 1000,
     });
   }, []);
+  useEffect(() => {
+    imgRef.current.firstChild.style.overflow = "visible";
+    console.log(imgRef.current.firstChild.style.overflow);
+  }, []);
 
   return (
     <div className="carousel-cell lg:mx-3 md:mx-2 sm:mx-1 smm:mx-1 flex flex-col justify-center items-center relative">
-      <div className="cc-child relative w-full">
-        {/* <Image src={source} alt="Image" width={560} height={350} /> */}
-        <img src={source} alt="Image" />
-        <button className="doct-but lg:text-base md:text-base sm:text-sm smm:text-xs absolute mdd:right-1 right-2 bottom-0 md:my-3 p-2 mdd:my-1 mdd:p-1 rounded-full bg-white text-skin-dark">
+      <div ref={imgRef} className="cc-child relative w-full">
+        <Image src={source} alt="Image" width={560} height={350} />
+        <button className="doct-but lg:text-base md:text-base sm:text-sm smm:text-xs absolute mdd:right-4 right-8 mdd:bottom-1 bottom-3 md:my-3 p-2 mdd:my-1 mdd:p-1 rounded-full bg-white text-skin-dark">
           <Link href={`/treatments/${to}`}>Discover More</Link>
         </button>
       </div>

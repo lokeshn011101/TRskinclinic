@@ -18,50 +18,20 @@ const Reviews = ({ review, name, delay = "", offset = "" }) => {
       data-aos-offset={offset}
     >
       <div className="flex flex-row justify-center md:items-start items-center lg:mb-2 md:mb-2 sm:mb-1 smm:mb-1">
-        <div className="h-2 md:h-4">
-          <Image
-            src="/Home/icons.png"
-            alt="star"
-            width={16}
-            height={16}
-            className="h-2 md:h-4"
-          />
+        <div className=" md:h-4">
+          <Image src="/Home/icons.png" alt="star" width={16} height={16} />
         </div>
-        <div className="h-2 md:h-4 ml-1">
-          <Image
-            src="/Home/icons.png"
-            alt="star"
-            width={16}
-            height={16}
-            className="h-2 md:h-4 ml-1"
-          />
+        <div className=" md:h-4 ml-1">
+          <Image src="/Home/icons.png" alt="star" width={16} height={16} />
         </div>
-        <div className="h-2 md:h-4 ml-1">
-          <Image
-            src="/Home/icons.png"
-            alt="star"
-            width={16}
-            height={16}
-            className="h-2 md:h-4 ml-1"
-          />
+        <div className=" md:h-4 ml-1">
+          <Image src="/Home/icons.png" alt="star" width={16} height={16} />
         </div>
-        <div className="h-2 md:h-4 ml-1">
-          <Image
-            src="/Home/icons.png"
-            alt="star"
-            width={16}
-            height={16}
-            className="h-2 md:h-4 ml-1"
-          />
+        <div className=" md:h-4 ml-1">
+          <Image src="/Home/icons.png" alt="star" width={16} height={16} />
         </div>
-        <div className="h-2 md:h-4 ml-1">
-          <Image
-            src="/Home/icons.png"
-            alt="star"
-            width={16}
-            height={16}
-            className="h-2 md:h-4 ml-1"
-          />
+        <div className=" md:h-4 ml-1">
+          <Image src="/Home/icons.png" alt="star" width={16} height={16} />
         </div>
       </div>
       <div className="review lg:mb-5 md:mb-4 sm:mb-3 smm:mb-2 mdd:text-center">

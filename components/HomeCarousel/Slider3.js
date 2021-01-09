@@ -35,14 +35,14 @@ const Slider1 = () => {
           style={{
             transform: props.xy ? props.xy.interpolate(trans5) : null,
           }}
-          className="carouel-container absolute w-full h-full  overflow-hidden"
+          className="carouel-container absolute w-full h-full"
         >
-          <div className="homeimg3 absolute right-0 w-5/12 h-auto overflow-hidden">
+          <div className="homeimg3 absolute right-0 w-5/12 h-auto ">
             <Image
               src="/Home/Home3/home32.png"
               alt="home1"
               width={722}
-              height={675}
+              height={700}
             />
           </div>
         </animated.div>
@@ -94,8 +94,8 @@ const Slider1 = () => {
           <div className="h3dand absolute top-0 left-0" id="h3dand3">
             <Image
               src="/Home/Home3/homebottom.png"
-              width={469}
-              height={349}
+              width={400}
+              height={290}
               alt=""
             />
           </div>
@@ -109,12 +109,12 @@ const Slider1 = () => {
           }}
           className="carouel-container absolute w-full h-full"
         >
-          <div className=" absolute top-0 left-0" id="h3dand4">
-            <Image
+          <div>
+            <img
               src="/Home/Home3/linenearface.png"
-              alt=""
-              width={135}
-              height={712}
+              alt="img"
+              className=" absolute top-0 left-0"
+              id="h3dand4"
             />
           </div>
         </animated.div>
