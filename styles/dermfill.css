@@ -75,6 +75,10 @@ button {
   .downcarou .slick-current h3 {
     margin-top: 1.3rem;
   }
+  .slick-slide .doct-but {
+    right: 10% !important;
+    bottom: 5%;
+  }
   .slick-current .doct-but {
     right: -8% !important;
     bottom: -10%;

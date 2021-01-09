@@ -24,7 +24,7 @@ const Item = ({ desc, source, to }) => {
           <Link href={`/treatments/${to}`}>Discover More</Link>
         </button>
       </div>
-      <h3 className="descd lg:text-sm md:text-sm sm:text-xs smm:text-xs leading-0">
+      <h3 className="descd mt-2 lg:text-sm md:text-sm sm:text-xs smm:text-xs leading-0">
         {desc}
       </h3>
     </div>

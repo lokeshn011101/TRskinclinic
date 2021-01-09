@@ -161,6 +161,18 @@ ul {
   z-index: 100;
   left: 5% !important;
 }
+@media (max-width: 425px) {
+  .slick-next {
+    top: 20% !important;
+    z-index: 100;
+    right: 5% !important;
+  }
+  .slick-prev {
+    top: 20% !important;
+    z-index: 100;
+    left: 5% !important;
+  }
+}
 .slick-prev:before,
 .slick-next:before {
   content: "" !important;
