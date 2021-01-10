@@ -56,10 +56,10 @@ const Home = () => {
           grade treatments with outstanding levels of customer service combined
           with professionalism and expertise. Most of all, we place our
           patients’ needs above all else."
-        aosTitle="fade-down"
-        offsetTitle="0"
+        aosTitle={winWidth > 640 ? "fade-down" : "fade-up"}
+        offsetTitle={winWidth > 640 ? "50" : "20"}
         aosText="fade-up"
-        offsetText="0"
+        offsetText={winWidth > 640 ? "50" : "20"}
       />
 
       <div className="flex sm:flex-row flex-col justify-center w-10/12 h-auto max-w-5xl mx-auto">
@@ -80,7 +80,7 @@ const Home = () => {
             className="lg:mb-12 sm:mb-7 smm:mb-3"
             data-aos={winWidth <= 640 ? "fade-up" : "fade-left"}
             data-aos-delay="200"
-            data-aos-offset="10"
+            data-aos-offset={winWidth > 640 ? "10" : "50"}
           >
             <h2 className="lg:mb-2 description lg:text-4xl smm:mb-0 sm:mb-1 uppercase md:text-xl sm:text-xl smm:text-lg smm:text-center smm:w-full">
               QUALIFIED DOCTORS
@@ -94,7 +94,7 @@ const Home = () => {
             className="lg:mb-12 sm:mb-7 smm:mb-3"
             data-aos={winWidth <= 640 ? "fade-up" : "fade-left"}
             data-aos-delay="300"
-            data-aos-offset="10"
+            data-aos-offset={winWidth > 640 ? "10" : "50"}
           >
             <h2 className="lg:mb-2 description lg:text-4xl smm:mb-0 sm:mb-1 uppercase md:text-xl sm:text-xl smm:text-lg smm:text-center smm:w-full">
               MEDICAL CARE
@@ -108,7 +108,7 @@ const Home = () => {
             className="lg:mb-12 sm:mb-7 smm:mb-3"
             data-aos={winWidth <= 640 ? "fade-up" : "fade-left"}
             data-aos-delay="400"
-            data-aos-offset="10"
+            data-aos-offset={winWidth > 640 ? "10" : "50"}
           >
             <h2 className="lg:mb-2 description lg:text-4xl smm:mb-0 sm:mb-1 uppercase md:text-xl sm:text-xl smm:text-lg smm:text-center smm:w-full">
               ADVANCED LASERS
@@ -124,25 +124,25 @@ const Home = () => {
         title="OUR TREATMENTS"
         text="We provide avant-garde cosmetic medical grade treatments to achieve quick and effective results that satisfy your aesthetic needs.
 We offer our patients in-depth assessment, skin & hair related advice and assistance to reach their beauty goals."
-        aosTitle="fade-down"
-        offsetTitle="0"
+        aosTitle={winWidth > 640 ? "fade-down" : "fade-up"}
+        offsetTitle={winWidth > 640 ? "50" : "20"}
         aosText="fade-up"
-        offsetText="0"
+        offsetText={winWidth > 640 ? "50" : "20"}
       />
       <CarouselHome />
       <TextAboveSection
         title="Meet our DOCTORS"
         text="Our Medical Team is led by our very own Medical Director and team of highly experienced Registered Doctors, Nurses & Professionals.
 Who are committed to provide our patients with skin care of the highest quality at affordable pricing."
-        aosTitle="fade-down"
-        offsetTitle="-300"
+        aosTitle={winWidth > 640 ? "fade-down" : "fade-up"}
+        offsetTitle={winWidth > 640 ? "-300" : "100"}
         aosText="fade-up"
-        offsetText="-200"
+        offsetText={winWidth > 640 ? "-200" : "150"}
       />
       <div
         className="flex justify-center w-8/12 mx-auto items-center md:mt-14 sm:mt-9 smm:mt-7 relative"
         data-aos="zoom-in-up"
-        data-aos-offset="-300"
+        data-aos-offset={winWidth > 640 ? "-100" : "100"}
       >
         <Image
           src="/Home/doctors.png"
@@ -162,8 +162,8 @@ Who are committed to provide our patients with skin care of the highest quality 
       <div className="lg:mt-32 sm:mt-16 smm:mt-10">
         <h2
           className="about-head2 mx-auto text-center lg:text-4xl md:text-2xl sm:text-xl smm:text-lg uppercase lg:mb-24 md:mb-20 sm:mb-16 smm:mb-10 lg:mt-8 md:mt-6 sm:mt-4 smm:mt-2"
-          data-aos="fade-down"
-          data-aos-offset="-200"
+          data-aos={winWidth > 640 ? "fade-down" : "fade-up"}
+          data-aos-offset={winWidth > 640 ? "-200" : "50"}
         >
           Patient reviews
         </h2>
@@ -179,7 +179,7 @@ Who are committed to provide our patients with skin care of the highest quality 
               className="w-5/12 md:mx-10 md:transform md:-translate-y-5"
               data-aos={winWidth <= 640 ? "fade-right" : "fade-down"}
               data-aos-delay="400"
-              data-aos-offset="-300"
+              data-aos-offset={winWidth > 640 ? "-100" : "100"}
             />
           </div>
           <div className="h-full w-5/12 md:transform md:translate-y-24 ml-2">
@@ -191,7 +191,7 @@ Who are committed to provide our patients with skin care of the highest quality 
               className=""
               data-aos={winWidth <= 640 ? "fade-left" : "fade-up"}
               data-aos-delay="400"
-              data-aos-offset="-300"
+              data-aos-offset={winWidth > 640 ? "-100" : "100"}
             />
           </div>
         </div>
@@ -201,7 +201,7 @@ Who are committed to provide our patients with skin care of the highest quality 
 my skin. I have never felt more better”"
             name="— Ananya Kannan"
             delay="200"
-            offset="-300"
+            offset={winWidth > 640 ? "-100" : "10"}
           />
           <Reviews
             review="“Possibly the best clinic in Chennai! The friendliest
@@ -209,7 +209,7 @@ doctors one has seen. TR Skin Clinic is the
 one stop for all skin problems”"
             name="— Vaishnavi Rao"
             delay="300"
-            offset="-350"
+            offset={winWidth > 640 ? "-180" : "50"}
           />
           <Reviews
             review="“TR skin Clinic gave me the confidence that my
@@ -219,7 +219,7 @@ any acne now. All thanks to TR Skin Clinic,
 you’re the best!”"
             name="— Shanthoshri Janakiraman"
             delay="350"
-            offset="-450"
+            offset={winWidth > 640 ? "-250" : "150"}
           />
         </div>
       </div>
