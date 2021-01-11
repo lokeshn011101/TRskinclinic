@@ -80,17 +80,28 @@ a,
 
 .card4 {
   position: absolute;
-  width: fit-content !important;
-  height: fit-content !important;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+}
+.card4 div {
+  overflow: visible !important;
+}
+.card4 img {
+  transform: scale(1.5);
 }
 .abimg {
   width: fit-content !important;
   height: fit-content !important;
 }
-
+.aboutcontainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 .container {
   width: 100%;
   height: 100%;
@@ -184,4 +195,11 @@ ul {
   .consult-us {
     width: 91.66667%;
   }
+}
+.aboutimg1 {
+  transform: scaleY(1.15) !important;
+}
+
+.doctorss {
+  transform: scaleY(0.9) !important;
 }
