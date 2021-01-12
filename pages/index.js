@@ -40,7 +40,6 @@ const Home = () => {
     autoplaySpeed: 3500,
     autoplay: true,
   };
-  console.log(winWidth);
   return (
     <div className=" overflow-hidden">
       <div className="bg-transparent h-auto">

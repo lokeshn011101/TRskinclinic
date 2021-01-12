@@ -114,7 +114,8 @@ a,
 .card-head,
 .homecar-heading,
 .homecar-heading2,
-.homecar-heading3 {
+.homecar-heading3,
+.app-heading {
   font-family: "Playfair Display", serif;
 }
 
@@ -202,4 +203,22 @@ ul {
 
 .doctorss {
   transform: scaleY(0.9) !important;
+}
+.app-headingpar {
+  top: 46% !important;
+  left: 15% !important;
+}
+@media (max-width: 600px) {
+  .app-headingpar {
+    left: 8% !important;
+  }
+}
+@media (max-width: 450px) {
+  .app-headingpar {
+    top: 40% !important;
+    left: 3% !important;
+  }
+  .app-headingpar h1 {
+    font-size: 1rem;
+  }
 }

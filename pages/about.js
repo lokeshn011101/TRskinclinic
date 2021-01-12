@@ -115,10 +115,7 @@ const About = () => {
       </div>
       <div className="about-desc2 flex flex-col justify-center items-center lg:flex-row lg:justify-center lg:items-center mx-auto lg:py-12 md:py-9 sm:py-6 smm:pb-3 smm:pt-0 w-10/12 lgg:w-8/12 mdd:w-10/12 mb-32">
         <div className="flex flex-col lg:justify-center lg:items-center md:w-full lg:w-1/2 mdd:my-10  transition-all duration-500 ease-in-out lg:hover:w-10/12">
-          <div
-            data-aos="fade-right"
-            data-aos-offset={winWidth > 640 ? "250" : "250"}
-          >
+          <div data-aos="fade-right" data-aos-offset="250">
             <div className="doctorss md:w-9/12 mx-auto smm:w-9/12">
               <div className="docss">
                 <Image
@@ -158,10 +155,7 @@ const About = () => {
           </div>
         </div>
         <div className="flex flex-col lg:justify-center lg:items-center md:w-full lg:w-1/2 mdd:my-10  transition-all duration-500 ease-in-out lg:hover:w-10/12 lgg:mt-32">
-          <div
-            data-aos="fade-left"
-            data-aos-offset={winWidth > 640 ? "250" : "250"}
-          >
+          <div data-aos="fade-left" data-aos-offset="250">
             <div className="doctorss md:w-9/12 mx-auto  smm:w-9/12">
               <div className="docss">
                 <Image
