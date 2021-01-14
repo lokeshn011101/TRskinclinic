@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import TreatmentsCard from "../../components/TreatmentsCard";
 import FAQ from "../../components/FAQ";
 import Image from "next/image";
+import AOS from "aos";
 
 const Li = ({ data }) => {
   return data.map((item) => {
@@ -77,10 +78,18 @@ const ChemicalPeels = () => {
       "Reduces The Effect Of Sun Damage",
     ],
   ];
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <>
       <TreatmentsCard Name={"Chemical Peel"} treatment="ChemicalPeels" />
-      <div className="trdesc mx-auto w-3/4 lg:mt-40 md:mt-36 sm:mt-20 smm:mt-16 lg:mb-20 md:mb-16 sm:mb-12 smm:mb-9 mdd:text-center text-sm mdd:text-xs">
+      <div
+        className="trdesc mx-auto w-3/4 lg:mt-40 md:mt-36 sm:mt-20 smm:mt-16 lg:mb-20 md:mb-16 sm:mb-12 smm:mb-9 mdd:text-center text-sm mdd:text-xs"
+        data-aos="fade-up"
+      >
         A chemical peel is a skin-resurfacing procedure that can be applied to
         the face, hands, and neck. They’re used for the improvement of the
         appearance of the skin. During this procedure, chemical solutions will
@@ -90,29 +99,41 @@ const ChemicalPeels = () => {
       </div>
 
       <div className="mx-auto w-full">
-        <h2 className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center">
+        <h2
+          className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+          data-aos="fade-up"
+        >
           Why should you get it done?
         </h2>
-        <div className="w-3/4 trdesc mx-auto text-sm mdd:text-xs mdd:text-center">
+        <div
+          className="w-3/4 trdesc mx-auto text-sm mdd:text-xs mdd:text-center"
+          data-aos="fade-up"
+        >
           Chemical peels can be used to treat a variation of skin problems
         </div>
         <div className="w-9/12 trdesc mx-auto lg:mb-20 md:mb-16 sm:mb-12 smm:mb-9 lg:text-2xl md:text-xl sm:text-lg smm:text-base mdd:text-center">
           <ul className="list-none lg:ml-5 md:ml-4 sm:ml-3 smm:ml-2">
-            <li>Wrinkles and fine lines</li>
-            <li>Sun Damage</li>
-            <li>Acne Scars</li>
-            <li>Uneven skin tone or redness</li>
-            <li>Scars</li>
-            <li>Melasma</li>
-            <li>Hyperpigmentation</li>
+            <li data-aos="fade-up">Wrinkles and fine lines</li>
+            <li data-aos="fade-up">Sun Damage</li>
+            <li data-aos="fade-up">Acne Scars</li>
+            <li data-aos="fade-up">Uneven skin tone or redness</li>
+            <li data-aos="fade-up">Scars</li>
+            <li data-aos="fade-up">Melasma</li>
+            <li data-aos="fade-up">Hyperpigmentation</li>
           </ul>
         </div>
       </div>
       <div className="mx-auto w-full">
-        <h2 className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center">
+        <h2
+          className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+          data-aos="fade-up"
+        >
           What happens during a chemical peel?
         </h2>
-        <div className="w-3/4 trdesc lg:mt-4 md:mt-3 sm:mt-2 smm:mt-1 mx-auto lg:mb-12 md:mb-10 sm:mb-8 smm:mb-5 mdd:text-center text-sm mdd:text-xs">
+        <div
+          className="w-3/4 trdesc lg:mt-4 md:mt-3 sm:mt-2 smm:mt-1 mx-auto lg:mb-12 md:mb-10 sm:mb-8 smm:mb-5 mdd:text-center text-sm mdd:text-xs"
+          data-aos="fade-up"
+        >
           Before getting a chemical peel, some patients need to follow a
           pre-peel skin care plan for 2 to 4 weeks. This plan can improve
           results and reduce potential side effects. On the day of your peel,
@@ -124,13 +145,15 @@ const ChemicalPeels = () => {
         </div>
       </div>
       <div className="flex md:flex-row flex-col justify-around items-center mx-auto lg:w-5/12 w-7/12">
-        <Image
-          src="/Treatments/ChemicalPeels/two.png"
-          alt="cp1"
-          width={200}
-          height={200}
-        />
-        <div className="md:mt-0 mt-8">
+        <div data-aos="fade-right">
+          <Image
+            src="/Treatments/ChemicalPeels/two.png"
+            alt="cp1"
+            width={200}
+            height={200}
+          />
+        </div>
+        <div className="md:mt-0 mt-8" data-aos="fade-left">
           <Image
             src="/Treatments/ChemicalPeels/one.png"
             alt="cp1"
@@ -140,10 +163,16 @@ const ChemicalPeels = () => {
         </div>
       </div>
       <div className="md:mt-20 mt-16">
-        <h2 className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center">
+        <h2
+          className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+          data-aos="fade-up"
+        >
           What type of Chemical Peels can I get and What are their benefits?
         </h2>
-        <div className="w-11/12 mx-auto flex flex-row justify-start items-start mdd:justify-center mdd:items-center mdd:flex-col">
+        <div
+          className="w-11/12 mx-auto flex flex-row justify-start items-start mdd:justify-center mdd:items-center mdd:flex-col"
+          data-aos="fade-up"
+        >
           <RenderItem
             data={benefits[0]}
             heading="Glycolic Peel"

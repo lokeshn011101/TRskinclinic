@@ -86,7 +86,7 @@ const Appointment = () => {
           <div
             className="stepss flex flex-row items-center lg:px-5 md:px-12 sm:px-10 smm:px-8 lg:my-7 md:my-5 sm:my-4 smm:my-3 font-light"
             data-aos="fade-up"
-            data-aos-offset="150"
+            data-aos-offset="100"
           >
             <div className="lg:mr-5 md:mr-12 sm:mr-10 smm:mr-5 w-2/12">
               <Image
@@ -104,7 +104,7 @@ const Appointment = () => {
           <div
             className="stepss flex flex-row items-center lg:px-5 md:px-12 sm:px-10 smm:px-8 lg:my-5 md:my-4 sm:my-3 smm:my-2 font-light"
             data-aos="fade-up"
-            data-aos-offset="150"
+            data-aos-offset="50"
           >
             <div className="lg:mr-5 md:mr-12 sm:mr-10 smm:mr-5 w-2/12">
               <Image

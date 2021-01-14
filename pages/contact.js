@@ -28,17 +28,19 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row lg:justify-center lg:items-center w-full h-full">
-        <div
-          className="sm:w-1/2 w-full sm:h-full h-10/12 bg-skin-medium"
-          data-aos="fade-right"
-          data-aos-offset="250"
-        >
-          <iframe
-            width="100%"
-            height="700px"
-            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJNzAz0ZFnUjoRisAc5Vm4SB4&key=AIzaSyCCjkT1IB-TO2cfqltUVmSNEm7F3p4So5w"
-          ></iframe>
+      <div className="flex flex-col sm:flex-row lg:justify-center lg:items-center w-full h-full ">
+        <div className="sm:w-1/2 bg-skin-medium">
+          <div
+            className="w-full sm:h-full h-10/12 bg-skin-medium"
+            data-aos="fade-right"
+            data-aos-offset="250"
+          >
+            <iframe
+              width="100%"
+              height="700px"
+              src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJNzAz0ZFnUjoRisAc5Vm4SB4&key=AIzaSyCCjkT1IB-TO2cfqltUVmSNEm7F3p4So5w"
+            ></iframe>
+          </div>
         </div>
         <div className="cont sm:w-1/2 w-full smm:mt-16 bg-skin-medium p-5 sm:p-10">
           <div

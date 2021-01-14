@@ -3,7 +3,8 @@ import { useSpring, animated } from "react-spring";
 import Image from "next/image";
 
 const calc = (x, y) => [x - window.innerWidth / 5, y - window.innerHeight / 5];
-const trans2 = (x, y) => `translate3d(${x / 40}px,${y / 30 - 5}px,0)`;
+const trans2 = (x, y) => `translate3d(${x / 40}px,${y / 80 + 40}px,0)`;
+const trans0 = (x, y) => `translate3d(${x / 40}px,${y / 80}px,0)`;
 
 const Card = () => {
   const [props, set] = useSpring(() => ({
@@ -35,7 +36,11 @@ const Card = () => {
       </h1>
       <animated.div
         className="absolute w-4/12"
-        style={{ transform: props.xy ? props.xy.interpolate(trans2) : null }}
+        style={{
+          transform: props.xy
+            ? props.xy.interpolate(ww >= 1315 ? trans2 : trans0)
+            : null,
+        }}
       >
         <Image
           src="/About/aboutgirl.png"

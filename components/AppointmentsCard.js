@@ -5,7 +5,7 @@ import AOS from "aos";
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 5];
 
-const trans0 = (x, y) => `translate3d(${x / 35}px,${y / 120 - 5}px,0)`;
+const trans0 = (x, y) => `translate3d(${x / 35}px,${y / 80 - 5}px,0)`;
 const trans1 = (x, y) => `translate3d(${x / 25}px,${y / 25 - 10}px,0)`;
 const trans2 = (x, y) => `translate3d(${x / 18 + 20}px,${y / 18 - 15}px,0)`;
 const trans3 = (x, y) => `translate3d(${x / 13 + 23}px,${y / 13 - 18}px,0)`;
@@ -14,6 +14,7 @@ const trans5 = (x, y) => `translate3d(${x / 28 + 19}px,${y / 28 - 13}px,0)`;
 const trans6 = (x, y) => `translate3d(${x / 23 + 15}px,${y / 23 - 15}px,0)`;
 const trans7 = (x, y) => `translate3d(${x / 20 + 13}px,${y / 20 - 16}px,0)`;
 const trans8 = (x, y) => `translate3d(${x / 17 + 27}px,${y / 17 - 26}px,0)`;
+const trans10 = (x, y) => `translate3d(${x / 30}px,${y / 30}px,0)`;
 
 const Slider1 = () => {
   const [props, set] = useSpring(() => ({
@@ -169,11 +170,19 @@ const Slider1 = () => {
             <Image src="/Appointments/8.png" width={73} height={30} alt="" />
           </div>
         </animated.div>
-        <div className="absolute app-headingpar flex flex-col justify-center items-start overflow-visible">
+        <animated.div
+          onMouseMove={({ clientX: x, clientY: y }) => {
+            set({ xy: calc(x, y) });
+          }}
+          style={{
+            transform: props.xy ? props.xy.interpolate(trans10) : null,
+          }}
+          className="absolute app-headingpar flex flex-col justify-center items-start overflow-visible"
+        >
           <div className="app-heading text-white lg:text-4xl md:text-2xl sm:text-xl smm:text-lg flex flex-col justify-start items-start">
             <h1>Experience The Difference</h1>
           </div>
-        </div>
+        </animated.div>
       </div>
     </div>
   );

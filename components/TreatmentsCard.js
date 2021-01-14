@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSpring, animated } from "react-spring";
 import { useRouter } from "next/router";
 import Image from "next/image";
@@ -17,10 +17,11 @@ const TreatmentsCard = ({ treatment, Name, trImage }) => {
     config: { mass: 10, tension: 300, friction: 140 },
   }));
   return (
-    <div className="tr-container">
+    <div className="tr-container" data-aos="fade-right">
       <div className="tr-bg relative">
         <Image
-          layout="fill"
+          width={1519}
+          height={396}
           src="/Treatments/bg.jpg"
           alt="Say goodbye to all your skin woes"
           className="w-full h-full"
@@ -35,12 +36,15 @@ const TreatmentsCard = ({ treatment, Name, trImage }) => {
             }}
             className="treimg-container absolute w-4/12"
           >
-            <Image
-              layout="fill"
-              src={`/Treatments/${treatment}/pic.png`}
-              alt="treatment image"
-              className="treimg"
-            />
+            <div>
+              <Image
+                width={506}
+                height={362}
+                src={`/Treatments/${treatment}/pic.png`}
+                alt="treatment image"
+                className="treimg"
+              />
+            </div>
           </animated.div>
           <animated.div
             onMouseMove={({ clientX: x, clientY: y }) => {
@@ -49,15 +53,17 @@ const TreatmentsCard = ({ treatment, Name, trImage }) => {
             style={{
               transform: props.xy ? props.xy.interpolate(trans4) : null,
             }}
-            className="tr-container absolute "
+            className="tr-container absolute"
             id="tr1"
           >
-            <Image
-              layout="fill"
-              className="tr"
-              src="/Treatments/top.png"
-              alt="dandelion"
-            />
+            <div className="trimg" id="tr11">
+              <Image
+                width={157}
+                height={118}
+                src="/Treatments/top.png"
+                alt="dandelion"
+              />
+            </div>
           </animated.div>
           <animated.div
             onMouseMove={({ clientX: x, clientY: y }) => {
@@ -69,12 +75,14 @@ const TreatmentsCard = ({ treatment, Name, trImage }) => {
             className="tr-container absolute  "
             id="tr2"
           >
-            <Image
-              layout="fill"
-              className="tr "
-              src="/Treatments/bottom.png"
-              alt="dandelion"
-            />
+            <div className="trimg" id="tr22">
+              <Image
+                width={357}
+                height={258}
+                src="/Treatments/bottom.png"
+                alt="dandelion"
+              />
+            </div>
           </animated.div>
           <animated.div
             onMouseMove={({ clientX: x, clientY: y }) => {

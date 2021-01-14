@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import Image from "next/image";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import SmoothCollapse from "react-smooth-collapse";
 
 const Helper = ({ item }) => {
   const [toggle, setToggle] = useState("");
@@ -9,7 +10,7 @@ const Helper = ({ item }) => {
   };
 
   return (
-    <div key={item[0]} className="">
+    <div key={item[0]} className="" data-aos="fade-up">
       <div
         className={
           toggle === "active"
@@ -20,8 +21,7 @@ const Helper = ({ item }) => {
       >
         <h2 className="w-10/12 p-4 uppercase select-none">{item[0]}</h2>
         <button className="w-1/12">
-          <Image
-            layout="fill"
+          <img
             src={toggle === "active" ? "/drpClose.png" : "/drpOpen.png"}
             alt={item[0]}
             className={
@@ -32,16 +32,9 @@ const Helper = ({ item }) => {
           />
         </button>
       </div>
-      <div
-        ref={content}
-        className={
-          toggle === "active"
-            ? "bg-skin-belowMedium p-4 py-5 accordion-text acc"
-            : "bg-skin-belowMedium p-4 py-5 accordion-text hidden"
-        }
-      >
-        {item[1]}
-      </div>
+      <SmoothCollapse expanded={toggle}>
+        <div className="p-4 py-5 accordion-text">{item[1]}</div>
+      </SmoothCollapse>
     </div>
   );
 };
@@ -53,9 +46,17 @@ const RenderItem = ({ data }) => {
 };
 
 const FAQ = ({ data }) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <div className="mx-auto w-full md:mt-24 sm:mt-20 smm:mt-16">
-      <h1 className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center">
+      <h1
+        className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+        data-aos="fade-up"
+      >
         FAQ's
       </h1>
       <div className="acc w-3/4 trdesc mx-auto mt-7">

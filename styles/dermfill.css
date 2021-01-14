@@ -1,31 +1,3 @@
-.treimg-container {
-  top: 45%;
-  left: 9%;
-}
-.trh {
-  bottom: -5%;
-  left: 56%;
-}
-#tr1 {
-  top: 30%;
-  left: 43%;
-}
-#tr2 {
-  bottom: -3%;
-  left: 62%;
-}
-@media (min-width: 640px) {
-  .trh {
-    bottom: 2%;
-    left: 50%;
-  }
-}
-@media (max-width: 400px) {
-  .trh {
-    bottom: 8%;
-    left: 50%;
-  }
-}
 button {
   outline: none;
   outline-width: 0;

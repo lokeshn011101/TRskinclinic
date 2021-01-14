@@ -5,6 +5,7 @@ import "../styles/HomeCarousel/homeSlider1.css";
 import "../styles/HomeCarousel/homeSlider2.css";
 import "../styles/HomeCarousel/homeSlider3.css";
 import "../styles/dermfill.css";
+import "../styles/treatments.css";
 import "aos/dist/aos.css";
 import Layout from "../components/Layout";
 import Head from "next/head";

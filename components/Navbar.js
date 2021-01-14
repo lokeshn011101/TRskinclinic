@@ -4,23 +4,38 @@ import { useRouter } from "next/router";
 import React from "react";
 import Image from "next/image";
 
+const Helper = ({ route, text }) => {
+  return (
+    <li className="menu-item">
+      <Link href={`/treatments/${route}`}>{text}</Link>
+    </li>
+  );
+};
+
+const RenderItem = ({ data }) => {
+  return data.map((item) => {
+    return <Helper route={item[0]} text={item[1]} />;
+  });
+};
+
 const Navbar = () => {
+  const data = [
+    ["chemical-peels", "Chemical Peels"],
+    ["dermal-fillers", "Dermal Fillers"],
+    ["anti-wrinkle-treatment", "Anti Wrinkle Treatment"],
+    ["acne-scar-treatment", "Acne Scar Treatment"],
+    ["laser-hair-removal", "Laser Hair Removal"],
+    ["skin-tags", "Skin Tags"],
+    ["microdermabrasion", "Microdermabrasion"],
+    ["growth-factor-treatment", "Growth Factor Treatment"],
+    ["photo-facial", "Photofacial"],
+    ["body-sculpting", "Body Sculpting"],
+    ["skin-resurfacing-m22", "Skin Resurfacing With M22™"],
+    ["skin-hydration", "Skin Hydration with Volite"],
+  ];
   const Ol = React.createRef();
   const [navToggle, setNaveToggle] = useState(false);
-  const [drpDwn, setDrpDwn] = useState(true);
   const router = useRouter();
-  // const wrapperRef = useRef(null);
-  // useEffect(() => {
-  //   const handleClickOutside = (event) => {
-  //     if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
-  //       setDrpDwn(true);
-  //     }
-  //   };
-  //   document.addEventListener("mousedown", handleClickOutside);
-  //   return () => {
-  //     document.removeEventListener("mousedown", handleClickOutside);
-  //   };
-  // }, [wrapperRef]);
   return (
     <nav className="sticky top-0 navbar-container w-full h-auto flex justify-end z-10">
       <div className="bg-skin-lightWithOpacity flex justify-center w-full  lg:items-end lg:flex-row shadow-sm">
@@ -59,211 +74,23 @@ const Navbar = () => {
             </Link>
           </div>
           <div
+            className=""
             className={`${
               router.pathname.includes("/treatments")
-                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 px-4 py-3 relative"
-                : "relative"
+                ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 px-4 py-3 relative dropdown headerdrp"
+                : "relative dropdown headerdrp py-3 px-4"
             }`}
           >
-            <button
-              name="drpdwn"
-              className="menu-item-t cursor-pointer select-none"
-              onClick={() => {
-                drpDwn
-                  ? (Ol.current.style.display = "block")
-                  : (Ol.current.style.display = "none");
-                router.pathname.includes("/treatments")
-                  ? (Ol.current.style.margin = "0 auto")
-                  : (Ol.current.style.margin = "0.8rem auto 0 auto");
-                setDrpDwn(!drpDwn);
-              }}
-            >
-              Treatments
-            </button>
-            <ol className="sub-menu" ref={Ol}>
-              <li
-                className="menu-item"
-                onClick={() => {
-                  drpDwn
-                    ? (Ol.current.style.display = "block")
-                    : (Ol.current.style.display = "none");
-                  router.pathname.includes("/treatments")
-                    ? (Ol.current.style.margin = "0 auto")
-                    : (Ol.current.style.margin = "0.8rem auto 0 auto");
-                  setDrpDwn(!drpDwn);
-                }}
-              >
-                <Link href="/treatments/chemical-peels">Chemical Peels</Link>
-              </li>
-              <li
-                className="menu-item"
-                onClick={() => {
-                  drpDwn
-                    ? (Ol.current.style.display = "block")
-                    : (Ol.current.style.display = "none");
-                  router.pathname.includes("/treatments")
-                    ? (Ol.current.style.margin = "0 auto")
-                    : (Ol.current.style.margin = "0.8rem auto 0 auto");
-                  setDrpDwn(!drpDwn);
-                }}
-              >
-                <Link href="/treatments/dermal-fillers">Dermal Fillers</Link>
-              </li>
-              <li
-                className="menu-item"
-                onClick={() => {
-                  drpDwn
-                    ? (Ol.current.style.display = "block")
-                    : (Ol.current.style.display = "none");
-                  router.pathname.includes("/treatments")
-                    ? (Ol.current.style.margin = "0 auto")
-                    : (Ol.current.style.margin = "0.8rem auto 0 auto");
-                  setDrpDwn(!drpDwn);
-                }}
-              >
-                <Link href="/treatments/anti-wrinkle-treatment">
-                  Anti Wrinkle Treatment
-                </Link>
-              </li>
-              <li
-                className="menu-item"
-                onClick={() => {
-                  drpDwn
-                    ? (Ol.current.style.display = "block")
-                    : (Ol.current.style.display = "none");
-                  router.pathname.includes("/treatments")
-                    ? (Ol.current.style.margin = "0 auto")
-                    : (Ol.current.style.margin = "0.8rem auto 0 auto");
-                  setDrpDwn(!drpDwn);
-                }}
-              >
-                <Link href="/treatments/acne-scar-treatment">
-                  Acne Scar Treatment
-                </Link>
-              </li>
-              <li
-                className="menu-item"
-                onClick={() => {
-                  drpDwn
-                    ? (Ol.current.style.display = "block")
-                    : (Ol.current.style.display = "none");
-                  router.pathname.includes("/treatments")
-                    ? (Ol.current.style.margin = "0 auto")
-                    : (Ol.current.style.margin = "0.8rem auto 0 auto");
-                  setDrpDwn(!drpDwn);
-                }}
-              >
-                <Link href="/treatments/laser-hair-removal">
-                  Laser Hair Removal
-                </Link>
-              </li>
-              <li
-                className="menu-item"
-                onClick={() => {
-                  drpDwn
-                    ? (Ol.current.style.display = "block")
-                    : (Ol.current.style.display = "none");
-                  router.pathname.includes("/treatments")
-                    ? (Ol.current.style.margin = "0 auto")
-                    : (Ol.current.style.margin = "0.8rem auto 0 auto");
-                  setDrpDwn(!drpDwn);
-                }}
-              >
-                <Link href="/treatments/skin-tags">Skin Tags</Link>
-              </li>
-              <li
-                className="menu-item"
-                onClick={() => {
-                  drpDwn
-                    ? (Ol.current.style.display = "block")
-                    : (Ol.current.style.display = "none");
-                  router.pathname.includes("/treatments")
-                    ? (Ol.current.style.margin = "0 auto")
-                    : (Ol.current.style.margin = "0.8rem auto 0 auto");
-                  setDrpDwn(!drpDwn);
-                }}
-              >
-                <Link href="/treatments/microdermabrasion">
-                  Microdermabrasion
-                </Link>
-              </li>
-              <li
-                className="menu-item"
-                onClick={() => {
-                  drpDwn
-                    ? (Ol.current.style.display = "block")
-                    : (Ol.current.style.display = "none");
-                  router.pathname.includes("/treatments")
-                    ? (Ol.current.style.margin = "0 auto")
-                    : (Ol.current.style.margin = "0.8rem auto 0 auto");
-                  setDrpDwn(!drpDwn);
-                }}
-              >
-                <Link href="/treatments/growth-factor-treatment">
-                  Growth Factor Treatment
-                </Link>
-              </li>
-              <li
-                className="menu-item"
-                onClick={() => {
-                  drpDwn
-                    ? (Ol.current.style.display = "block")
-                    : (Ol.current.style.display = "none");
-                  router.pathname.includes("/treatments")
-                    ? (Ol.current.style.margin = "0 auto")
-                    : (Ol.current.style.margin = "0.8rem auto 0 auto");
-                  setDrpDwn(!drpDwn);
-                }}
-              >
-                <Link href="/treatments/photo-facial">Photofacial</Link>
-              </li>
-              <li
-                className="menu-item"
-                onClick={() => {
-                  drpDwn
-                    ? (Ol.current.style.display = "block")
-                    : (Ol.current.style.display = "none");
-                  router.pathname.includes("/treatments")
-                    ? (Ol.current.style.margin = "0 auto")
-                    : (Ol.current.style.margin = "0.8rem auto 0 auto");
-                  setDrpDwn(!drpDwn);
-                }}
-              >
-                <Link href="/treatments/body-sculpting">Body Sculpting</Link>
-              </li>
-              <li
-                className="menu-item"
-                onClick={() => {
-                  drpDwn
-                    ? (Ol.current.style.display = "block")
-                    : (Ol.current.style.display = "none");
-                  router.pathname.includes("/treatments")
-                    ? (Ol.current.style.margin = "0 auto")
-                    : (Ol.current.style.margin = "0.8rem auto 0 auto");
-                  setDrpDwn(!drpDwn);
-                }}
-              >
-                <Link href="/treatments/skin-resurfacing-m22">
-                  Skin Resurfacing With M22™
-                </Link>
-              </li>
-              <li
-                className="menu-item"
-                onClick={() => {
-                  drpDwn
-                    ? (Ol.current.style.display = "block")
-                    : (Ol.current.style.display = "none");
-                  router.pathname.includes("/treatments")
-                    ? (Ol.current.style.margin = "0 auto")
-                    : (Ol.current.style.margin = "0.8rem auto 0 auto");
-                  setDrpDwn(!drpDwn);
-                }}
-              >
-                <Link href="/treatments/skin-hydration">
-                  Skin Hydration with Volite
-                </Link>
-              </li>
-            </ol>
+            <nav className="navvv">
+              <ul class="cf">
+                <li>
+                  <div className="hhhh cursor-pointer">Treatments</div>
+                  <ul className="navrenup">
+                    <RenderItem data={data} />
+                  </ul>
+                </li>
+              </ul>
+            </nav>
           </div>
           <div
             className={`${
