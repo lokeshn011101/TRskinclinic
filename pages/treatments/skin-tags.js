@@ -10,14 +10,20 @@ const RenderList = ({ data, data2 }) => {
     <ul className="nlist ">
       {data.map((item) => {
         return (
-          <li key={item} className="md:my-7 p-0 text-sm mdd:text-xs">
+          <li
+            key={item}
+            className="md:my-7 p-0 text-sm mdd:text-xs"
+            data-aos="fade-up"
+          >
             <div className=" flex flex-row justify-start items-start">
-              <Image
-                layout="fill"
-                className="inline-block mr-3 mdd:hidden"
-                src={`/${i}.png`}
-                alt={`${i++}`}
-              />
+              <div className="inline-block mr-3 mdd:hidden">
+                <Image
+                  width={40}
+                  height={40}
+                  src={`/${i}.png`}
+                  alt={`${i++}`}
+                />
+              </div>
               <h2 className="lg:text-4xl w-full md:text-2xl sm:text-xl smm:text-lg trhd2 mdd:text-center">
                 {item[0]}
               </h2>
@@ -26,7 +32,9 @@ const RenderList = ({ data, data2 }) => {
           </li>
         );
       })}
-      <div className="text-sm mdd:text-x">{data2}</div>
+      <div className="text-sm mdd:text-x" data-aos="fade-up">
+        {data2}
+      </div>
     </ul>
   );
 };
@@ -71,39 +79,60 @@ const SkinTags = () => {
           title="What are corns?"
           text="Corns and calluses are thick, hardened layers of skin that develop when your skin tries to defend itself against friction and pressure. They most often appear
 on the feet and toes or hands and fingers."
+          aosTitle="fade-up"
+          aosText="fade-up"
         />
       </div>
 
       <div className="mx-auto w-full">
-        <h2 className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center">
+        <h2
+          className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+          data-aos="fade-up"
+          data-aos="fade-up"
+        >
           What are the symptoms?
         </h2>
-        <div className="w-3/4 trdesc mx-auto">
+        <div
+          className="w-3/4 trdesc mx-auto"
+          data-aos="fade-up"
+          data-aos="fade-up"
+        >
           You may have a corn or a callus if you notice:
         </div>
         <div className="w-9/12 trdesc mx-auto lg:mb-20 md:mb-36 sm:mb-32 smm:mb-9 lg:text-2xl md:text-xl sm:text-lg smm:text-base mdd:text-center">
           <ul className="list-none lg:ml-5 md:ml-4 sm:ml-3 smm:ml-2">
-            <li>A thick, rough area of skin</li>
-            <li>A hardened, raised bump</li>
-            <li>Tenderness or pain under your skin</li>
-            <li>Flaky, dry or waxy skin</li>
+            <li data-aos="fade-up" data-aos="fade-up">
+              A thick, rough area of skin
+            </li>
+            <li data-aos="fade-up" data-aos="fade-up">
+              A hardened, raised bump
+            </li>
+            <li data-aos="fade-up" data-aos="fade-up">
+              Tenderness or pain under your skin
+            </li>
+            <li data-aos="fade-up" data-aos="fade-up">
+              Flaky, dry or waxy skin
+            </li>
           </ul>
         </div>
       </div>
       <div className="mx-auto w-full">
-        <h2 className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center">
+        <h2
+          className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+          data-aos="fade-up"
+        >
           What Causes Corns?
         </h2>
-        <div className="w-3/4 trdesc mx-auto">
+        <div className="w-3/4 trdesc mx-auto" data-aos="fade-up">
           Pressure and friction from repetitive actions cause corns and calluses
           to develop and grow. Some sources of this pressure and friction
           include:
         </div>
         <div className="w-9/12 trdesc mx-auto lg:mb-20 md:mb-36 sm:mb-32 smm:mb-9 lg:text-2xl md:text-xl sm:text-lg smm:text-base mdd:text-center">
           <ul className="list-none lg:ml-5 md:ml-4 sm:ml-3 smm:ml-2">
-            <li>Wearing shoes that don’t fit</li>
-            <li>Skipping socks</li>
-            <li>Playing instruments or using hand tools</li>
+            <li data-aos="fade-up">Wearing shoes that don’t fit</li>
+            <li data-aos="fade-up">Skipping socks</li>
+            <li data-aos="fade-up">Playing instruments or using hand tools</li>
           </ul>
         </div>
       </div>
@@ -111,14 +140,21 @@ on the feet and toes or hands and fingers."
         title="What treatments we offer for Corns"
         text="We offer a non surgical approach to corns as they can reoccur and we inform our patients about the common signs to look out for and how to
 remove them at home."
+        aosTitle="fade-up"
+        aosText="fade-up"
       />
       <TreatmentsSection
         title="What are Skin Tags?"
         text="Skin tags are soft, noncancerous growths that usually form within the skin folds of the neck, armpits, breasts, groin area, and eyelids. These growths
 are loose collagen fibers that become lodged inside the thicker parts of the skin."
+        aosTitle="fade-up"
+        aosText="fade-up"
       />
       <div className="mx-auto w-full">
-        <h2 className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center">
+        <h2
+          className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+          data-aos="fade-up"
+        >
           Procedures for Skin Tags
         </h2>
         <div className="w-9/12 trdesc mx-auto md:mb-32 sm:mb-24 smm:mb-9 lg:text-2xl md:text-xl sm:text-lg smm:text-base mdd:text-center">
@@ -134,9 +170,14 @@ are loose collagen fibers that become lodged inside the thicker parts of the ski
         title="What is DPN?"
         text="Dermatosis papulosa nigra (DPN) is a harmless skin condition that affects people. It consists of small, dark  bumps that usually appear on your face
 and neck which are usually hereditary in nature."
+        aosTitle="fade-up"
+        aosText="fade-up"
       />
       <div className="mx-auto w-full">
-        <h2 className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center">
+        <h2
+          className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+          data-aos="fade-up"
+        >
           Treatment For DPN
         </h2>
         <div className="w-9/12 trdesc mx-auto md:mb-32 sm:mb-24 smm:mb-9 lg:text-2xl md:text-xl sm:text-lg smm:text-base mdd:text-center">
