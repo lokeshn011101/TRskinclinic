@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import TreatmentsCard from "../../components/TreatmentsCard";
 import TreatmentsSection from "../../components/TreatmentsSection";
 import FAQ from "../../components/FAQ";
@@ -16,13 +16,13 @@ const Li = ({ data }) => {
 const RenderItem = ({ heading, data, dir }) => {
   return (
     <div
-      className="titem h-full w-1/2 mdd:h-auto mdd:w-3/4 flex flex-col mdd:justify-center mdd:items-center mdd:mt-10 mt-5 bg-skin-aboveLight ml-1 mb-10"
+      className="titem h-full mdd:h-auto mdd:w-11/12 flex flex-col mdd:justify-center mdd:items-center mdd:mt-10 mt-5 bg-skin-aboveLight ml-1 mb-10"
       data-aos={dir}
     >
       <h2 className="trhd2 w-full lg:text-2xl md:text-xl sm:text-lg smm:text-lg text-center p-4 bg-skin-medium">
         {heading}
       </h2>
-      <ul className="pr-7 mdd:mb-5 mb-3">
+      <ul className="mdd:mb-5 mb-3">
         <Li data={data} />
       </ul>
     </div>
@@ -30,6 +30,7 @@ const RenderItem = ({ heading, data, dir }) => {
 };
 
 const Microdermabasion = () => {
+  const [navToggle, setNaveToggle] = useState(false);
   const faq = [
     [
       "Does THE treatment hurt?",
@@ -54,7 +55,7 @@ const Microdermabasion = () => {
     <>
       <TreatmentsCard Name={"Microdermabrasion"} treatment="Microdermabasion" />
       <div
-        className="trdesc mx-auto w-3/4 lg:mt-44 md:mt-36 sm:mt-20 smm:mt-16 lg:mb-20 md:mb-16 sm:mb-12 smm:mb-9 mdd:text-center text-sm mdd:text-xs"
+        className="trdesc mx-auto w-3/4 smm:w-11/12 lg:mt-44 md:mt-36 sm:mt-20 smm:mt-16 lg:mb-20 md:mb-16 sm:mb-12 smm:mb-9 mdd:text-center text-sm mdd:text-xs"
         data-aos="fade-up"
       >
         It is a procedure that uses a diamond tip which helps exfoliate the dead
@@ -80,12 +81,12 @@ and function. Medi-Facials sittings may take 45 minutes and similarly microderma
 
       <div className="mx-auto w-full">
         <h2
-          className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+          className="trhd2 w-3/4 smm:w-11/12 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
           data-aos="fade-up"
         >
           Treatment Benefits
         </h2>
-        <div className="w-9/12 trdesc mx-auto lg:mb-20 md:mb-16 sm:mb-12 smm:mb-9 lg:text-2xl md:text-xl sm:text-lg smm:text-base mdd:text-center">
+        <div className="w-9/12 smm:w-11/12 trdesc mx-auto lg:mb-20 md:mb-16 sm:mb-12 smm:mb-9 lg:text-2xl md:text-xl sm:text-lg smm:text-base mdd:text-center">
           <ul className="list-none lg:ml-5 md:ml-4 sm:ml-3 smm:ml-2">
             <li data-aos="fade-up">
               Replenishes the skin with vitamins for a fresh glow
@@ -101,13 +102,13 @@ and function. Medi-Facials sittings may take 45 minutes and similarly microderma
       </div>
       <div className="mx-auto w-full">
         <h2
-          className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+          className="trhd2 w-3/4 smm:w-11/12 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
           data-aos="fade-up"
         >
           How does it differ from regular facials?
         </h2>
         <div
-          className="w-3/4 trdesc lg:mt-4 md:mt-3 sm:mt-2 smm:mt-1 mx-auto lg:mb-4 md:mb-3 sm:mb-2 smm:mb-1 mdd:text-center text-sm mdd:text-xs"
+          className="w-3/4 smm:w-11/12 trdesc lg:mt-4 md:mt-3 sm:mt-2 smm:mt-1 mx-auto lg:mb-4 md:mb-3 sm:mb-2 smm:mb-1 mdd:text-center text-sm mdd:text-xs"
           data-aos="fade-up"
         >
           Aesthetic medi-facials help to improve the skin tone, texture, and
@@ -119,9 +120,8 @@ and function. Medi-Facials sittings may take 45 minutes and similarly microderma
           in active breakouts in acne prone skin and cause skin damage.
         </div>
       </div>
-
-      <div className="w-10/12 mx-auto flex flex-row justify-center items-start mdd:justify-center mdd:items-center mdd:flex-col mb-10">
-        <div className="w-full h-full flex flex-row justify-center items-start mdd:justify-center mdd:items-center">
+      <div className="w-10/12 mx-auto flex justify-center items-start mdd:justify-center mdd:items-center mdd:flex-col mb-10 sm:hidden">
+        <div className="w-full h-full flex flex-col justify-center items-start mdd:justify-center mdd:items-center">
           <RenderItem
             data={benefits[0]}
             heading="Microdermabrasion"
@@ -134,7 +134,38 @@ and function. Medi-Facials sittings may take 45 minutes and similarly microderma
           />
         </div>
       </div>
-
+      <div className="w-10/12 mx-auto mb-14 mt-5 smm:hidden" data-aos="fade-up">
+        <table className=" h-full w-full mdd:mt-10 mt-5 bg-skin-aboveLight mb-10">
+          <tr>
+            <th className="w-1/2 border-r-2 border-white">
+              <h2 className="trhd2 lg:text-2xl md:text-xl sm:text-lg smm:text-lg text-center p-4 bg-skin-medium">
+                Microdermabrasion
+              </h2>
+            </th>
+            <th className="w-1/2 border-l-2 border-white">
+              <h2 className="trhd2 lg:text-2xl md:text-xl sm:text-lg smm:text-lg text-center p-4 bg-skin-medium">
+                Medi Facials
+              </h2>
+            </th>
+          </tr>
+          <tr>
+            <td className="px-4 py-3 border-r-2 border-white">
+              {benefits[0][0]}
+            </td>
+            <td className="px-4 py-3 border-r-2 border-white">
+              {benefits[0][1]}
+            </td>
+          </tr>
+          <tr>
+            <td className="px-4 py-3 border-l-2 border-white">
+              {benefits[1][0]}
+            </td>
+            <td className="px-4 py-3 border-l-2 border-white">
+              {benefits[1][1]}
+            </td>
+          </tr>
+        </table>
+      </div>
       <TreatmentsSection
         title="Who should opt for these treatments?"
         text="If you’re looking to target specific skin concern, have a big event coming up, like your wedding then go for medical facials. These have minimal downtime

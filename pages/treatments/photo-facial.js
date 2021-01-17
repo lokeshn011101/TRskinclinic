@@ -20,7 +20,7 @@ const RenderList = ({ data }) => {
               <Image width={40} height={40} src={`/${i}.png`} alt={`${i}`} />
             </div>
             <div className="flex md:flex-row flex-col md:justify-center justify-start items-center my-6">
-              <div className="mx-5 mr-8 mdd:mb-5">
+              <div className="mx-5 mr-8 smm:w-8/12 smm:mx-auto mdd:mb-5">
                 <Image
                   width={208}
                   height={208}
@@ -29,7 +29,7 @@ const RenderList = ({ data }) => {
                 />
               </div>
               <div className="flex flex-col mdd:items-center items-start justify-center text-left">
-                <div>{item}</div>
+                <div className="mdd:text-center">{item}</div>
               </div>
             </div>
           </li>
@@ -69,7 +69,10 @@ const PhotoFacial = () => {
   return (
     <>
       <TreatmentsCard Name={"Photo Facial"} treatment="PhotoFacial" />
-      <div className="trdesc mx-auto w-3/4 lg:mt-36 md:mt-36 sm:mt-20 smm:mt-36 lg:mb-20 md:mb-36 sm:mb-32 smm:mb-9 mdd:text-center text-sm mdd:text-xs">
+      <div
+        className="trdesc mx-auto w-11/12 sm:w-3/4 lg:mt-36 md:mt-36 sm:mt-20 smm:mt-16 lg:mb-20 md:mb-36 sm:mb-32 smm:mb-9 mdd:text-center text-sm mdd:text-xs"
+        data-aos="fade-up"
+      >
         Photofacials use different types of light emitting devices to treat skin
         discoloration and reduce the appearance of blemishes. This procedure is
         ideal for those looking to treat a variety of common skin issues
@@ -77,12 +80,15 @@ const PhotoFacial = () => {
       </div>
       <div className="mx-auto w-full">
         <h2
-          className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+          className="trhd2 w-11/12 sm:w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
           data-aos="fade-up"
         >
           What are photofacials used for?
         </h2>
-        <div className="w-3/4 trdesc mx-auto" data-aos="fade-up">
+        <div
+          className="w-3/4 trdesc mx-auto text-sm mdd:text-xs mdd:text-center"
+          data-aos="fade-up"
+        >
           Generally speaking, photofacials are used to treat skin blemishes and
           pigmentation issues. IPL photofacial treatments can also be used to
           treat the following:
@@ -100,7 +106,7 @@ const PhotoFacial = () => {
       </div>
       <div className="mx-auto w-full">
         <h2
-          className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+          className="trhd2 w-11/12 sm:w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
           data-aos="fade-up"
         >
           What is the procedure like?

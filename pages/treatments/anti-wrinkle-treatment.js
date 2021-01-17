@@ -25,7 +25,7 @@ const AntiWrinkleTreatment = () => {
         treatment="AntiWrinkleTreatments"
       />
       <div
-        className="trdesc mx-auto w-3/4 lg:mt-36 md:mt-36 sm:mt-20 smm:mt-16 lg:mb-20 md:mb-16 sm:mb-12 smm:mb-9 mdd:text-center text-sm mdd:text-xs"
+        className="trdesc mx-auto w-3/4 mdd:w-11/12 lg:mt-36 md:mt-36 sm:mt-20 smm:mt-16 lg:mb-20 md:mb-16 sm:mb-12 smm:mb-9 mdd:text-center text-sm mdd:text-xs"
         data-aos="fade-up"
       >
         Anti-Wrinkle Treatment is used to reduce skin wrinkles and treat certain
@@ -43,7 +43,7 @@ to help make the skin look visibly smoother."
 
       <div className="mx-auto w-full">
         <h2
-          className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+          className="trhd2 w-3/4 mdd:w-11/12 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
           data-aos="fade-up"
         >
           Some common treatment areas include:

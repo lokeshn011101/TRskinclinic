@@ -32,7 +32,7 @@ const RenderList = ({ data, data2 }) => {
           </li>
         );
       })}
-      <div className="text-sm mdd:text-x" data-aos="fade-up">
+      <div className="text-sm mdd:text-xs" data-aos="fade-up">
         {data2}
       </div>
     </ul>
@@ -74,7 +74,7 @@ const SkinTags = () => {
   return (
     <>
       <TreatmentsCard Name={"Skin Tags"} treatment="SkinTags" />
-      <div className="w-full md:mt-44 mt-20">
+      <div className="w-full md:mt-44 mt-16">
         <TreatmentsSection
           title="What are corns?"
           text="Corns and calluses are thick, hardened layers of skin that develop when your skin tries to defend itself against friction and pressure. They most often appear
@@ -86,14 +86,14 @@ on the feet and toes or hands and fingers."
 
       <div className="mx-auto w-full">
         <h2
-          className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+          className="trhd2 smm:w-11/12 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
           data-aos="fade-up"
           data-aos="fade-up"
         >
           What are the symptoms?
         </h2>
         <div
-          className="w-3/4 trdesc mx-auto"
+          className="smm:w-11/12 w-3/4 trdesc mx-auto mdd:text-center"
           data-aos="fade-up"
           data-aos="fade-up"
         >
@@ -118,12 +118,15 @@ on the feet and toes or hands and fingers."
       </div>
       <div className="mx-auto w-full">
         <h2
-          className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+          className="trhd2 smm:w-11/12 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
           data-aos="fade-up"
         >
           What Causes Corns?
         </h2>
-        <div className="w-3/4 trdesc mx-auto" data-aos="fade-up">
+        <div
+          className="smm:w-11/12 w-3/4 trdesc mx-auto mdd:text-center"
+          data-aos="fade-up"
+        >
           Pressure and friction from repetitive actions cause corns and calluses
           to develop and grow. Some sources of this pressure and friction
           include:
@@ -152,12 +155,12 @@ are loose collagen fibers that become lodged inside the thicker parts of the ski
       />
       <div className="mx-auto w-full">
         <h2
-          className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+          className="trhd2 smm:w-11/12 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
           data-aos="fade-up"
         >
           Procedures for Skin Tags
         </h2>
-        <div className="w-9/12 trdesc mx-auto md:mb-32 sm:mb-24 smm:mb-9 lg:text-2xl md:text-xl sm:text-lg smm:text-base mdd:text-center">
+        <div className="w-9/12 smm:w-11/12 trdesc mx-auto md:mb-32 sm:mb-24 smm:mb-9 lg:text-2xl md:text-xl sm:text-lg smm:text-base mdd:text-center">
           <RenderList
             data={benefits1}
             data2="
@@ -175,12 +178,12 @@ and neck which are usually hereditary in nature."
       />
       <div className="mx-auto w-full">
         <h2
-          className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+          className="trhd2 smm:w-11/12 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
           data-aos="fade-up"
         >
           Treatment For DPN
         </h2>
-        <div className="w-9/12 trdesc mx-auto md:mb-32 sm:mb-24 smm:mb-9 lg:text-2xl md:text-xl sm:text-lg smm:text-base mdd:text-center">
+        <div className="w-9/12 smm:w-11/12 trdesc mx-auto md:mb-32 sm:mb-24 smm:mb-9 lg:text-2xl md:text-xl sm:text-lg smm:text-base mdd:text-center">
           <RenderList
             data={benefits2}
             data2="

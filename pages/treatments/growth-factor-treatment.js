@@ -20,7 +20,7 @@ const RenderList = ({ data }) => {
               <Image width={40} height={40} src={`/${i}.png`} alt={`${i}`} />
             </div>
             <div className="flex md:flex-row flex-col md:justify-center justify-start items-center my-6 mdd:mx-auto">
-              <div className="mx-5 mr-8 mdd:mb-5">
+              <div className="mx-5 mdd:w-9/12 mdd:mx-auto mr-8 mdd:mb-5">
                 <Image
                   width={208}
                   height={208}
@@ -32,7 +32,7 @@ const RenderList = ({ data }) => {
                 <h3 className=" trhd2 lg:text-3xl md:text-xl sm:text-lg smm:text-base mb-3">
                   {item[0]}
                 </h3>
-                <div>{item[1]}</div>
+                <div className="mdd:text-center">{item[1]}</div>
               </div>
             </div>
           </li>
@@ -83,7 +83,7 @@ const GrowthFactorTreatment = () => {
         treatment="GrowthFactorTreatment"
       />
       <div
-        className="trdesc mx-auto w-3/4 lg:mt-44 md:mt-36 sm:mt-20 smm:mt-36 lg:mb-20 md:mb-36 sm:mb-32 smm:mb-9 mdd:text-center text-sm mdd:text-xs"
+        className="trdesc mx-auto w-11/12 sm:w-3/4 lg:mt-44 md:mt-36 sm:mt-20 smm:mt-16 lg:mb-20 md:mb-36 sm:mb-32 smm:mb-9 mdd:text-center text-sm mdd:text-xs"
         data-aos="fade-up"
       >
         It is a treatment for hair loss, facial rejuvenation and acne scars that
@@ -108,7 +108,7 @@ It restores the function of hair follicles in the area where the injection is do
       />
       <div className="mx-auto w-full">
         <h2
-          className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+          className="trhd2 w-11/12 sm:w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
           data-aos="fade-up"
         >
           Growth Factors Hair Loss Treatment - The Procedure
@@ -119,7 +119,7 @@ It restores the function of hair follicles in the area where the injection is do
       </div>
       <div className="mx-auto w-full">
         <h2
-          className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+          className="trhd2 w-11/12 sm:w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
           data-aos="fade-up"
         >
           Benefits of Growth Factor Treatment

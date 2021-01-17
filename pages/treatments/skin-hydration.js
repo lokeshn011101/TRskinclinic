@@ -10,7 +10,7 @@ const SkinHydration = () => {
         treatment="SkinHydration"
       />
       <div
-        className="trdesc mx-auto w-3/4 lg:mt-36 md:mt-36 sm:mt-20 smm:mt-16 lg:mb-20 md:mb-16 sm:mb-12 smm:mb-9 mdd:text-center text-sm mdd:text-xs"
+        className="trdesc mx-auto sm:w-3/4 w-11/12 lg:mt-36 md:mt-36 sm:mt-20 smm:mt-16 lg:mb-20 md:mb-16 sm:mb-12 smm:mb-9 mdd:text-center text-sm mdd:text-xs"
         data-aos="fade-up"
       >
         Volite is an FDA-cleared injectable that can reduce the appearance of
@@ -20,17 +20,14 @@ const SkinHydration = () => {
       </div>
       <div className="mx-auto w-full">
         <h2
-          className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+          className="trhd2 sm:w-3/4 w-11/12 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
           data-aos="fade-up"
         >
           Why should you get this treatment done?
         </h2>
-        <div className="w-9/12 trdesc mx-auto lg:mb-20 md:mb-36 sm:mb-32 smm:mb-9 lg:text-2xl md:text-xl sm:text-lg smm:text-base mdd:text-center">
+        <div className="sm:w-3/4 w-11/12  trdesc mx-auto lg:mb-20 md:mb-36 sm:mb-32 smm:mb-9 lg:text-2xl md:text-xl sm:text-lg smm:text-base mdd:text-center">
           <div className="nlist">
-            <div
-              className="my-4 mr-4 flex flex-row justify-start items-center"
-              data-aos="fade-up"
-            >
+            <div className="my-4 mr-4" data-aos="fade-up">
               It hydrates the skin
             </div>
             <div className="my-4 mr-4" data-aos="fade-up">
@@ -44,12 +41,15 @@ const SkinHydration = () => {
       </div>
       <div className="mx-auto w-full">
         <h2
-          className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+          className="trhd2 sm:w-3/4 w-11/12 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
           data-aos="fade-up"
         >
           Where can you get this done?
         </h2>
-        <div className="w-3/4 trdesc mx-auto" data-aos="fade-up">
+        <div
+          className="sm:w-3/4 w-11/12 trdesc mx-auto mdd:text-center"
+          data-aos="fade-up"
+        >
           This skin booster treatment can be used on the
         </div>
         <div className="w-9/12 trdesc mx-auto lg:mb-20 md:mb-16 sm:mb-12 smm:mb-9 lg:text-2xl md:text-xl sm:text-lg smm:text-base mdd:text-center">

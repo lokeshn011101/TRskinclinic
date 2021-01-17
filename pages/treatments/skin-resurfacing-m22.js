@@ -30,7 +30,7 @@ const SkinResurfacing = () => {
     <>
       <TreatmentsCard Name={"Skin Resurfacing"} treatment="SkinResurfacing" />
       <div
-        className="trdesc mx-auto w-3/4 lg:mt-36 md:mt-36 sm:mt-20 smm:mt-16 lg:mb-20 md:mb-16 sm:mb-12 smm:mb-9 mdd:text-center text-sm mdd:text-xs"
+        className="trdesc mx-auto w-11/12 sm:w-3/4 lg:mt-36 md:mt-36 sm:mt-20 smm:mt-16 lg:mb-20 md:mb-16 sm:mb-12 smm:mb-9 mdd:text-center text-sm mdd:text-xs"
         data-aos="fade-up"
       >
         Skin Resurfacing with M22™ by Lumenis is a powerful and effective form
@@ -51,12 +51,15 @@ the best in the world currently and we are happy to offer it to you."
 
       <div className="mx-auto w-full">
         <h2
-          className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+          className="trhd2 w-11/12 sm:w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
           data-aos="fade-up"
         >
           What can Skin Resurfacing fix?
         </h2>
-        <div className="w-3/4 trdesc mx-auto" data-aos="fade-up">
+        <div
+          className="w-11/12 sm:w-3/4 trdesc mx-auto mdd:text-center"
+          data-aos="fade-up"
+        >
           Laser resurfacing can be used to treat:
         </div>
         <div className="w-9/12 trdesc mx-auto lg:mb-20 md:mb-16 sm:mb-12 smm:mb-9 lg:text-2xl md:text-xl sm:text-lg smm:text-base mdd:text-center">

@@ -54,12 +54,12 @@ const FAQ = ({ data }) => {
   return (
     <div className="mx-auto w-full md:mt-24 sm:mt-20 smm:mt-16">
       <h1
-        className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+        className="trhd2 w-11/12 sm:w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
         data-aos="fade-up"
       >
         FAQ's
       </h1>
-      <div className="acc w-3/4 trdesc mx-auto mt-7">
+      <div className="acc w-11/12 sm:w-3/4 trdesc mx-auto mt-7">
         <RenderItem data={data} />
       </div>
     </div>

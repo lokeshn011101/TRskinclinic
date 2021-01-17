@@ -54,7 +54,7 @@ const BodySculpting = () => {
     <>
       <TreatmentsCard Name={"Body Sculpting"} treatment="BodySculpting" />
       <div
-        className="trdesc mx-auto w-3/4 lg:mt-36 md:mt-36 sm:mt-20 smm:mt-36 lg:mb-20 md:mb-36 sm:mb-32 smm:mb-9 mdd:text-center text-sm mdd:text-xs"
+        className="trdesc mx-auto w-3/4 lg:mt-36 md:mt-36 sm:mt-20 smm:mt-16 lg:mb-20 md:mb-36 sm:mb-32 smm:mb-9 mdd:text-center text-sm mdd:text-xs"
         data-aos="fade-up"
       >
         Body sculpting, also called body contouring, is a wide range of
@@ -85,7 +85,11 @@ const BodySculpting = () => {
         </h2>
         <div className="flex w-full md:flex-col flex-row justify-around items-center smm:flex-col ">
           <div className="mt-8 w-full flex md:flex-row flex-col justify-between items-center">
-            <div className="" data-aos="fade-right" data-aos-delay="40">
+            <div
+              className="smm:w-6/12 mx-auto "
+              data-aos="fade-right"
+              data-aos-delay="40"
+            >
               <Image
                 src="/Treatments/BodySculpting/one.png"
                 alt="cp1"
@@ -96,7 +100,11 @@ const BodySculpting = () => {
               <div className="text-sm mdd:text-xs text-center">Double Chin</div>
             </div>
 
-            <div className="mdd:mt-6" data-aos="fade-right" data-aos-delay="80">
+            <div
+              className="smm:w-6/12 mx-auto mdd:mt-6"
+              data-aos="fade-right"
+              data-aos-delay="80"
+            >
               <Image
                 src="/Treatments/BodySculpting/two.png"
                 alt="cp1"
@@ -109,7 +117,7 @@ const BodySculpting = () => {
               </div>
             </div>
             <div
-              className="mdd:mt-6"
+              className="smm:w-6/12 mx-auto mdd:mt-6"
               data-aos="fade-right"
               data-aos-delay="120"
             >
@@ -124,7 +132,11 @@ const BodySculpting = () => {
             </div>
           </div>
           <div className="mt-8 w-full flex md:flex-row flex-col justify-between items-center">
-            <div className="mdd:mt-6" data-aos="fade-right" data-aos-delay="40">
+            <div
+              className="smm:w-6/12 mx-auto mdd:mt-6"
+              data-aos="fade-right"
+              data-aos-delay="40"
+            >
               <Image
                 src="/Treatments/BodySculpting/four.png"
                 alt="cp1"
@@ -134,7 +146,11 @@ const BodySculpting = () => {
               />
               <div className="text-sm mdd:text-xs text-center">Thighs</div>
             </div>
-            <div className="mdd:mt-6" data-aos="fade-right" data-aos-delay="80">
+            <div
+              className="smm:w-6/12 mx-auto mdd:mt-6"
+              data-aos="fade-right"
+              data-aos-delay="80"
+            >
               <Image
                 src="/Treatments/BodySculpting/five.png"
                 alt="cp1"
@@ -145,7 +161,7 @@ const BodySculpting = () => {
               <div className="text-sm mdd:text-xs text-center">Arms</div>
             </div>
             <div
-              className="mdd:mt-6"
+              className="smm:w-6/12 mx-auto mdd:mt-6"
               data-aos="fade-right"
               data-aos-delay="120"
             >

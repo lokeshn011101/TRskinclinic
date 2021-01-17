@@ -76,7 +76,7 @@ const Navbar = () => {
           <div
             className=""
             className={`${
-              router.pathname.includes("/treatments")
+              router.pathname.includes("/treatments/")
                 ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 px-4 py-3 relative dropdown headerdrp"
                 : "relative dropdown headerdrp py-3 px-4"
             }`}
@@ -105,7 +105,8 @@ const Navbar = () => {
           </div>
           <div
             className={`${
-              router.pathname.includes("/gallery")
+              router.pathname.includes("/gallery/") ||
+              router.pathname === "/gallery"
                 ? "border-2 border-t-0 border-l-0 border-r-0 border-green-500 px-4 py-3"
                 : ""
             }`}

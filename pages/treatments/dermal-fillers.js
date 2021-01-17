@@ -24,7 +24,7 @@ const DermalFillers = () => {
     <>
       <TreatmentsCard Name={"Dermal Fillers"} treatment="DermalFillers" />
       <div
-        className="trdesc mx-auto w-3/4 lg:mt-36 md:mt-36 sm:mt-20 smm:mt-16 lg:mb-20 md:mb-16 sm:mb-12 smm:mb-9 mdd:text-center text-sm mdd:text-xs"
+        className="trdesc mx-auto w-3/4 mdd:w-11/12 lg:mt-36 md:mt-36 sm:mt-20 smm:mt-16 lg:mb-20 md:mb-16 sm:mb-12 smm:mb-9 mdd:text-center text-sm mdd:text-xs"
         data-aos="fade-up"
       >
         Dermal fillers are made up of proteins which are found naturally in our
@@ -44,12 +44,12 @@ const DermalFillers = () => {
 
       <div className="mx-auto w-full">
         <h2
-          className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+          className="trhd2 w-3/4 mdd:w-11/12 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
           data-aos="fade-up"
         >
           What can dermal fillers do to enhance your skin?
         </h2>
-        <div className="w-9/12 trdesc mx-auto lg:mb-20 md:mb-16 sm:mb-12 smm:mb-9 lg:text-2xl md:text-xl sm:text-lg smm:text-base mdd:text-center">
+        <div className="w-9/12 mdd:w-11/12 trdesc mx-auto lg:mb-20 md:mb-16 sm:mb-12 smm:mb-9 lg:text-2xl md:text-xl sm:text-lg smm:text-base mdd:text-center">
           <ul className="list-none lg:ml-5 md:ml-4 sm:ml-3 smm:ml-2">
             <li data-aos="fade-up">Improve under eye hollows</li>
             <li data-aos="fade-up">Provide a mid face lift</li>

@@ -50,7 +50,7 @@ const AcneScarTreatment = () => {
         treatment="AcneScarTreatment"
       />
       <div
-        className="trdesc mx-auto w-3/4 lg:mt-36 md:mt-36 sm:mt-20 smm:mt-36 lg:mb-20 md:mb-36 sm:mb-32 smm:mb-9 mdd:text-center text-sm mdd:text-xs"
+        className="trdesc mx-auto smm:w-11/12 w-3/4 lg:mt-36 md:mt-36 sm:mt-20 smm:mt-16 lg:mb-20 md:mb-36 sm:mb-32 smm:mb-9 mdd:text-center text-sm mdd:text-xs"
         data-aos="fade-up"
       >
         Acne is a skin condition that occurs when your hair follicles become
@@ -60,12 +60,12 @@ const AcneScarTreatment = () => {
       </div>
       <div className="mx-auto w-full">
         <h2
-          className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+          className="trhd2 smm:w-11/12 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
           data-aos="fade-up"
         >
           Causes
         </h2>
-        <div className="w-3/4 trdesc mx-auto" data-aos="fade-up">
+        <div className="smm:w-11/12 w-3/4 trdesc mx-auto" data-aos="fade-up">
           Four main factors cause acne:
         </div>
         <div className="w-9/12 trdesc mx-auto lg:mb-20 md:mb-36 sm:mb-32 smm:mb-9 lg:text-2xl md:text-xl sm:text-lg smm:text-base mdd:text-center">
@@ -74,17 +74,20 @@ const AcneScarTreatment = () => {
       </div>
       <div className="mx-auto w-full">
         <h2
-          className="trhd2 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
+          className="trhd2 smm:w-11/12 w-3/4 mx-auto lg:text-4xl md:text-2xl sm:text-xl smm:text-lg mdd:text-center"
           data-aos="fade-up"
         >
           What are Acne Scars?
         </h2>
-        <div className="w-3/4 trdesc mx-auto" data-aos="fade-up">
+        <div
+          className="smm:w-11/12 w-3/4 trdesc mx-auto mdd:text-center"
+          data-aos="fade-up"
+        >
           Acne scars are the dark and sometimes swollen pits left in the skin
           long after the pimple has healed and are divided into four categories
           according to appearance and cause:
         </div>
-        <div className="w-9/12 trdesc mx-auto lg:mb-20 md:mb-36 sm:mb-32 smm:mb-9 lg:text-2xl md:text-xl sm:text-lg smm:text-base mdd:text-center">
+        <div className="w-9/12 mdd:w-11/12 trdesc mx-auto lg:mb-20 md:mb-36 sm:mb-32 smm:mb-9 lg:text-2xl md:text-xl sm:text-lg smm:text-base mdd:text-center">
           <ul className="list-none lg:ml-5 md:ml-4 sm:ml-3 smm:ml-2">
             <li data-aos="fade-up">Ice pick (Small pits)</li>
             <li data-aos="fade-up">
