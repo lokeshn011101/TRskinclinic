@@ -3,6 +3,66 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import React from "react";
 import Image from "next/image";
+import SmoothCollapse from "react-smooth-collapse";
+
+const MobileAccordion = ({
+  toggleMobile,
+  setToggleMobile,
+  navToggle,
+  setNaveToggle,
+}) => {
+  const data = [
+    ["chemical-peels", "Chemical Peels"],
+    ["dermal-fillers", "Dermal Fillers"],
+    ["anti-wrinkle-treatment", "Anti Wrinkle Treatment"],
+    ["acne-scar-treatment", "Acne Scar Treatment"],
+    ["laser-hair-removal", "Laser Hair Removal"],
+    ["skin-tags", "Skin Tags"],
+    ["microdermabrasion", "Microdermabrasion"],
+    ["growth-factor-treatment", "Growth Factor Treatment"],
+    ["photo-facial", "Photofacial"],
+    ["body-sculpting", "Body Sculpting"],
+    ["skin-resurfacing-m22", "Skin Resurfacing With M22™"],
+    ["skin-hydration", "Skin Hydration with Volite"],
+  ];
+  return (
+    <div>
+      <div
+        className="w-full flex flex-row justify-end items-center cursor-pointer"
+        onClick={() => {
+          setToggleMobile(!toggleMobile);
+        }}
+      >
+        <h2 className="pr-3 text-right uppercase select-none">TREATMENTS</h2>
+        <button className="w-1/12">
+          <img
+            src="/MobDrp.png"
+            alt="tog"
+            className={
+              toggleMobile === true
+                ? "float-right select-none transform rotate-180"
+                : "float-right select-none transform rotate-0"
+            }
+          />
+        </button>
+      </div>
+      <SmoothCollapse expanded={toggleMobile}>
+        {data.map((item) => {
+          return (
+            <div
+              className="w-full text-right pt-2 accordion-text "
+              onClick={() => setNaveToggle(!navToggle)}
+            >
+              <Link href={`/treatments/${item[0]}`} className="uppercase">
+                {item[1]}
+              </Link>
+            </div>
+          );
+        })}
+      </SmoothCollapse>
+    </div>
+  );
+};
 
 const Helper = ({ route, text }) => {
   return (
@@ -33,6 +93,10 @@ const Navbar = () => {
     ["skin-resurfacing-m22", "Skin Resurfacing With M22™"],
     ["skin-hydration", "Skin Hydration with Volite"],
   ];
+  const [toggleMobile, setToggleMobile] = useState(false);
+  const toggleAccordion = () => {
+    setToggleMobile(!toggleMobile);
+  };
   const Ol = React.createRef();
   const [navToggle, setNaveToggle] = useState(false);
   const router = useRouter();
@@ -128,13 +192,14 @@ const Navbar = () => {
           </div>
           <div className="text-black text-md">
             Search
-            <Image
-              alt="icon"
-              className="inline w-4 h-4 ml-2"
-              src="https://www.flaticon.com/svg/static/icons/svg/622/622669.svg"
-              height={16}
-              width={16}
-            />
+            <div className="h-4 w-4 inline ml-3">
+              <Image
+                alt="icon"
+                src="https://www.flaticon.com/svg/static/icons/svg/622/622669.svg"
+                height={16}
+                width={16}
+              />
+            </div>
           </div>
         </div>
         <button
@@ -153,7 +218,7 @@ const Navbar = () => {
       </div>
       {navToggle ? (
         <>
-          <div className="toggler fixed top-0 lg:hidden animate-slide h-screen bg-skin-light z-10 w-64">
+          <div className="toggler overflow-scroll overflow-x-hidden fixed top-0 lg:hidden animate-slide h-screen bg-skin-light z-10 w-64">
             <div className="absolute w-4 h-4 right-5 top-3">
               <button
                 name="toggler"
@@ -169,17 +234,19 @@ const Navbar = () => {
                 />
               </button>
             </div>
-            <div className="absolute flex w-60 flex-col items-end justify-between lg:hidden my-12">
+            <div className="oritog right-0 absolute flex w-60 flex-col items-end justify-between lg:hidden my-12">
               <div href="/" className="text-black text-md mr-6 mb-4">
                 Search
-                <Image
-                  alt="icon"
-                  className="inline w-4 h-4 ml-2"
-                  alt="search"
-                  src="https://www.flaticon.com/svg/static/icons/svg/622/622669.svg"
-                  height={16}
-                  width={16}
-                />
+                <div className="h-4 w-4 inline ml-2">
+                  <Image
+                    alt="icon"
+                    className="inline w-4 h-4 ml-2"
+                    alt="search"
+                    src="https://www.flaticon.com/svg/static/icons/svg/622/622669.svg"
+                    height={16}
+                    width={16}
+                  />
+                </div>
               </div>
               <div
                 className="mr-6 my-3"
@@ -197,13 +264,13 @@ const Navbar = () => {
                   ABOUT US
                 </Link>
               </div>
-              <div
-                className="mr-6 my-3"
-                onClick={() => setNaveToggle(!navToggle)}
-              >
-                <Link href="/treatments" className="text-black text-md">
-                  TREATMENTS
-                </Link>
+              <div className="w-full mr-6 my-3">
+                <MobileAccordion
+                  navToggle={navToggle}
+                  setNaveToggle={setNaveToggle}
+                  toggleMobile={toggleMobile}
+                  setToggleMobile={setToggleMobile}
+                />
               </div>
               <div
                 className="mr-6 my-3"

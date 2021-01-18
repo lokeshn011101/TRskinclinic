@@ -3,17 +3,17 @@ import AOS from "aos";
 import SmoothCollapse from "react-smooth-collapse";
 
 const Helper = ({ item }) => {
-  const [toggle, setToggle] = useState("");
+  const [toggle, setToggle] = useState(false);
   const content = React.createRef();
   const toggleAccordion = () => {
-    setToggle(toggle === "" ? "active" : "");
+    setToggle(toggle === false ? true : false);
   };
 
   return (
     <div key={item[0]} className="" data-aos="fade-up">
       <div
         className={
-          toggle === "active"
+          toggle === true
             ? "accc acctitle bg-skin-light flex flex-row justify-between items-center cursor-pointer"
             : "acctitle bg-skin-light flex flex-row justify-between items-center cursor-pointer"
         }
@@ -22,10 +22,10 @@ const Helper = ({ item }) => {
         <h2 className="w-10/12 p-4 uppercase select-none">{item[0]}</h2>
         <button className="w-1/12">
           <img
-            src={toggle === "active" ? "/drpClose.png" : "/drpOpen.png"}
+            src={toggle === true ? "/drpClose.png" : "/drpOpen.png"}
             alt={item[0]}
             className={
-              toggle === "active"
+              toggle === true
                 ? "float-right pr-4 select-none"
                 : "float-right pr-2 select-none"
             }
