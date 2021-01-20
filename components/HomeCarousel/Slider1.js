@@ -24,7 +24,7 @@ const Slider1 = () => {
     config: { mass: 10, tension: 300, friction: 140 },
   }));
   return (
-    <div className="carou-container" data-aos="fade-right">
+    <div className="carou-container mx-auto " data-aos="fade-right">
       <div className="home-img1 relative">
         <Image
           src="/Home/Home1/homebg1.png"

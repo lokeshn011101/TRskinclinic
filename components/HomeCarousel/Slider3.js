@@ -19,7 +19,7 @@ const Slider1 = () => {
     config: { mass: 10, tension: 300, friction: 140 },
   }));
   return (
-    <div className="carou-container  overflow-hidden">
+    <div className="carou-container mx-auto overflow-hidden">
       <div className="home-img1 relative">
         <Image
           src="/Home/Home3/home31.png"

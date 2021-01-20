@@ -15,10 +15,10 @@ const RenderList = ({ data }) => {
             className="my-5 p-0 flex flex-row items-center"
             data-aos="fade-up"
           >
-            <div className="inline-block mr-3">
+            <div className="inline-block smm:w-1/12 mr-3">
               <Image width={40} height={40} src={`/${i}.png`} alt={`${i++}`} />
             </div>
-            <div>{item}</div>
+            <div className="smm:w-11/12 smm:text-left">{item}</div>
           </li>
         );
       })}
@@ -65,7 +65,10 @@ const AcneScarTreatment = () => {
         >
           Causes
         </h2>
-        <div className="smm:w-11/12 w-3/4 trdesc mx-auto" data-aos="fade-up">
+        <div
+          className="smm:w-11/12 w-3/4 trdesc mx-auto smm:text-center"
+          data-aos="fade-up"
+        >
           Four main factors cause acne:
         </div>
         <div className="w-9/12 trdesc mx-auto lg:mb-20 md:mb-36 sm:mb-32 smm:mb-9 lg:text-2xl md:text-xl sm:text-lg smm:text-base mdd:text-center">

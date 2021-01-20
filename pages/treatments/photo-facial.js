@@ -16,11 +16,11 @@ const RenderList = ({ data }) => {
             className="my-5 p-0 flex flex-row items-center text-sm mdd:text-xs"
             data-aos="fade-up"
           >
-            <div className="mx-5 mdd:hidden">
+            <div className="mx-5 mdd:hidden md:w-1/12">
               <Image width={40} height={40} src={`/${i}.png`} alt={`${i}`} />
             </div>
-            <div className="flex md:flex-row flex-col md:justify-center justify-start items-center my-6">
-              <div className="mx-5 mr-8 smm:w-8/12 smm:mx-auto mdd:mb-5">
+            <div className="md:w-11/12 flex md:flex-row flex-col md:justify-center justify-start items-center my-6">
+              <div className="md:w-3/12 mx-5 mr-8 smm:w-8/12 smm:mx-auto mdd:mb-5">
                 <Image
                   width={208}
                   height={208}
@@ -28,7 +28,7 @@ const RenderList = ({ data }) => {
                   alt={nums[i++]}
                 />
               </div>
-              <div className="flex flex-col mdd:items-center items-start justify-center text-left">
+              <div className="md:w-9/12 flex flex-col mdd:items-center items-start justify-center text-left">
                 <div className="mdd:text-center">{item}</div>
               </div>
             </div>

@@ -79,43 +79,45 @@ const CarouselHome = () => {
       data-aos-delay="200"
       data-aos-offset="0"
     >
-      <Slider {...settings}>
-        <Item
-          source="/HomeCarousel/four.png"
-          desc="Microdermabrasion is a procedure that helps exfoliate dead cells & combat acne."
-          to="microdermabrasion"
-        />
-        <Item
-          source="/HomeCarousel/five.png"
-          desc="Laser Hair removal is a medical procedure that uses a concentrated beam of light to remove unwanted hair."
-          to="laser-hair-removal"
-        />
-        <Item
-          source="/HomeCarousel/six.png"
-          desc="Dermal fillers add volume to certain areas on the face to hydrate, rejuvenate and enhance your facial features."
-          to="dermal-fillers"
-        />
-        <Item
-          source="/HomeCarousel/seven.png"
-          desc="Anti wrinkle treatment is for reduction of skin wrinkles and certain muscle conditions."
-          to="anti-wrinkle-treatment"
-        />
-        <Item
-          source="/HomeCarousel/one.png"
-          desc="Growth factor is a treatment for hair loss, facial rejuvenation and acne scars that uses the patient’s own PRP."
-          to="growth-factor-treatment"
-        />
-        <Item
-          source="/HomeCarousel/two.png"
-          desc="Skin Resurfacing with M22TM is a Non-invasive & Non-surgical treatments for Skin conditions."
-          to="skin-resurfacing-m22"
-        />
-        <Item
-          source="/HomeCarousel/three.png"
-          desc="Body sculpting is a procedure to shrink areas of stubborn body fat."
-          to="body-sculpting"
-        />
-      </Slider>
+      <div>
+        <Slider {...settings}>
+          <Item
+            source="/HomeCarousel/four.png"
+            desc="Microdermabrasion is a procedure that helps exfoliate dead cells & combat acne."
+            to="microdermabrasion"
+          />
+          <Item
+            source="/HomeCarousel/five.png"
+            desc="Laser Hair removal is a medical procedure that uses a concentrated beam of light to remove unwanted hair."
+            to="laser-hair-removal"
+          />
+          <Item
+            source="/HomeCarousel/six.png"
+            desc="Dermal fillers add volume to certain areas on the face to hydrate, rejuvenate and enhance your facial features."
+            to="dermal-fillers"
+          />
+          <Item
+            source="/HomeCarousel/seven.png"
+            desc="Anti wrinkle treatment is for reduction of skin wrinkles and certain muscle conditions."
+            to="anti-wrinkle-treatment"
+          />
+          <Item
+            source="/HomeCarousel/one.png"
+            desc="Growth factor is a treatment for hair loss, facial rejuvenation and acne scars that uses the patient’s own PRP."
+            to="growth-factor-treatment"
+          />
+          <Item
+            source="/HomeCarousel/two.png"
+            desc="Skin Resurfacing with M22TM is a Non-invasive & Non-surgical treatments for Skin conditions."
+            to="skin-resurfacing-m22"
+          />
+          <Item
+            source="/HomeCarousel/three.png"
+            desc="Body sculpting is a procedure to shrink areas of stubborn body fat."
+            to="body-sculpting"
+          />
+        </Slider>
+      </div>
     </div>
   );
 };

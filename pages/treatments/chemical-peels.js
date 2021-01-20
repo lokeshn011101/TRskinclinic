@@ -7,7 +7,7 @@ import AOS from "aos";
 const Li = ({ data }) => {
   return data.map((item) => {
     return (
-      <li className="beneli mdd:m-1" key={item}>
+      <li className="beneli mx-auto mdd:m-1" key={item}>
         {item}
       </li>
     );
@@ -20,7 +20,7 @@ const RenderItem = ({ heading, data, skintype }) => {
       <h2 className="trhd2 w-full lg:text-2xl md:text-xl sm:text-lg smm:text-lg mdd:text-center p-2 pl-4 bg-skin-medium">
         {heading}
       </h2>
-      <ul className="pr-7 mdd:mb-5 mb-7">
+      <ul className="mdd:mb-5 mb-7 mx-auto">
         <Li data={data} />
       </ul>
       <h2 className="trhd2 lg:text-2xl md:text-xl sm:text-lg smm:text-lg mdd:text-center pl-4">
@@ -146,20 +146,24 @@ const ChemicalPeels = () => {
       </div>
       <div className="flex md:flex-row flex-col justify-around items-center mx-auto lg:w-5/12 w-7/12">
         <div className="mdd:w-9/12 mx-auto" data-aos="fade-right">
-          <Image
-            src="/Treatments/ChemicalPeels/two.png"
-            alt="cp1"
-            width={200}
-            height={200}
-          />
+          <div className="mx-auto divimgg">
+            <Image
+              src="/Treatments/ChemicalPeels/two.png"
+              alt="cp1"
+              width={200}
+              height={200}
+            />
+          </div>
         </div>
         <div className="md:mt-0 mt-8 mdd:w-9/12 mx-auto" data-aos="fade-left">
-          <Image
-            src="/Treatments/ChemicalPeels/one.png"
-            alt="cp1"
-            width={200}
-            height={200}
-          />
+          <div className="mx-auto divimgg">
+            <Image
+              src="/Treatments/ChemicalPeels/one.png"
+              alt="cp1"
+              width={200}
+              height={200}
+            />
+          </div>
         </div>
       </div>
       <div className="md:mt-20 mt-16">

@@ -209,3 +209,6 @@ a {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+.divimgg {
+  width: fit-content;
+}
