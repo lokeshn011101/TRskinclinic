@@ -231,3 +231,18 @@ ul {
 ::-webkit-scrollbar-thumb:hover {
   background: #df9a80;
 }
+
+.tdocs {
+  width: fit-content !important;
+}
+.cc-child {
+  width: fit-content !important;
+}
+.carou-containerapp,
+.imgpar,
+.tr-bg {
+  width: fit-content !important;
+}
+.imgpar {
+  height: fit-content !important;
+}

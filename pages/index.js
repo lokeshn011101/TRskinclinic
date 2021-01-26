@@ -139,7 +139,7 @@ Who are committed to provide our patients with skin care of the highest quality 
         offsetText={winWidth > 640 ? "-200" : "150"}
       />
       <div
-        className="flex justify-center w-8/12 mx-auto items-center md:mt-14 sm:mt-9 smm:mt-7 relative"
+        className="tdocs flex justify-center w-8/12 mx-auto items-center md:mt-14 sm:mt-9 smm:mt-7 relative"
         data-aos="zoom-in-up"
         data-aos-offset={winWidth > 640 ? "-100" : "100"}
       >

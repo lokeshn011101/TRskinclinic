@@ -17,8 +17,8 @@ const TreatmentsCard = ({ treatment, Name, trImage }) => {
     config: { mass: 10, tension: 300, friction: 140 },
   }));
   return (
-    <div className="tr-container" data-aos="fade-right">
-      <div className="tr-bg relative">
+    <div className="tr-container mx-auto" data-aos="fade-right">
+      <div className="tr-bg mx-auto relative">
         <Image
           width={1519}
           height={396}

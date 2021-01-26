@@ -13,7 +13,7 @@ const Gallery = () => {
   return (
     <div className="flex lg:flex-row flex-col justify-around items-center mx-auto lg:p-24">
       <div
-        className="relative lg:w-1/4 lgg:w-7/12 lgg:mt-8"
+        className="relative imgpar lg:w-1/4 lgg:w-7/12 lgg:mt-8"
         data-aos="fade-right"
         data-aos-delay="30"
       >
@@ -28,7 +28,7 @@ const Gallery = () => {
         </h2>
       </div>
       <div
-        className="relative lg:w-1/4 lgg:w-7/12 lgg:mt-8"
+        className="relative imgpar lg:w-1/4 lgg:w-7/12 lgg:mt-8"
         data-aos="fade-right"
         data-aos-delay="80"
       >
@@ -43,7 +43,7 @@ const Gallery = () => {
         </h2>
       </div>
       <div
-        className="relative lg:w-1/4 lgg:w-7/12 lgg:mt-8"
+        className="relative imgpar lg:w-1/4 lgg:w-7/12 lgg:mt-8"
         data-aos="fade-right"
         data-aos-delay="130"
       >

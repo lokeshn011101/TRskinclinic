@@ -22,7 +22,10 @@ const Slider1 = () => {
     config: { mass: 10, tension: 300, friction: 140 },
   }));
   return (
-    <div className="carou-container overflow-hidden" data-aos="fade-right">
+    <div
+      className="carou-containerapp overflow-hidden mx-auto"
+      data-aos="fade-right"
+    >
       <div className="home-img1 relative overflow-hidden">
         <Image
           src="/Appointments/appbg.png"
