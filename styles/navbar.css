@@ -116,3 +116,99 @@ a {
     opacity: 1;
   }
 }
+
+@media (min-width: 1023px) {
+  .toggler {
+    display: none !important;
+  }
+  .navigate {
+    width: 80.3333% !important;
+    margin-right: 2.5% !important;
+  }
+}
+.toggler {
+  padding-top: 0.5rem;
+}
+
+.navvv ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 150%;
+}
+.navvv li {
+  float: left;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.navvv a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.dropdown:hover .navvv li a {
+  background: #fff7f5;
+}
+.headerdrp:hover {
+  background-color: #fff7f5;
+}
+.navvv li ul {
+  float: left;
+  left: -75%;
+  top: 0;
+  width: 170%;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  z-index: 1;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.dropdown:hover .navvv li ul {
+  opacity: 1;
+  top: 155.5%;
+  left: -75%;
+  visibility: visible;
+}
+.navvv li ul li {
+  float: none;
+  width: 150%;
+}
+.navvv li ul a:hover {
+  background: #ebcabe;
+}
+.cf:after,
+.cf:before {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.navrenup li a:hover {
+  background: #ebcabe;
+}
+.menu-item a {
+  padding: 0.5rem !important;
+}
+.toggler::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.toggler {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.divimgg {
+  width: fit-content;
+}

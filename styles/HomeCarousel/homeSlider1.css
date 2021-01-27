@@ -35,8 +35,28 @@
 }
 
 .homeimg1 {
-  top: 8%;
+  top: 9%;
 }
+@media (max-width: 768px) {
+  .homeimg1 {
+    top: 11%;
+  }
+}
+@media (max-width: 500px) {
+  .homeimg1 {
+    top: 13%;
+  }
+}
+@media (max-width: 400px) {
+  .hh {
+    margin-bottom: -0.5rem;
+  }
+  .but1 {
+    font-size: 0.5rem;
+    padding: 0.1rem 0.2rem;
+  }
+}
+
 .homecar-heading {
   top: 35%;
   left: 10%;
@@ -46,5 +66,56 @@
   .homecar-heading {
     font-size: 4rem;
     line-height: 1;
+  }
+}
+@media (max-width: 800px) {
+  .h1dand {
+    transform: scale(0.7) !important;
+  }
+  #h1dand8 {
+    top: 45%;
+    left: 45%;
+  }
+}
+@media (max-width: 650px) {
+  .h1dand {
+    transform: scale(0.6) !important;
+  }
+  #h1dand3 {
+    top: 25%;
+  }
+  #h1dand6 {
+    top: 2%;
+    left: 42.5%;
+  }
+}
+@media (max-width: 500px) {
+  .h1dand {
+    transform: scale(0.5) !important;
+  }
+  #h1dand3 {
+    top: 25%;
+  }
+  #h1dand8 {
+    top: 45%;
+    left: 41.5%;
+  }
+}
+
+@media (max-width: 426px) {
+  .h1dand {
+    transform: scale(0.35) !important;
+  }
+  #h1dand3 {
+    top: 40%;
+    left: 34%;
+  }
+  #h1dand6 {
+    top: -7%;
+    left: 40.5%;
+  }
+  #h1dand8 {
+    top: 45%;
+    left: 40%;
   }
 }
