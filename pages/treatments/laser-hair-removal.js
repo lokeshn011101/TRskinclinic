@@ -15,10 +15,10 @@ const RenderList = ({ data }) => {
             className="md:my-5 p-0 flex flex-row items-center text-sm mdd:text-xs"
             data-aos="fade-up"
           >
-            <div className="mx-5 mdd:hidden">
+            <div className="md:w-1/12 mx-5 mr-8 mdd:hidden">
               <Image width={40} height={40} src={`/${i}.png`} alt={`${i++}`} />
             </div>
-            <div className="flex flex-col mdd:items-center justify-center items-start md:my-6 mdd:mx-auto">
+            <div className="md:w-11/12 flex flex-col mdd:items-center justify-center items-start md:my-6 mdd:mx-auto">
               <h3 className="trhd2 lg:text-3xl md:text-xl sm:text-lg smm:text-base mb-3">
                 {item[0]}
               </h3>
