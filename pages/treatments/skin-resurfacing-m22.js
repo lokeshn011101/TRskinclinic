@@ -11,11 +11,11 @@ const SkinResurfacing = () => {
     ],
     [
       "Is there any downtime?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+      "No, there is no downtime. You can get back to your daily routine after the treatment and use makeup the next day. ",
     ],
     [
       "How long are the sessions?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+      "One session lasts for about 30-45 minutes. You may need to take 3-4 sessions in  intervals of 3-4 weeks in combination with creams as suggested by our doctor. ",
     ],
     [
       "How long do the results last?",
@@ -43,7 +43,7 @@ const SkinResurfacing = () => {
       </div>
       <TreatmentsSection
         title="Why do we choose the M22™ Laser?"
-        text="At TR Skin Clinic, we are committed to providing our patients with the most effective skin resurfacing laser for a range of skin conditions. M22™ Lumeni is one
+        text="At TR Skin Clinic, we are committed to providing our patients with the most effective skin resurfacing laser for a range of skin conditions. M22™ Lumenis is one
 the best in the world currently and we are happy to offer it to you."
         aosTitle="fade-up"
         aosText="fade-up"
