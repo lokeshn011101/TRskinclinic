@@ -1,0 +1,121 @@
+.h1dand {
+  z-index: -100;
+}
+#h1dand1 {
+  top: 5%;
+  left: 18%;
+}
+#h1dand2 {
+  top: 23%;
+  left: 25%;
+}
+#h1dand3 {
+  top: 18%;
+  left: 31%;
+}
+#h1dand4 {
+  top: 5%;
+  left: 37%;
+}
+#h1dand5 {
+  top: 25%;
+  left: 40%;
+}
+#h1dand7 {
+  top: 35%;
+  left: 46%;
+}
+#h1dand6 {
+  top: 15%;
+  left: 46.5%;
+}
+#h1dand8 {
+  top: 45%;
+  left: 51%;
+}
+
+.homeimg1 {
+  top: 9%;
+}
+@media (max-width: 768px) {
+  .homeimg1 {
+    top: 11%;
+  }
+}
+@media (max-width: 500px) {
+  .homeimg1 {
+    top: 13%;
+  }
+}
+@media (max-width: 400px) {
+  .hh {
+    margin-bottom: -0.5rem;
+  }
+  .but1 {
+    font-size: 0.5rem;
+    padding: 0.1rem 0.2rem;
+  }
+}
+
+.homecar-heading {
+  top: 35%;
+  left: 10%;
+}
+
+@media (min-width: 1024px) {
+  .homecar-heading {
+    font-size: 4rem;
+    line-height: 1;
+  }
+}
+@media (max-width: 800px) {
+  .h1dand {
+    transform: scale(0.7) !important;
+  }
+  #h1dand8 {
+    top: 45%;
+    left: 45%;
+  }
+}
+@media (max-width: 650px) {
+  .h1dand {
+    transform: scale(0.6) !important;
+  }
+  #h1dand3 {
+    top: 25%;
+  }
+  #h1dand6 {
+    top: 2%;
+    left: 42.5%;
+  }
+}
+@media (max-width: 500px) {
+  .h1dand {
+    transform: scale(0.5) !important;
+  }
+  #h1dand3 {
+    top: 25%;
+  }
+  #h1dand8 {
+    top: 45%;
+    left: 41.5%;
+  }
+}
+
+@media (max-width: 426px) {
+  .h1dand {
+    transform: scale(0.35) !important;
+  }
+  #h1dand3 {
+    top: 40%;
+    left: 34%;
+  }
+  #h1dand6 {
+    top: -7%;
+    left: 40.5%;
+  }
+  #h1dand8 {
+    top: 45%;
+    left: 40%;
+  }
+}
