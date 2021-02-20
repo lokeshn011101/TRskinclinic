@@ -207,7 +207,7 @@ const Navbar = () => {
               Book An Appointment
             </Link>
           </div>
-          <div className="text-black text-md">
+          {/* <div className="text-black text-md">
             Search
             <div className="h-4 w-4 inline ml-3">
               <Image
@@ -217,7 +217,7 @@ const Navbar = () => {
                 width={16}
               />
             </div>
-          </div>
+          </div> */}
         </div>
         <button
           name="toggler"
@@ -256,7 +256,7 @@ const Navbar = () => {
               </button>
             </div>
             <div className="oritog right-0 absolute flex w-60 flex-col items-end justify-between lg:hidden my-12">
-              <div href="/" className="text-black text-md mr-6 mb-4">
+              {/* <div className="text-black text-md mr-6 mb-4">
                 Search
                 <div className="h-4 w-4 inline ml-2">
                   <Image
@@ -268,7 +268,7 @@ const Navbar = () => {
                     width={16}
                   />
                 </div>
-              </div>
+              </div> */}
               <div
                 className="mr-6 my-3"
                 onClick={() => setNaveToggle(!navToggle)}
