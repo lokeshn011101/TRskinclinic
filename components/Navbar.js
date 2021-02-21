@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/router";
 import React from "react";
 import Image from "next/image";
@@ -79,6 +79,30 @@ const RenderItem = ({ data }) => {
 };
 
 const Navbar = () => {
+  const ref = useRef();
+  const butRef = useRef();
+  const [toggleMobile, setToggleMobile] = useState(false);
+  const [navToggle, setNaveToggle] = useState(false);
+  const router = useRouter();
+
+  useEffect(() => {
+    const onBodyClick = (event) => {
+      if (
+        (ref.current && ref.current.contains(event.target)) ||
+        (butRef.current && event.target.name == butRef.current.name) ||
+        (butRef.current &&
+          event.target.parentNode.parentNode.name == butRef.current.name)
+      ) {
+        return;
+      }
+      setNaveToggle(false);
+    };
+    document.body.addEventListener("click", onBodyClick);
+    return () => {
+      document.body.removeEventListener("click", onBodyClick);
+    };
+  }, []);
+
   const data = [
     ["chemical-peels", "Chemical Peels"],
     ["dermal-fillers", "Dermal Fillers"],
@@ -93,13 +117,6 @@ const Navbar = () => {
     ["skin-resurfacing-m22", "Skin Resurfacing With M22™"],
     ["skin-hydration", "Skin Hydration with Volite"],
   ];
-  const [toggleMobile, setToggleMobile] = useState(false);
-  const toggleAccordion = () => {
-    setToggleMobile(!toggleMobile);
-  };
-  const Ol = React.createRef();
-  const [navToggle, setNaveToggle] = useState(false);
-  const router = useRouter();
   return (
     <nav className="sticky top-0 navbar-container w-full h-auto flex justify-end z-10">
       <div className="bg-skin-lightWithOpacity flex justify-center w-full  lg:items-end lg:flex-row shadow-sm">
@@ -190,7 +207,7 @@ const Navbar = () => {
               Book An Appointment
             </Link>
           </div>
-          <div className="text-black text-md">
+          {/* <div className="text-black text-md">
             Search
             <div className="h-4 w-4 inline ml-3">
               <Image
@@ -200,11 +217,11 @@ const Navbar = () => {
                 width={16}
               />
             </div>
-          </div>
+          </div> */}
         </div>
         <button
           name="toggler"
-          onClick={() => setNaveToggle(!navToggle)}
+          onClick={() => setNaveToggle(true)}
           className="toggler w-24 ml-auto focus:outline-none"
         >
           <Image
@@ -218,12 +235,16 @@ const Navbar = () => {
       </div>
       {navToggle ? (
         <>
-          <div className="toggler overflow-scroll overflow-x-hidden fixed top-0 lg:hidden animate-slide h-screen bg-skin-light z-10 w-64">
+          <div
+            ref={ref}
+            className="toggler overflow-scroll overflow-x-hidden fixed top-0 lg:hidden animate-slide h-screen shadow-2xl bg-skin-light z-10 w-64"
+          >
             <div className="absolute w-4 h-4 right-5 top-3">
               <button
                 name="toggler"
                 className="focus:outline-none"
-                onClick={() => setNaveToggle(!navToggle)}
+                onClick={() => setNaveToggle(false)}
+                ref={butRef}
               >
                 <Image
                   alt="icon"
@@ -235,7 +256,7 @@ const Navbar = () => {
               </button>
             </div>
             <div className="oritog right-0 absolute flex w-60 flex-col items-end justify-between lg:hidden my-12">
-              <div href="/" className="text-black text-md mr-6 mb-4">
+              {/* <div className="text-black text-md mr-6 mb-4">
                 Search
                 <div className="h-4 w-4 inline ml-2">
                   <Image
@@ -247,7 +268,7 @@ const Navbar = () => {
                     width={16}
                   />
                 </div>
-              </div>
+              </div> */}
               <div
                 className="mr-6 my-3"
                 onClick={() => setNaveToggle(!navToggle)}

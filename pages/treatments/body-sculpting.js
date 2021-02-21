@@ -33,15 +33,15 @@ const BodySculpting = () => {
     ],
     [
       "Will the results look natural?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+      "All you're doing is tightening the skin and (non-surgically) removing fat cells. The results you see are all-natural and 100% you",
     ],
     [
       "Is It Painful?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+      "It is painless, although you may feel mild heat sometimes. Body sculpting is non-invasive and avoids much of the discomfort associated with liposuction and other surgical procedures. ",
     ],
     [
       "Are There Any Risks?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+      "One of the benefits of a non-surgical procedure like this is that the risk of complications is  reduced. It's very unlikely that you'll experience anything more than discomfort or a bit of numbness following your procedure. ",
     ],
   ];
   const benefits = [

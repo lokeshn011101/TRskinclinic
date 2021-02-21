@@ -11,11 +11,11 @@ const AntiWrinkleTreatment = () => {
     ],
     [
       "How much downtime is required?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+      "Treatment requires minimal downtime. So you can return to your daily routine immediately after you leave our clinic.",
     ],
     [
       "Is BOTOX and Anti-Wrinkle Treatment the same?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+      "Yes, Anti-Wrinkle Treatment is just another name for BOTOX.",
     ],
   ];
   return (
@@ -34,8 +34,8 @@ const AntiWrinkleTreatment = () => {
       </div>
       <TreatmentsSection
         title="Why choose Anti-Wrinkle Treatment?"
-        text="The appearance of wrinkles can make one’s face appear older than it is. Also with wrinkles once they become static (present without movement)
-It becomes hard to treat. So starting treatments early will prevent this. Anti-Wrinkle Treatment  works beneath the surface and relaxes the muscle
+        text="The appearance of wrinkles can make one’s face appear older than it is. With wrinkles once they become static (present without movement)
+It becomes harder to treat them. So starting treatments early will help prevent this. Anti-Wrinkle Treatment  works beneath the skin's surface and relaxes the muscle
 to help make the skin look visibly smoother."
         aosTitle="fade-up"
         aosText="fade-up"

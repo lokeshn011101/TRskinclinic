@@ -54,11 +54,11 @@ const GrowthFactorTreatment = () => {
     ],
     [
       "Is there any downtime?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+      "The results of the treatment are entirely natural, there are no side effects, since the patient’s own blood is used and provided that it is performed by a specialist doctor, it is sterile and specific.",
     ],
     [
       "Does the treatment work on male pattern baldness?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+      "The treatment will not work for male pattern balding, in such cases a hair transplantation is advised and oral medications.",
     ],
   ];
   const benefits = [
@@ -138,7 +138,7 @@ It restores the function of hair follicles in the area where the injection is do
 
       <TreatmentsSection
         title="How many sittings does the treatment require?"
-        text="GFC is one sitting a month for 3 sittings and subsequently once every six months in order to maintain the result."
+        text="GFC requires one sitting a month, over the span of three months and subsequently once every six months in order to maintain the result."
         aosTitle="fade-up"
         aosText="fade-up"
       />

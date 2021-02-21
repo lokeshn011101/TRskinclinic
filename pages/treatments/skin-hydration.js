@@ -75,15 +75,15 @@ it stimulates the body’s own natural collagen to improve skin quality."
         aosText="fade-up"
       />
       <TreatmentsSection
-        title="When will I see the results and How long do the they last?"
-        text="You can see effects after the procedure, but significant results are visible after two weeks. Studies suggest that the results can last up to nine months and
+        title="When will I see the results and How long do they last?"
+        text="You can see the effects after the procedure, but significant results are visible after two weeks. Studies suggest that the results can last up to nine months and
 offer noteworthy skin quality enhancement."
         aosTitle="fade-up"
         aosText="fade-up"
       />
       <TreatmentsSection
         title="Is there any downtime?"
-        text="There is no downtime in this treatment. You can return to you normal routines after the treatment."
+        text="There is no downtime in this treatment. You can return to your normal routines after the treatment."
         aosTitle="fade-up"
         aosText="fade-up"
       />
