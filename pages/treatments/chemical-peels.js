@@ -57,13 +57,13 @@ const ChemicalPeels = () => {
       "Brighter, Smoother Skin",
       "Treats Acne And Blackheads",
       "Reduce Fine Lines, And Wrinkles",
-      "Fade Dark Spots And Uneven Skin Tone",
+      "Fades Dark Spots And Uneven Skin Tone",
     ],
     [
       "Immediate Results",
       "Exfoliates Dead Skin",
       "Improvement Of Uneven Skin Pigmentation And Melasma",
-      "Younger, And More Refreshed Skin Post Treatment",
+      "Younger, And More Refreshed Skin Post-Treatment",
     ],
     [
       "Decreases The Appearance Of Scars",
@@ -184,7 +184,7 @@ const ChemicalPeels = () => {
           />
           <RenderItem
             data={benefits[1]}
-            heading="Salycilic Acid"
+            heading="Salicylic Acid"
             skintype="Combination, Oily Or Acne Prone Skin"
           />
           <RenderItem
@@ -216,7 +216,7 @@ const ChemicalPeels = () => {
               </th>
               <th className="w-1/5 border-r-2 border-white">
                 <h2 className="trhd2 lg:text-2xl md:text-xl sm:text-lg smm:text-lg text-center p-4 bg-skin-medium">
-                  Salycilic Acid
+                  Salicylic Acid
                 </h2>
               </th>
               <th className="w-1/5 border-r-2 border-white">

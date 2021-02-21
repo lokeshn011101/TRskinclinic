@@ -17,7 +17,7 @@ const DermalFillers = () => {
     ],
     [
       "Is there any downtime?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+      "There is no downtime because the results are instant. You can continue with your normal routine. However, we always advise our patients not to schedule a filler appointment right before any important event as there may be some bruising or swelling depending on the area of treatment.",
     ],
   ];
   return (
@@ -55,9 +55,9 @@ const DermalFillers = () => {
             <li data-aos="fade-up">Provide a mid face lift</li>
             <li data-aos="fade-up">Enhance the cheek area</li>
             <li data-aos="fade-up">Enhance lips & reduce lip lines</li>
-            <li data-aos="fade-up">Define the chin & Jawline</li>
+            <li data-aos="fade-up">Define the chin & jawline</li>
             <li data-aos="fade-up">Reduce lines around the mouth</li>
-            <li data-aos="fade-up">Define the Nose</li>
+            <li data-aos="fade-up">Define the nose</li>
           </ul>
         </div>
       </div>

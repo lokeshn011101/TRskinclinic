@@ -38,7 +38,7 @@ const Microdermabasion = () => {
     ],
     [
       "Is there any downtime?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+      "No, there is no downtime in this treatment. You can get back to your daily routine.",
     ],
   ];
   const benefits = [
@@ -48,7 +48,7 @@ const Microdermabasion = () => {
     ],
     [
       "Medi Facials take 45 minutes and include microdermabrasion along with hydra exfoliation.",
-      "It also has an ultrasonic scrubber to cleanse pores, cleanse impurities and remove whitehead & blackheads. It also infusesingredients for anti-ageing glow.",
+      "It also has an ultrasonic scrubber to cleanse pores, cleanse impurities and remove whitehead & blackheads. It also infuses ingredients for anti-ageing glow.",
     ],
   ];
   return (

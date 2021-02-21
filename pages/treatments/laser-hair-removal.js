@@ -15,10 +15,10 @@ const RenderList = ({ data }) => {
             className="md:my-5 p-0 flex flex-row items-center text-sm mdd:text-xs"
             data-aos="fade-up"
           >
-            <div className="mx-5 mdd:hidden">
+            <div className="md:w-1/12 mx-5 mr-8 mdd:hidden">
               <Image width={40} height={40} src={`/${i}.png`} alt={`${i++}`} />
             </div>
-            <div className="flex flex-col mdd:items-center justify-center items-start md:my-6 mdd:mx-auto">
+            <div className="md:w-11/12 flex flex-col mdd:items-center justify-center items-start md:my-6 mdd:mx-auto">
               <h3 className="trhd2 lg:text-3xl md:text-xl sm:text-lg smm:text-base mb-3">
                 {item[0]}
               </h3>
@@ -38,12 +38,12 @@ const LaserHairRemoval = () => {
       "It can cause initial stinging in areas with thick hair. But it does not cause any pain whatsoever. Topical anaesthetic cream can be applied on certain bony areas in case it stings a little more.",
     ],
     [
-      "When will I see the results after THE TREATMENT?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+      "When will I see the results after having laser hair removal?",
+      "You will notice thinning of  hair follicles after every sitting & duration between each sitting will increase. Although results may vary  from patient to patient depending on their hair growth cycles and hormones.!",
     ],
     [
       "How long does THE TREATMENT TAKE?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+      "A single sitting may go on from 15 min to an hour depending on the area. Sittings are  usually one month apart and then the time for the hair to grow takes longer as the  interval between sittings increases.  ",
     ],
   ];
   const benefits = [
@@ -220,14 +220,7 @@ const LaserHairRemoval = () => {
       <TreatmentsSection
         title="What's the pre and post care?"
         text="Only shave between sittings, as waxing and shaving pull the hair from the root and dispute the hair cycle which can lead to more sittings.
-This can also stimulate hair growth in other areas that we have already treated."
-        aosTitle="fade-up"
-        aosText="fade-up"
-      />
-      <TreatmentsSection
-        title="What's the pre and post care?"
-        text="Only shave between sittings, as waxing and shaving pull the hair from the root and dispute the hair cycle which can lead to more sittings.
-This can also stimulate hair growth in other areas that we have already treated."
+This can also stimulate hair growth in other areas that have already been treated."
         aosTitle="fade-up"
         aosText="fade-up"
       />

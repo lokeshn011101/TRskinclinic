@@ -51,15 +51,15 @@ const PhotoFacial = () => {
     ],
     [
       "How long does it take to recover from a photofacial?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+      "There’s no real recovery time to speak of. With IPL photofacials, there may be a few mild side effects immediately after the procedure which is rare but will settle in a few hours or days. Nevertheless, you can resume normal activities immediately after treatment, including applying your usual facial creams and makeup. ",
     ],
     [
       "How long do the results last?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+      "The results of an IPL photofacial will be apparent for six months to a year. Dermatologists recommend maintenance treatments every six to 12 months to help prolong results. The  anti-aging effects of IPL photofacials, two to three treatments a year are  enough to develop and maintain younger looking skin with renewed collagen  growth. ",
     ],
     [
       "What can I do to prolong results?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+      "Avoid things that damage your skin. That means limiting direct exposure to the sun, wearing sunscreen, and taking optimal  care of your skin with moisturizers and face washings. Of course, keeping up with your scheduled maintenance treatments with us.",
     ],
   ];
   const benefits = [

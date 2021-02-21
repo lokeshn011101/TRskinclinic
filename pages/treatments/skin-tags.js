@@ -47,11 +47,11 @@ const SkinTags = () => {
     ],
     [
       "Can I do other activities after corn treatmenT?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+      "Yes. Corn removals are usually painless and there is no down time. Most  people experience immediate relief after treatment and can go back to their  normal routines after the treatment.",
     ],
     [
       "Are the surgical treatments painful?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+      "These treatments are performed under topical anesthesia hence, you will feel no pain at all.",
     ],
   ];
   const benefits1 = [

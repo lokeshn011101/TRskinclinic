@@ -34,7 +34,7 @@ const AcneScarTreatment = () => {
     ],
     [
       "What are the results of laser acne treatment?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+      "ResurFX technology by Lumenis can reduce acne scars and can also smoothen the skin  and especially reduce rolling and box acne scars by 80% and leave you with clear  skin permanently.",
     ],
   ];
   const benefits = [
@@ -106,8 +106,7 @@ const AcneScarTreatment = () => {
       </div>
       <TreatmentsSection
         title="How Do People Get Acne Scars?"
-        text="Surprisingly, not all acne scars arise due to picking the outbreak area. The skin on your face is  extremely sensitive and if you suffer from extreme bouts
-of intense inflammation, acne scars are a possibility."
+        text="Notably, not all acne scars arise due to picking the outbreak area. The skin on your face is extremely sensitive and due to skin pores being filled with excess oil, dead skin cells and bacteria the resulting inflamed blemishes cause scars on your skin.  If you suffer from extreme bouts of intense acne inflammation, acne scars are a possibility."
         aosTitle="fade-up"
         aosText="fade-up"
       />
@@ -115,7 +114,7 @@ of intense inflammation, acne scars are a possibility."
         title="Treatment for Acne"
         text="Depending on the grade of your acne, we may prescribe different medications. Our prescribed medication will give you clear skin with a 95% improvement
 in the appearance of your skin. You will not be plagued by pimples or scars even after you stop the treatment. Additionally we do have chemical peels
-in case you have an important event and need to get rid of your acne immediately. "
+in case you need to get rid of your acne immediately. "
         aosTitle="fade-up"
         aosText="fade-up"
       />
