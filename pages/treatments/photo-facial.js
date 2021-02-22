@@ -47,7 +47,7 @@ const PhotoFacial = () => {
     ],
     [
       "Do photofacials hurt?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+      "IPL photofacials are mostly pain free. Some patients have compared the brief stinging pain of the pulsating light to a tight pinch.",
     ],
     [
       "How long does it take to recover from a photofacial?",

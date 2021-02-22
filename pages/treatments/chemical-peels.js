@@ -39,11 +39,11 @@ const ChemicalPeels = () => {
     ],
     [
       "Do chemical peels hurt?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+      "In general, users only feel a mild stinging sensation during light or medium chemical peels. After the procedure, a mild pain reliever may be given to get rid of any discomfort, if necessary",
     ],
     [
       "How do I know what chemical peel is right for me?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+      "Our doctors will check your skin after a consultation & take you through the chemical peels suitable for your skin concerns.",
     ],
   ];
   const benefits = [
