@@ -50,7 +50,7 @@ const GrowthFactorTreatment = () => {
     ],
     [
       "Is it safe?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
+      "The results of the treatment are entirely natural, there are no side effects, since the patient’s own blood is used and provided that it is performed by a specialist doctor, it is sterile and specific.",
     ],
     [
       "Is there any downtime?",

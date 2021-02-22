@@ -17,14 +17,6 @@ const SkinResurfacing = () => {
       "How long are the sessions?",
       "One session lasts for about 30-45 minutes. You may need to take 3-4 sessions in  intervals of 3-4 weeks in combination with creams as suggested by our doctor. ",
     ],
-    [
-      "How long do the results last?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
-    ],
-    [
-      "What can I do to prolong results?",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laborum, dolorem perspiciatis consequuntur nulla magni quae accusamus, earum consequatur libero officiis sit eum iusto cumque consectetur quidem neque laboriosam. Vero!",
-    ],
   ];
   return (
     <>
