@@ -34,7 +34,7 @@ const Footer = () => {
             <div className="vl smm:hidden sm:hidden md:block"></div>
             <div className="md:ml-3">
               <div>Mon - Fri : 10:30 AM - 6:00 PM</div>
-              <div>Sat: 10:30 PM - 4:00 PM</div>
+              <div>Sat: 10:30 AM - 4:00 PM</div>
               <div>Sunday Closed</div>
               <div>Contact Us: +91 77080 07026</div>
             </div>
